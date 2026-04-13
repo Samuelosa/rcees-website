@@ -4253,6 +4253,7 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
             c.width=img.naturalWidth;c.height=img.naturalHeight;
             c.getContext('2d').drawImage(img,0,0);
             const webp=c.toDataURL('image/webp',0.85);
+            c.width=0;
             if(webp.startsWith('data:image/webp')&&webp.length<('data:'+mime+';base64,'+b64).length){
               const wb64=webp.replace('data:image/webp;base64,','');
               resolve({b64:wb64,mime:'image/webp'});
@@ -4266,36 +4267,8 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
       });
     }
 
-    // ── Generate sw.js ──
-    const cacheVersion='rcees-'+Date.now();
-    const swContent=`const CACHE='${cacheVersion}';
-const PRECACHE=['./','.\/index.html','.\/cropped-RCEES-LOGO-web-2048x641.png'];
-self.addEventListener('install',e=>{
-  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(PRECACHE)).then(()=>self.skipWaiting()));
-});
-self.addEventListener('activate',e=>{
-  e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
-});
-self.addEventListener('fetch',e=>{
-  const url=new URL(e.request.url);
-  const isImage=url.pathname.startsWith('/rcees-website/images/');
-  const isHTML=url.pathname.endsWith('.html')||url.pathname.endsWith('/');
-  if(isImage){
-    e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(res=>{
-      const clone=res.clone();
-      caches.open(CACHE).then(c=>c.put(e.request,clone));
-      return res;
-    })));
-  } else if(isHTML){
-    e.respondWith(fetch(e.request).then(res=>{
-      const clone=res.clone();
-      caches.open(CACHE).then(c=>c.put(e.request,clone));
-      return res;
-    }).catch(()=>caches.match(e.request)));
-  } else {
-    e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));
-  }
-});`;
+    // ── sw.js cache version (content generated after imageBlobs is populated) ──
+    const cacheVersion='rcees-v1-'+Date.now();
 
     // ── Generate sitemap.xml ──
     const base='https://samuelosa.github.io/rcees-website';
@@ -4317,7 +4290,7 @@ ${sections.map(s=>`  <url><loc>${base}/${s}</loc></url>`).join('\n')}
     const imageQueue=[];
     let pidx=0;
     const preClean=html.replace(/data:(image\/[^;]+);base64,([A-Za-z0-9+/=]+)/g,(match,mime,b64)=>{
-      if(seen.has(b64))return'__IMG_'+seen.get(b64)+'__';
+      if(seen.has(b64))return seen.get(b64);
       const placeholder='__IMGQ'+pidx+'__';
       imageQueue.push({mime,b64,placeholder,idx:pidx});
       seen.set(b64,placeholder);
@@ -4357,6 +4330,37 @@ ${sections.map(s=>`  <url><loc>${base}/${s}</loc></url>`).join('\n')}
     if(htmlBlobRes.status===401)throw new Error('INVALID_TOKEN');
     if(!htmlBlobRes.ok)throw new Error('HTML blob failed ('+htmlBlobRes.status+')');
     const htmlBlob=await htmlBlobRes.json();
+
+    // ── Generate sw.js (after imageBlobs so all image paths are available) ──
+    const imagePrecache=imageBlobs.map(img=>`'./${img.path}'`).join(',');
+    const swContent=`const CACHE='${cacheVersion}';
+const PRECACHE=['./','.\/index.html','.\/cropped-RCEES-LOGO-web-2048x641.png'${imagePrecache?','+imagePrecache:''}];
+self.addEventListener('install',e=>{
+  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(PRECACHE)).then(()=>self.skipWaiting()));
+});
+self.addEventListener('activate',e=>{
+  e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+});
+self.addEventListener('fetch',e=>{
+  const url=new URL(e.request.url);
+  const isImage=url.pathname.startsWith('/rcees-website/images/');
+  const isHTML=url.pathname.endsWith('.html')||url.pathname.endsWith('/');
+  if(isImage){
+    e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(res=>{
+      const clone=res.clone();
+      caches.open(CACHE).then(c=>c.put(e.request,clone));
+      return res;
+    })));
+  } else if(isHTML){
+    e.respondWith(fetch(e.request).then(res=>{
+      const clone=res.clone();
+      caches.open(CACHE).then(c=>c.put(e.request,clone));
+      return res;
+    }).catch(()=>caches.match(e.request)));
+  } else {
+    e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));
+  }
+});`;
 
     // ── Upload sw.js blob ──
     const swBlobRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
