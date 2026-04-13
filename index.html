@@ -3644,8 +3644,9 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     if(!token){showToast('Publish cancelled.',3000);return;}
 
     showToast('Publishing\u2026',60000);
-    publishToGitHub(html,token).then(()=>{
-      showToast('\u2713 Published! Live at samuelosa.github.io/rcees-website in ~30s',5000);
+    publishToGitHub(html,token).then((result)=>{
+      const imgNote=result.imagesExtracted?(' \u2014 '+result.imagesExtracted+' image'+(result.imagesExtracted>1?'s':'')+' extracted'):'';
+      showToast('\u2713 Published'+imgNote+'! Live at samuelosa.github.io/rcees-website in ~30s',5000);
     }).catch(err=>{
       if(err.message==='INVALID_TOKEN'){
         localStorage.removeItem('gh_token');
@@ -3660,39 +3661,66 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     const owner='Samuelosa',repo='rcees-website';
     const h={'Authorization':'token '+token,'Content-Type':'application/json'};
 
-    // 1. Create blob (utf-8 — avoids base64 size inflation)
-    const blobRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
-      method:'POST',headers:h,body:JSON.stringify({content:html,encoding:'utf-8'})
+    // ── STEP 1: Extract any base64 images from HTML ──
+    const extMap={'image/jpeg':'jpg','image/jpg':'jpg','image/png':'png','image/gif':'gif','image/webp':'webp','image/svg+xml':'svg'};
+    function imgHash(s){let h=0;for(let i=0;i<Math.min(s.length,500);i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h).toString(36).padStart(8,'0');}
+    const seen=new Map(); // b64 → filename
+    const newImages=[]; // {path, b64} to upload
+    const cleanHtml=html.replace(/data:(image\/[^;]+);base64,([A-Za-z0-9+/=]+)/g,(match,mime,b64)=>{
+      if(seen.has(b64))return'images/'+seen.get(b64);
+      const ext=extMap[mime]||'bin';
+      const fname='img-'+imgHash(b64)+'.'+ext;
+      seen.set(b64,fname);
+      newImages.push({path:'images/'+fname,b64});
+      return'images/'+fname;
     });
-    if(blobRes.status===401)throw new Error('INVALID_TOKEN');
-    if(!blobRes.ok)throw new Error('Blob creation failed ('+blobRes.status+')');
-    const blobData=await blobRes.json();
 
-    // 2. Get current HEAD commit SHA
+    // ── STEP 2: Upload new image blobs in parallel ──
+    if(newImages.length)showToast('Publishing\u2026 extracting '+newImages.length+' image(s)',60000);
+    const imageBlobs=await Promise.all(newImages.map(async img=>{
+      const r=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
+        method:'POST',headers:h,body:JSON.stringify({content:img.b64,encoding:'base64'})
+      });
+      if(r.status===401)throw new Error('INVALID_TOKEN');
+      if(!r.ok)throw new Error('Image upload failed ('+r.status+')');
+      return{path:img.path,sha:(await r.json()).sha};
+    }));
+
+    // ── STEP 3: Upload HTML blob (utf-8 — no base64 inflation) ──
+    const htmlBlobRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
+      method:'POST',headers:h,body:JSON.stringify({content:cleanHtml,encoding:'utf-8'})
+    });
+    if(htmlBlobRes.status===401)throw new Error('INVALID_TOKEN');
+    if(!htmlBlobRes.ok)throw new Error('HTML blob failed ('+htmlBlobRes.status+')');
+    const htmlBlob=await htmlBlobRes.json();
+
+    // ── STEP 4: Get HEAD commit + tree ──
     const refRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/ref/heads/main',{headers:h});
     if(!refRes.ok)throw new Error('Could not read branch');
     const headSha=(await refRes.json()).object.sha;
-
-    // 3. Get tree SHA from HEAD commit
     const commitData=await(await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/commits/'+headSha,{headers:h})).json();
 
-    // 4. Create new tree pointing index.html at new blob
+    // ── STEP 5: Create tree with HTML + any new images ──
+    const treeItems=[{path:'index.html',mode:'100644',type:'blob',sha:htmlBlob.sha},
+      ...imageBlobs.map(img=>({path:img.path,mode:'100644',type:'blob',sha:img.sha}))];
     const treeData=await(await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/trees',{
       method:'POST',headers:h,
-      body:JSON.stringify({base_tree:commitData.tree.sha,tree:[{path:'index.html',mode:'100644',type:'blob',sha:blobData.sha}]})
+      body:JSON.stringify({base_tree:commitData.tree.sha,tree:treeItems})
     })).json();
 
-    // 5. Create commit
+    // ── STEP 6: Commit ──
+    const msg='Update website \u2014 '+new Date().toLocaleString()+(newImages.length?' ('+newImages.length+' new image'+(newImages.length>1?'s':'')+')':'');
     const newCommit=await(await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/commits',{
       method:'POST',headers:h,
-      body:JSON.stringify({message:'Update website \u2014 '+new Date().toLocaleString(),tree:treeData.sha,parents:[headSha]})
+      body:JSON.stringify({message:msg,tree:treeData.sha,parents:[headSha]})
     })).json();
 
-    // 6. Advance main branch to new commit
+    // ── STEP 7: Advance branch ──
     const updateRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/refs/heads/main',{
       method:'PATCH',headers:h,body:JSON.stringify({sha:newCommit.sha})
     });
     if(!updateRes.ok)throw new Error('Failed to update branch ('+updateRes.status+')');
+    return{imagesExtracted:newImages.length};
   }
 
   // Apply image to a slide background
