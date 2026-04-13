@@ -280,6 +280,19 @@ section{padding:5rem 0}
 .pub-card-link:hover{text-decoration:underline}
 .pub-no-results{grid-column:1/-1;text-align:center;padding:3.5rem 1rem;
   color:var(--gray-500);font-size:.9rem}
+.pub-loading{grid-column:1/-1;display:flex;align-items:center;gap:.75rem;
+  padding:3rem 1rem;color:var(--gray-500);font-size:.88rem}
+.pub-spinner{width:18px;height:18px;border:2px solid var(--gray-100);
+  border-top-color:var(--blue);border-radius:50%;animation:pub-spin .7s linear infinite;flex-shrink:0}
+@keyframes pub-spin{to{transform:rotate(360deg)}}
+.pub-card-citations{font-size:.72rem;color:var(--gray-400);margin-top:.1rem}
+.pub-api-note{grid-column:1/-1;font-size:.72rem;color:var(--gray-400);
+  text-align:right;padding-top:.5rem}
+@media(prefers-color-scheme:dark){
+  .pub-spinner{border-color:#1e3a5a;border-top-color:#4a90d9}
+  .pub-card-citations{color:#5a7a9a}
+  .pub-api-note{color:#5a7a9a}
+}
 @media(prefers-color-scheme:dark){
   #publications{background:#0a1628;border-color:#1e3a5a}
   .pub-filter-hd{border-color:#2a5a8a}
@@ -3165,34 +3178,183 @@ window.addEventListener('scroll',()=>{
 },{passive:true});
 bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-// Publications filter
+// Publications — Semantic Scholar live fetch
 (function(){
+  // ── Author config: Semantic Scholar IDs for RCEES researchers ──
+  // To update: find a researcher at semanticscholar.org and paste their numeric ID below.
+  const AUTHORS=[
+    {id:'2262320388', name:'Gyamfi, S.',        slug:'gyamfi'},
+    {id:'98703604',   name:'Diawuo, F.A.',      slug:'diawuo'},
+    {id:'100527868',  name:'Batinge, B.',       slug:'batinge'},
+    {id:'2059979254', name:'Mensah, G.S.',      slug:'mensah'},
+    {id:'1422138787', name:'Antwi-Agyei, P.',  slug:'antwi-agyei'},
+  ];
+
   const grid=document.getElementById('pubGrid');
-  if(!grid)return;
-  const cards=[...grid.querySelectorAll('.pub-card')];
-  function applyFilters(){
-    const years=[...document.querySelectorAll('input[name="pub-year"]:checked')].map(el=>el.value);
-    const authors=[...document.querySelectorAll('input[name="pub-author"]:checked')].map(el=>el.value);
-    const themes=[...document.querySelectorAll('input[name="pub-theme"]:checked')].map(el=>el.value);
-    let visible=0;
-    cards.forEach(card=>{
-      const yOk=!years.length||years.includes(card.dataset.year);
-      const aOk=!authors.length||authors.some(a=>card.dataset.authors.split(',').includes(a));
-      const tOk=!themes.length||themes.includes(card.dataset.theme);
-      const show=yOk&&aOk&&tOk;
-      card.style.display=show?'':'none';
-      if(show)visible++;
+  const sidebar=document.querySelector('.pub-sidebar');
+  if(!grid||!sidebar)return;
+
+  // Show spinner
+  grid.innerHTML='<div class="pub-loading"><span class="pub-spinner"></span>Loading publications from Semantic Scholar…</div>';
+
+  const FIELDS='title,authors,year,venue,externalIds,citationCount,openAccessPdf';
+  const API='https://api.semanticscholar.org/graph/v1/author/';
+
+  Promise.allSettled(AUTHORS.map(author=>
+    fetch(`${API}${author.id}/papers?fields=${FIELDS}&limit=100`)
+      .then(r=>r.ok?r.json():Promise.reject(r.status))
+      .then(d=>({author,papers:d.data||[]}))
+  )).then(results=>{
+
+    // Merge & deduplicate by paperId
+    const map=new Map();
+    results.forEach(res=>{
+      if(res.status!=='fulfilled')return;
+      const{author,papers}=res.value;
+      papers.forEach(p=>{
+        if(!p.title||!p.year)return;
+        const key=p.paperId||p.title;
+        if(map.has(key)){map.get(key).slugs.push(author.slug);}
+        else{map.set(key,{p,slugs:[author.slug]});}
+      });
     });
-    let msg=grid.querySelector('.pub-no-results');
-    if(!visible){
-      if(!msg){msg=document.createElement('p');msg.className='pub-no-results';msg.textContent='No publications match the selected filters.';grid.appendChild(msg);}
-    } else if(msg){msg.remove();}
+
+    if(!map.size){showStatic();return;}
+
+    // Sort newest first
+    const items=[...map.values()].sort((a,b)=>(b.p.year||0)-(a.p.year||0));
+
+    // Derive dynamic filter values
+    const years=[...new Set(items.map(i=>String(i.p.year)).filter(Boolean))];
+    const themeSet=new Set();
+
+    grid.innerHTML='';
+    items.forEach(({p,slugs})=>{
+      const theme=classifyTheme(p.title,p.venue||'');
+      themeSet.add(theme);
+      const themeSlug=theme.toLowerCase().replace(/[\s&]+/g,'-').replace(/[^a-z0-9-]/g,'');
+      const doi=p.externalIds&&p.externalIds.DOI;
+      const pdfUrl=p.openAccessPdf&&p.openAccessPdf.url;
+      const href=doi?'https://doi.org/'+doi:pdfUrl||'';
+      const authorsStr=formatAuthors(p.authors||[]);
+      const card=document.createElement('div');
+      card.className='pub-card';
+      card.dataset.year=p.year;
+      card.dataset.authors=slugs.join(',');
+      card.dataset.theme=themeSlug;
+      card.innerHTML=
+        '<div class="pub-card-top">'+
+          '<span class="pub-card-year">'+p.year+'</span>'+
+          '<span class="pub-card-theme">'+esc(theme)+'</span>'+
+        '</div>'+
+        '<p class="pub-card-title">'+esc(p.title)+'</p>'+
+        (authorsStr?'<p class="pub-card-authors">'+esc(authorsStr)+'</p>':'')+
+        (p.venue?'<p class="pub-card-journal"><em>'+esc(p.venue)+'</em></p>':'')+
+        (p.citationCount?'<p class="pub-card-citations">'+p.citationCount+' citation'+(p.citationCount!==1?'s':'')+'</p>':'')+
+        (href?'<a href="'+href+'" target="_blank" rel="noopener" class="pub-card-link">PDF / DOI →</a>':'')+
+        '';
+      grid.appendChild(card);
+    });
+
+    // Attribution note
+    const note=document.createElement('p');
+    note.className='pub-api-note';
+    note.textContent='Source: Semantic Scholar';
+    grid.appendChild(note);
+
+    // Rebuild sidebar with live data
+    rebuildSidebar(years,[...themeSet].sort());
+    attachFilters();
+
+  }).catch(()=>showStatic());
+
+  function classifyTheme(title,venue){
+    const t=(title+' '+venue).toLowerCase();
+    if(/solar|pv|photovoltaic|biomass|renewable|wind|hydrogen|fuel.cell|energy.system|mini.grid|battery|storage|generat|electr|power.plant/.test(t))return'Energy Systems';
+    if(/poverty|access|rural|household|cooking|off.grid|productive.use|energy.service/.test(t))return'Energy Access';
+    if(/climate|adaptation|emission|carbon|greenhouse|ndc|warming|mitigation/.test(t))return'Climate Change';
+    if(/water|sanitation|wash|irrigation|flood|hydro|groundwater|wastewater/.test(t))return'Water Resources';
+    if(/education|training|learning|capacity|curriculum|pedagogy|student|competen/.test(t))return'Education & Training';
+    if(/model|transit|scenario|assessment|forecast|planning|nexus|optimis|optimiz/.test(t))return'Energy Modelling';
+    return'Energy & Environment';
   }
-  document.querySelectorAll('.pub-sidebar input[type=checkbox]').forEach(cb=>cb.addEventListener('change',applyFilters));
-  document.getElementById('pubReset').addEventListener('click',function(){
-    document.querySelectorAll('.pub-sidebar input[type=checkbox]').forEach(cb=>cb.checked=false);
-    applyFilters();
-  });
+
+  function formatAuthors(authors){
+    const list=authors.slice(0,4).map(a=>{
+      const parts=a.name.trim().split(/\s+/);
+      return parts.length>1?parts[parts.length-1]+', '+parts[0][0]+'.':a.name;
+    });
+    return list.join('; ')+(authors.length>4?' et al.':'');
+  }
+
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+  function rebuildSidebar(years,themes){
+    sidebar.innerHTML=
+      '<div class="pub-filter-hd"><span>Filter</span><button class="pub-reset" id="pubReset">Reset</button></div>'+
+      '<div class="pub-filter-group"><span class="pub-filter-lbl">Year</span>'+
+        years.map(y=>'<label><input type="checkbox" name="pub-year" value="'+y+'"> '+y+'</label>').join('')+
+      '</div>'+
+      '<div class="pub-filter-group"><span class="pub-filter-lbl">Author</span>'+
+        AUTHORS.map(a=>'<label><input type="checkbox" name="pub-author" value="'+a.slug+'"> '+esc(a.name)+'</label>').join('')+
+      '</div>'+
+      '<div class="pub-filter-group"><span class="pub-filter-lbl">Thematic Area</span>'+
+        themes.map(t=>{const s=t.toLowerCase().replace(/[\s&]+/g,'-').replace(/[^a-z0-9-]/g,'');return'<label><input type="checkbox" name="pub-theme" value="'+s+'"> '+esc(t)+'</label>';}).join('')+
+      '</div>';
+  }
+
+  function attachFilters(){
+    function apply(){
+      const cards=[...grid.querySelectorAll('.pub-card')];
+      const years=[...document.querySelectorAll('input[name="pub-year"]:checked')].map(el=>el.value);
+      const authors=[...document.querySelectorAll('input[name="pub-author"]:checked')].map(el=>el.value);
+      const themes=[...document.querySelectorAll('input[name="pub-theme"]:checked')].map(el=>el.value);
+      let vis=0;
+      cards.forEach(card=>{
+        const show=(!years.length||years.includes(card.dataset.year))&&
+                   (!authors.length||authors.some(a=>card.dataset.authors.split(',').includes(a)))&&
+                   (!themes.length||themes.includes(card.dataset.theme));
+        card.style.display=show?'':'none';
+        if(show)vis++;
+      });
+      let msg=grid.querySelector('.pub-no-results');
+      if(!vis){if(!msg){msg=document.createElement('p');msg.className='pub-no-results';msg.textContent='No publications match the selected filters.';grid.insertBefore(msg,grid.querySelector('.pub-api-note'));}}
+      else if(msg)msg.remove();
+    }
+    sidebar.addEventListener('change',e=>{if(e.target.matches('input[type=checkbox]'))apply();});
+    sidebar.addEventListener('click',e=>{
+      if(e.target.matches('#pubReset')){
+        sidebar.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);
+        apply();
+      }
+    });
+  }
+
+  function showStatic(){
+    // API unavailable — static cards already in place, just wire up original filters
+    grid.querySelector('.pub-loading')&&grid.querySelector('.pub-loading').remove();
+    function apply(){
+      const cards=[...grid.querySelectorAll('.pub-card')];
+      const years=[...document.querySelectorAll('input[name="pub-year"]:checked')].map(el=>el.value);
+      const authors=[...document.querySelectorAll('input[name="pub-author"]:checked')].map(el=>el.value);
+      const themes=[...document.querySelectorAll('input[name="pub-theme"]:checked')].map(el=>el.value);
+      let vis=0;
+      cards.forEach(card=>{
+        const show=(!years.length||years.includes(card.dataset.year))&&
+                   (!authors.length||authors.some(a=>(card.dataset.authors||'').split(',').includes(a)))&&
+                   (!themes.length||themes.includes(card.dataset.theme));
+        card.style.display=show?'':'none';
+        if(show)vis++;
+      });
+      let msg=grid.querySelector('.pub-no-results');
+      if(!vis){if(!msg){msg=document.createElement('p');msg.className='pub-no-results';msg.textContent='No publications match the selected filters.';grid.appendChild(msg);}}
+      else if(msg)msg.remove();
+    }
+    sidebar.addEventListener('change',e=>{if(e.target.matches('input[type=checkbox]'))apply();});
+    sidebar.addEventListener('click',e=>{
+      if(e.target.matches('#pubReset')){sidebar.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);apply();}
+    });
+  }
 })();
 
 // Mobile menu
