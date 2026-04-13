@@ -3185,105 +3185,125 @@ window.addEventListener('scroll',()=>{
 },{passive:true});
 bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
-// Publications — Semantic Scholar live fetch
+// Publications — Google Scholar via SerpApi (24 h localStorage cache)
 (function(){
-  // ── Author config: Semantic Scholar IDs for RCEES researchers ──
-  // To update: find a researcher at semanticscholar.org and paste their numeric ID below.
+  // ── Config ──
+  // SERPAPI_KEY: update via edit mode if key changes.
+  // Restrict this key to your domains at serpapi.com/manage-api-key
+  const SERPAPI_KEY='2a055698d4eef43bff96bc9b951bb9bbaa024c897852421057e56d38c56c1ece';
+  const CACHE_KEY='rcees_pubs_v1';
+  const CACHE_TTL=24*60*60*1000;
+
+  // ── Author config: Google Scholar profile IDs ──
   const AUTHORS=[
-    {id:'2262320388', name:'Gyamfi, S.',          slug:'gyamfi'},
-    {id:'98703604',   name:'Diawuo, F.A.',        slug:'diawuo'},
-    {id:'100527868',  name:'Batinge, B.',         slug:'batinge'},
-    {id:'2059979254', name:'Mensah, G.S.',        slug:'mensah'},
-    {id:'1422138787', name:'Antwi-Agyei, P.',    slug:'antwi-agyei'},
-    {id:'102028823',  name:'Ofosu, E.A.',         slug:'ofosu'},
-    {id:'2236992637', name:'Kabo-bah, A.T.',      slug:'kabo-bah'},
-    {id:'122926052',  name:'Asuamah, E.Y.',       slug:'asuamah'},
-    {id:'134744366',  name:'Okyereh, S.A.',       slug:'okyereh'},
+    {id:'7XmmVJQAAAAJ', name:'Gyamfi, S.',        slug:'gyamfi'},
+    {id:'lWjktyYAAAAJ', name:'Diawuo, F.A.',      slug:'diawuo'},
+    {id:'uelQVKAAAAAJ', name:'Batinge, B.',       slug:'batinge'},
+    {id:'t_vJFsUAAAAJ', name:'Mensah, G.S.',      slug:'mensah'},
+    {id:'EV3PmdEAAAAJ', name:'Antwi-Agyei, P.',  slug:'antwi-agyei'},
+    {id:'K8VpdiEAAAAJ', name:'Derkyi, N.S.A.',    slug:'derkyi'},
+    {id:'gl-DhpEAAAAJ', name:'Nyantakyi, E.K.',   slug:'nyantakyi'},
+    {id:'JqhwKYkAAAAJ', name:'Attiogbe, F.',      slug:'attiogbe'},
+    {id:'XkBOIsYAAAAJ', name:'Okyereh, S.A.',     slug:'okyereh'},
+    {id:'Kt6MnSAAAAAJ', name:'Ofosu, E.A.',       slug:'ofosu'},
+    {id:'qwmXbKIAAAAJ', name:'Kabo-bah, A.T.',    slug:'kabo-bah'},
+    {id:'cGq_c64AAAAJ', name:'Asuamah, E.Y.',     slug:'asuamah'},
   ];
 
   const grid=document.getElementById('pubGrid');
   const sidebar=document.querySelector('.pub-sidebar');
   if(!grid||!sidebar)return;
 
-  // Show spinner
-  grid.innerHTML='<div class="pub-loading"><span class="pub-spinner"></span>Loading publications from Semantic Scholar…</div>';
+  grid.innerHTML='<div class="pub-loading"><span class="pub-spinner"></span>Loading publications…</div>';
 
-  const FIELDS='title,authors,year,venue,externalIds,citationCount,openAccessPdf';
-  const API='https://api.semanticscholar.org/graph/v1/author/';
-
-  // Fetch sequentially with 400ms gap to stay within Semantic Scholar rate limit (1 req/s)
-  async function fetchAll(){
-    const results=[];
-    for(let i=0;i<AUTHORS.length;i++){
-      if(i>0)await new Promise(r=>setTimeout(r,400));
-      const author=AUTHORS[i];
-      try{
-        let res=await fetch(`${API}${author.id}/papers?fields=${FIELDS}&limit=100`);
-        if(res.status===429){
-          await new Promise(r=>setTimeout(r,2000)); // back off and retry once
-          res=await fetch(`${API}${author.id}/papers?fields=${FIELDS}&limit=100`);
-        }
-        const d=res.ok?await res.json():{data:[]};
-        results.push({status:'fulfilled',value:{author,papers:d.data||[]}});
-      }catch(e){results.push({status:'rejected'});}
+  // ── Cache check ──
+  try{
+    const cached=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');
+    if(cached&&(Date.now()-cached.ts)<CACHE_TTL&&cached.articles&&cached.articles.length){
+      renderArticles(cached.articles);
+      return;
     }
-    return results;
+  }catch(e){}
+
+  // ── Fetch from SerpApi sequentially (200ms gap) ──
+  async function fetchAll(){
+    const all=[];
+    for(let i=0;i<AUTHORS.length;i++){
+      if(i>0)await new Promise(r=>setTimeout(r,200));
+      const a=AUTHORS[i];
+      try{
+        const url='https://serpapi.com/search.json?engine=google_scholar_author'
+          +'&author_id='+a.id+'&api_key='+SERPAPI_KEY+'&hl=en&sort=pubdate&num=100';
+        const res=await fetch(url);
+        if(!res.ok)continue;
+        const d=await res.json();
+        (d.articles||[]).forEach(art=>{
+          if(!art.title||!art.year)return;
+          all.push({
+            title:art.title,
+            authors:art.authors||'',
+            publication:art.publication||'',
+            year:String(art.year),
+            link:art.link||'',
+            citations:(art.cited_by&&art.cited_by.value)||0,
+            slug:a.slug,
+          });
+        });
+      }catch(e){}
+    }
+    return all;
   }
 
-  fetchAll().then(results=>{
+  fetchAll().then(raw=>{
+    if(!raw.length){showStatic();return;}
 
-    // Merge & deduplicate by paperId
+    // Deduplicate by normalised title+year
     const map=new Map();
-    results.forEach(res=>{
-      if(res.status!=='fulfilled')return;
-      const{author,papers}=res.value;
-      papers.forEach(p=>{
-        if(!p.title||!p.year)return;
-        const key=p.paperId||p.title;
-        if(map.has(key)){map.get(key).slugs.push(author.slug);}
-        else{map.set(key,{p,slugs:[author.slug]});}
-      });
+    raw.forEach(a=>{
+      const key=(a.title+a.year).toLowerCase().replace(/\s+/g,'');
+      if(map.has(key)){const e=map.get(key);if(!e.slugs.includes(a.slug))e.slugs.push(a.slug);}
+      else{map.set(key,{...a,slugs:[a.slug]});}
     });
 
-    if(!map.size){showStatic();return;}
+    const articles=[...map.values()].sort((a,b)=>Number(b.year)-Number(a.year));
 
-    // Sort newest first
-    const items=[...map.values()].sort((a,b)=>(b.p.year||0)-(a.p.year||0));
+    // Cache for 24 h
+    try{localStorage.setItem(CACHE_KEY,JSON.stringify({ts:Date.now(),articles}));}catch(e){}
 
-    // Derive dynamic filter values
-    const years=[...new Set(items.map(i=>String(i.p.year)).filter(Boolean))];
+    renderArticles(articles);
+  }).catch(()=>showStatic());
+
+  function renderArticles(articles){
+    const years=[...new Set(articles.map(a=>a.year).filter(Boolean))].sort((a,b)=>b-a);
     const themeSet=new Set();
-
     grid.innerHTML='';
-    items.forEach(({p,slugs})=>{
-      const theme=classifyTheme(p.title,p.venue||'');
+
+    articles.forEach(a=>{
+      const theme=classifyTheme(a.title,a.publication);
       themeSet.add(theme);
       const themeSlug=theme.toLowerCase().replace(/[\s&]+/g,'-').replace(/[^a-z0-9-]/g,'');
-      const doi=p.externalIds&&p.externalIds.DOI;
-      const pdfUrl=p.openAccessPdf&&p.openAccessPdf.url;
-      const href=doi?'https://doi.org/'+doi:pdfUrl||'';
-      const authorsStr=formatAuthors(p.authors||[]);
+      const journal=a.publication?a.publication.split(',')[0].trim():'';
       const card=document.createElement('div');
       card.className='pub-card';
-      card.dataset.year=p.year;
-      card.dataset.authors=slugs.join(',');
+      card.dataset.year=a.year;
+      card.dataset.authors=(a.slugs||[a.slug]).join(',');
       card.dataset.theme=themeSlug;
       card.innerHTML=
         '<div class="pub-card-top">'+
-          '<span class="pub-card-year">'+p.year+'</span>'+
+          '<span class="pub-card-year">'+esc(a.year)+'</span>'+
           '<span class="pub-card-theme">'+esc(theme)+'</span>'+
         '</div>'+
-        '<p class="pub-card-title">'+esc(p.title)+'</p>'+
-        (authorsStr?'<p class="pub-card-authors">'+esc(authorsStr)+'</p>':'')+
-        (p.venue?'<p class="pub-card-journal"><em>'+esc(p.venue)+'</em></p>':'')+
-        (p.citationCount?'<p class="pub-card-citations">'+p.citationCount+' citation'+(p.citationCount!==1?'s':'')+'</p>':'')+
-        (href?'<a href="'+href+'" target="_blank" rel="noopener" class="pub-card-link">PDF / DOI →</a>':'')+
+        '<p class="pub-card-title">'+esc(a.title)+'</p>'+
+        (a.authors?'<p class="pub-card-authors">'+esc(a.authors)+'</p>':'')+
+        (journal?'<p class="pub-card-journal"><em>'+esc(journal)+'</em></p>':'')+
+        (a.citations?'<p class="pub-card-citations">'+a.citations+' citation'+(a.citations!==1?'s':'')+'</p>':'')+
+        (a.link?'<a href="'+esc(a.link)+'" target="_blank" rel="noopener" class="pub-card-link">View →</a>':'')+
         '';
       grid.appendChild(card);
     });
 
-    // Hide cards beyond 20 (10 rows × 2 cols) and add show-more button
-    const VISIBLE_ROWS=10,COLS=2,LIMIT=VISIBLE_ROWS*COLS;
+    // Show-more: hide beyond 20 cards (10 rows × 2 cols)
+    const LIMIT=20;
     const allCards=[...grid.querySelectorAll('.pub-card')];
     if(allCards.length>LIMIT){
       allCards.slice(LIMIT).forEach(c=>c.classList.add('pub-hidden'));
@@ -3292,32 +3312,22 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
       btn.textContent='Show more (+'+(allCards.length-LIMIT)+')';
       btn.addEventListener('click',()=>{
         const hidden=[...grid.querySelectorAll('.pub-card.pub-hidden')];
-        if(hidden.length){
-          hidden.forEach(c=>c.classList.remove('pub-hidden'));
-          btn.textContent='Show less';
-        } else {
-          allCards.slice(LIMIT).forEach(c=>c.classList.add('pub-hidden'));
-          btn.textContent='Show more (+'+(allCards.length-LIMIT)+')';
-          grid.scrollIntoView({behavior:'smooth',block:'start'});
-        }
+        if(hidden.length){hidden.forEach(c=>c.classList.remove('pub-hidden'));btn.textContent='Show less';}
+        else{allCards.slice(LIMIT).forEach(c=>c.classList.add('pub-hidden'));btn.textContent='Show more (+'+(allCards.length-LIMIT)+')';grid.scrollIntoView({behavior:'smooth',block:'start'});}
       });
       grid.appendChild(btn);
     }
 
-    // Attribution note
     const note=document.createElement('p');
-    note.className='pub-api-note';
-    note.textContent='Source: Semantic Scholar';
+    note.className='pub-api-note';note.textContent='Source: Google Scholar';
     grid.appendChild(note);
 
-    // Rebuild sidebar with live data
     rebuildSidebar(years,[...themeSet].sort());
     attachFilters();
+  }
 
-  }).catch(()=>showStatic());
-
-  function classifyTheme(title,venue){
-    const t=(title+' '+venue).toLowerCase();
+  function classifyTheme(title,pub){
+    const t=(title+' '+pub).toLowerCase();
     if(/solar|pv|photovoltaic|biomass|renewable|wind|hydrogen|fuel.cell|energy.system|mini.grid|battery|storage|generat|electr|power.plant/.test(t))return'Energy Systems';
     if(/poverty|access|rural|household|cooking|off.grid|productive.use|energy.service/.test(t))return'Energy Access';
     if(/climate|adaptation|emission|carbon|greenhouse|ndc|warming|mitigation/.test(t))return'Climate Change';
@@ -3325,14 +3335,6 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
     if(/education|training|learning|capacity|curriculum|pedagogy|student|competen/.test(t))return'Education & Training';
     if(/model|transit|scenario|assessment|forecast|planning|nexus|optimis|optimiz/.test(t))return'Energy Modelling';
     return'Energy & Environment';
-  }
-
-  function formatAuthors(authors){
-    const list=authors.slice(0,4).map(a=>{
-      const parts=a.name.trim().split(/\s+/);
-      return parts.length>1?parts[parts.length-1]+', '+parts[0][0]+'.':a.name;
-    });
-    return list.join('; ')+(authors.length>4?' et al.':'');
   }
 
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
@@ -3363,32 +3365,21 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
         const match=(!years.length||years.includes(card.dataset.year))&&
                     (!authors.length||authors.some(a=>card.dataset.authors.split(',').includes(a)))&&
                     (!themes.length||themes.includes(card.dataset.theme));
-        // When filters active: show all matches regardless of pub-hidden; when cleared: restore pub-hidden
-        if(filtering){
-          card.style.display=match?'':'none';
-        } else {
-          card.style.display='';  // let pub-hidden class handle visibility
-        }
+        if(filtering){card.style.display=match?'':'none';}
+        else{card.style.display='';}
         if(match&&(filtering||!card.classList.contains('pub-hidden')))vis++;
       });
-      // Show/hide show-more btn when filtering
-      const showMoreBtn=grid.querySelector('.pub-show-more');
-      if(showMoreBtn)showMoreBtn.style.display=filtering?'none':'';
+      const btn=grid.querySelector('.pub-show-more');
+      if(btn)btn.style.display=filtering?'none':'';
       let msg=grid.querySelector('.pub-no-results');
       if(!vis){if(!msg){msg=document.createElement('p');msg.className='pub-no-results';msg.textContent='No publications match the selected filters.';grid.insertBefore(msg,grid.querySelector('.pub-api-note'));}}
       else if(msg)msg.remove();
     }
     sidebar.addEventListener('change',e=>{if(e.target.matches('input[type=checkbox]'))apply();});
-    sidebar.addEventListener('click',e=>{
-      if(e.target.matches('#pubReset')){
-        sidebar.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);
-        apply();
-      }
-    });
+    sidebar.addEventListener('click',e=>{if(e.target.matches('#pubReset')){sidebar.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);apply();}});
   }
 
   function showStatic(){
-    // API unavailable — static cards already in place, just wire up original filters
     grid.querySelector('.pub-loading')&&grid.querySelector('.pub-loading').remove();
     function apply(){
       const cards=[...grid.querySelectorAll('.pub-card')];
@@ -3400,17 +3391,14 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
         const show=(!years.length||years.includes(card.dataset.year))&&
                    (!authors.length||authors.some(a=>(card.dataset.authors||'').split(',').includes(a)))&&
                    (!themes.length||themes.includes(card.dataset.theme));
-        card.style.display=show?'':'none';
-        if(show)vis++;
+        card.style.display=show?'':'none';if(show)vis++;
       });
       let msg=grid.querySelector('.pub-no-results');
       if(!vis){if(!msg){msg=document.createElement('p');msg.className='pub-no-results';msg.textContent='No publications match the selected filters.';grid.appendChild(msg);}}
       else if(msg)msg.remove();
     }
     sidebar.addEventListener('change',e=>{if(e.target.matches('input[type=checkbox]'))apply();});
-    sidebar.addEventListener('click',e=>{
-      if(e.target.matches('#pubReset')){sidebar.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);apply();}
-    });
+    sidebar.addEventListener('click',e=>{if(e.target.matches('#pubReset')){sidebar.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.checked=false);apply();}});
   }
 })();
 
