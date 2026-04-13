@@ -3187,14 +3187,9 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
 // Publications — Google Scholar via SerpApi (24 h localStorage cache)
 (function(){
-  // ── Config ──
-  // SERPAPI_KEY: update via edit mode if key changes.
-  // Restrict this key to your domains at serpapi.com/manage-api-key
-  const SERPAPI_KEY='2a055698d4eef43bff96bc9b951bb9bbaa024c897852421057e56d38c56c1ece';
-  const CACHE_KEY='rcees_pubs_v1';
-  const CACHE_TTL=24*60*60*1000;
-
   // ── Author config: Google Scholar profile IDs ──
+  // publications.json is rebuilt daily by the GitHub Action in .github/workflows/fetch-publications.yml
+  // To add/remove authors, update both this list and .github/scripts/fetch-pubs.js
   const AUTHORS=[
     {id:'7XmmVJQAAAAJ', name:'Gyamfi, S.',        slug:'gyamfi'},
     {id:'lWjktyYAAAAJ', name:'Diawuo, F.A.',      slug:'diawuo'},
@@ -3216,62 +3211,14 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
 
   grid.innerHTML='<div class="pub-loading"><span class="pub-spinner"></span>Loading publications…</div>';
 
-  // ── Cache check ──
-  try{
-    const cached=JSON.parse(localStorage.getItem(CACHE_KEY)||'null');
-    if(cached&&(Date.now()-cached.ts)<CACHE_TTL&&cached.articles&&cached.articles.length){
-      renderArticles(cached.articles);
-      return;
-    }
-  }catch(e){}
-
-  // ── Fetch from SerpApi sequentially (200ms gap) ──
-  async function fetchAll(){
-    const all=[];
-    for(let i=0;i<AUTHORS.length;i++){
-      if(i>0)await new Promise(r=>setTimeout(r,200));
-      const a=AUTHORS[i];
-      try{
-        const url='https://serpapi.com/search.json?engine=google_scholar_author'
-          +'&author_id='+a.id+'&api_key='+SERPAPI_KEY+'&hl=en&sort=pubdate&num=100';
-        const res=await fetch(url);
-        if(!res.ok)continue;
-        const d=await res.json();
-        (d.articles||[]).forEach(art=>{
-          if(!art.title||!art.year)return;
-          all.push({
-            title:art.title,
-            authors:art.authors||'',
-            publication:art.publication||'',
-            year:String(art.year),
-            link:art.link||'',
-            citations:(art.cited_by&&art.cited_by.value)||0,
-            slug:a.slug,
-          });
-        });
-      }catch(e){}
-    }
-    return all;
-  }
-
-  fetchAll().then(raw=>{
-    if(!raw.length){showStatic();return;}
-
-    // Deduplicate by normalised title+year
-    const map=new Map();
-    raw.forEach(a=>{
-      const key=(a.title+a.year).toLowerCase().replace(/\s+/g,'');
-      if(map.has(key)){const e=map.get(key);if(!e.slugs.includes(a.slug))e.slugs.push(a.slug);}
-      else{map.set(key,{...a,slugs:[a.slug]});}
-    });
-
-    const articles=[...map.values()].sort((a,b)=>Number(b.year)-Number(a.year));
-
-    // Cache for 24 h
-    try{localStorage.setItem(CACHE_KEY,JSON.stringify({ts:Date.now(),articles}));}catch(e){}
-
-    renderArticles(articles);
-  }).catch(()=>showStatic());
+  // Fetch pre-built publications.json (updated daily by GitHub Action)
+  fetch('./publications.json?v='+Date.now())
+    .then(r=>r.ok?r.json():Promise.reject(r.status))
+    .then(d=>{
+      if(!d.articles||!d.articles.length){showStatic();return;}
+      renderArticles(d.articles);
+    })
+    .catch(()=>showStatic());
 
   function renderArticles(articles){
     const years=[...new Set(articles.map(a=>a.year).filter(Boolean))].sort((a,b)=>b-a);
