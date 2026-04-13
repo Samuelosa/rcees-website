@@ -5861,23 +5861,6 @@ self.addEventListener('fetch',e=>{
       });
     });
 
-    // Gallery image URL inputs
-    panelBody.querySelectorAll('input[data-gal-img-url]').forEach(input=>{
-      let debounce;
-      input.addEventListener('input',()=>{
-        clearTimeout(debounce);
-        debounce=setTimeout(()=>{
-          const i=input.dataset.galImgUrl;
-          const url=input.value.trim();
-          if(url){
-            applyGalleryImage(i,url);
-            const preview=document.getElementById('gal-preview-'+i);
-            if(preview){preview.src=url;preview.classList.add('show')}
-          }
-        },500);
-      });
-    });
-
     // Gallery title and subtitle fields
     panelBody.querySelectorAll('[data-gal-title]').forEach(input=>{
       input.addEventListener('input',()=>{
