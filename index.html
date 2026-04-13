@@ -1582,7 +1582,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
 </div>
 
 <!-- EDIT MODE UI -->
-<button class="edit-fab unlocked active" id="editFab" title="Edit this site"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> Editing</button>
+<button class="edit-fab" id="editFab" title="Edit this site"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
 <div class="edit-toast" id="editToast">Team photo updated!</div>
 
 <div class="edit-toolbar" id="editToolbar">
@@ -3612,11 +3612,12 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     toolbar.classList.remove('show');
     panel.classList.remove('show');
     document.body.style.paddingTop='';
-    fab.classList.remove('active');
+    fab.classList.remove('active','unlocked'); // strip unlocked so published HTML hides FAB for visitors
     fab.innerHTML='<svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     editActive=false;
 
     const html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+    fab.classList.add('unlocked'); // restore for current editing session
     try{localStorage.setItem('rcees_draft',html);}catch(e){}
 
     // Re-enter edit mode immediately so UI stays responsive
