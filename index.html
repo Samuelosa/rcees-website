@@ -3256,8 +3256,8 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
       grid.appendChild(card);
     });
 
-    // Show-more: hide beyond 20 cards (10 rows × 2 cols)
-    const LIMIT=20;
+    // Show-more: hide beyond 10 cards (5 rows × 2 cols)
+    const LIMIT=10;
     const allCards=[...grid.querySelectorAll('.pub-card')];
     if(allCards.length>LIMIT){
       allCards.slice(LIMIT).forEach(c=>c.classList.add('pub-hidden'));
