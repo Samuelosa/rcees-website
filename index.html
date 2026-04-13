@@ -1731,10 +1731,10 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
 
   <div class="gal-filters rv d3 vis">
     <button class="gal-filter active" data-gal="all">All</button>
-    <button class="gal-filter" data-gal="research" data-drive="">Research</button>
-    <button class="gal-filter" data-gal="events" data-drive="">Events</button>
-    <button class="gal-filter" data-gal="campus" data-drive="">Campus</button>
-    <button class="gal-filter" data-gal="students" data-drive="">Students</button>
+    <button class="gal-filter" data-gal="research" data-drive="https://drive.google.com/drive/folders/1_PO9K7BoSCtkvmqwSX3DBJUTF0E4TxzG?usp=share_link">Research</button>
+    <button class="gal-filter" data-gal="events" data-drive="https://drive.google.com/drive/folders/1FBikXPzZDCNXBd-M0zbZXZlbhACU7g-w?usp=share_link">Events</button>
+    <button class="gal-filter" data-gal="campus" data-drive="https://drive.google.com/drive/folders/1B5L1tF5_M01YFAkVHY8BH9tUjSVKz3b3?usp=share_link">Campus</button>
+    <button class="gal-filter" data-gal="students" data-drive="https://drive.google.com/drive/folders/1zwUpslZSlZl8EEeAgfiYzB_Xn-qG3xlK?usp=share_link">Students</button>
   </div>
   <a class="gal-drive-link" id="galDriveLink" href="#" target="_blank" rel="noopener" style="display:none"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> View all photos in Google Drive</a>
 
@@ -1786,12 +1786,12 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
 <div class="contact-grid">
   <div class="contact-info">
     <div class="sec-header">
-      <div class="sec-eyebrow rv">Contact Us</div>
-      <h2 class="sec-title rv d1">Get in Touch</h2>
-      <p class="sec-desc rv d2">Questions about admissions, research collaboration, or partnerships? We would be glad to hear from you.</p>
+      <div class="sec-eyebrow rv vis">Contact Us</div>
+      <h2 class="sec-title rv d1 vis">Get in Touch</h2>
+      <p class="sec-desc rv d2 vis">Questions about admissions, research collaboration, or partnerships? We would be glad to hear from you.</p>
     </div>
     <div style="margin-top:2rem">
-      <div class="ci rv d3">
+      <div class="ci rv d3 vis">
         <div class="ci-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="1.5"></path><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"></circle></svg></div>
         <div><h4 data-edit-id="ci-h-0">Location</h4><p data-edit-id="ci-p-0">University of Energy and Natural Resources<br>Sunyani, Bono Region, Ghana</p></div>
       </div>
@@ -1805,7 +1805,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
       </div>
     </div>
   </div>
-  <div class="contact-form rv d3">
+  <div class="contact-form rv d3 vis">
     <form id="cForm" onsubmit="handleContactSubmit(event)" novalidate="">
       <div class="form-row">
         <div class="form-group"><label for="cf-fname">First Name</label><input type="text" id="cf-fname" name="first_name" placeholder="Kwame" required="" autocomplete="given-name"></div>
@@ -1964,7 +1964,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
   </div>
 </div>
 <button class="edit-fab" id="editFab" title="Edit this site"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path><path d="M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-<div class="edit-toast" id="editToast">Featured article image updated!</div>
+<div class="edit-toast" id="editToast">✓ Published — 2 images extracted! Live at samuelosa.github.io/rcees-website in ~30s</div>
 
 <div class="edit-toolbar" id="editToolbar">
 <div class="container">
@@ -2859,7 +2859,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
           <img class="ep-img-preview" id="tm-preview-49">
           <div class="ep-img-or">or paste a photo URL</div>
           <input class="ep-img-url" placeholder="https://example.com/photo.jpg" data-tm-img-url="49" style="width:100%;padding:.45rem .6rem;border:1.5px solid var(--gray-100);border-radius:6px;font-size:.78rem;font-family:var(--sans);outline:none">
-        </div><div class="ep-field"><label>Profile URL</label><input data-tm-profile="49" placeholder="https://example.com/profile" style="width:100%"></div></div></div></div><div class="ep-section" id="eps-news"><div class="ep-section-title" data-eps="news">News &amp; Events</div><div class="ep-section-body"><div class="ep-person" style="position:relative"><h4 style="padding-right:70px">Featured Article</h4><button class="ep-remove-news-btn" data-news-type="featured" style="position:absolute;top:.6rem;right:.5rem;font-size:.68rem;font-weight:600;padding:.2rem .55rem;border:1.5px solid #d44;background:#fff0f0;color:#d44;border-radius:5px;cursor:pointer;font-family:var(--sans)">Remove</button><div class="ep-img-upload">
+        </div><div class="ep-field"><label>Profile URL</label><input data-tm-profile="49" placeholder="https://example.com/profile" style="width:100%"></div></div></div></div><div class="ep-section collapsed" id="eps-news"><div class="ep-section-title" data-eps="news">News &amp; Events</div><div class="ep-section-body"><div class="ep-person" style="position:relative"><h4 style="padding-right:70px">Featured Article</h4><button class="ep-remove-news-btn" data-news-type="featured" style="position:absolute;top:.6rem;right:.5rem;font-size:.68rem;font-weight:600;padding:.2rem .55rem;border:1.5px solid #d44;background:#fff0f0;color:#d44;border-radius:5px;cursor:pointer;font-family:var(--sans)">Remove</button><div class="ep-img-upload">
         <label class="ep-upload-label" for="news-img-featured">
           <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
           <span>Choose featured image</span>
