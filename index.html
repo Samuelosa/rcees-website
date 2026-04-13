@@ -259,25 +259,30 @@ section{padding:5rem 0}
   color:var(--gray-700);cursor:pointer;padding:.18rem 0;line-height:1.3;user-select:none}
 .pub-filter-group input[type=checkbox]{accent-color:var(--blue);width:13px;height:13px;
   cursor:pointer;flex-shrink:0}
-.pub-grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;align-content:start}
-.pub-card{background:var(--white);border:1px solid var(--gray-100);border-radius:8px;
-  padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.3rem;
+.pub-grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:.55rem;align-content:start}
+.pub-card{background:var(--white);border:1px solid var(--gray-100);border-radius:6px;
+  padding:.55rem .7rem;display:flex;flex-direction:column;gap:.15rem;
   transition:border-color .18s,box-shadow .18s}
-.pub-card:hover{border-color:var(--blue);box-shadow:0 4px 18px rgba(0,60,130,.08)}
-.pub-card-top{display:flex;justify-content:space-between;align-items:flex-start;
-  gap:.5rem;margin-bottom:.2rem}
-.pub-card-year{font-size:.68rem;font-weight:700;color:var(--gold);text-transform:uppercase;
-  letter-spacing:.06em;white-space:nowrap;padding-top:.1rem}
-.pub-card-theme{font-size:.65rem;font-weight:600;text-transform:uppercase;
-  letter-spacing:.05em;padding:.15rem .55rem;border-radius:20px;
+.pub-card:hover{border-color:var(--blue);box-shadow:0 2px 10px rgba(0,60,130,.07)}
+.pub-card.pub-hidden{display:none}
+.pub-card-top{display:flex;justify-content:space-between;align-items:center;
+  gap:.4rem;margin-bottom:.05rem}
+.pub-card-year{font-size:.6rem;font-weight:700;color:var(--gold);text-transform:uppercase;
+  letter-spacing:.06em;white-space:nowrap}
+.pub-card-theme{font-size:.58rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.04em;padding:.1rem .4rem;border-radius:20px;
   background:var(--gray-100);color:var(--gray-500);white-space:nowrap}
-.pub-card-title{font-weight:600;color:var(--blue);font-size:.9rem;line-height:1.45;
-  margin-bottom:.1rem}
-.pub-card-authors{font-size:.76rem;color:var(--gray-500)}
-.pub-card-journal{font-size:.76rem;color:var(--gray-700);font-style:italic}
-.pub-card-link{margin-top:.4rem;font-size:.74rem;color:var(--green-dark);
+.pub-card-title{font-weight:600;color:var(--blue);font-size:.78rem;line-height:1.35}
+.pub-card-authors{font-size:.68rem;color:var(--gray-500)}
+.pub-card-journal{font-size:.68rem;color:var(--gray-700);font-style:italic}
+.pub-card-link{margin-top:.2rem;font-size:.65rem;color:var(--green-dark);
   text-decoration:none;font-weight:600;align-self:flex-start}
 .pub-card-link:hover{text-decoration:underline}
+.pub-show-more{grid-column:1/-1;margin-top:.25rem;font-family:var(--sans);
+  font-size:.78rem;font-weight:600;padding:.45rem 1.4rem;border:1.5px solid var(--blue);
+  border-radius:7px;background:var(--white);color:var(--blue);cursor:pointer;
+  transition:all .2s;display:block;margin-left:auto;margin-right:auto}
+.pub-show-more:hover{background:var(--blue);color:var(--white)}
 .pub-no-results{grid-column:1/-1;text-align:center;padding:3.5rem 1rem;
   color:var(--gray-500);font-size:.9rem}
 .pub-loading{grid-column:1/-1;display:flex;align-items:center;gap:.75rem;
@@ -301,7 +306,9 @@ section{padding:5rem 0}
   .pub-filter-group label{color:#b8d0e8}
   .pub-reset{color:#8aaccc}
   .pub-card{background:#0d2140;border-color:#1e3a5a}
-  .pub-card:hover{border-color:#4a90d9;box-shadow:0 4px 18px rgba(0,0,0,.3)}
+  .pub-card:hover{border-color:#4a90d9;box-shadow:0 2px 10px rgba(0,0,0,.3)}
+  .pub-show-more{background:#0a1628;border-color:#2a5a8a;color:#4a90d9}
+  .pub-show-more:hover{background:#2a5a8a;color:#e8f0f8}
   .pub-card-title{color:#e8f0f8}
   .pub-card-authors{color:#8aaccc}
   .pub-card-journal{color:#b8d0e8}
@@ -3260,6 +3267,28 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
       grid.appendChild(card);
     });
 
+    // Hide cards beyond 20 (10 rows × 2 cols) and add show-more button
+    const VISIBLE_ROWS=10,COLS=2,LIMIT=VISIBLE_ROWS*COLS;
+    const allCards=[...grid.querySelectorAll('.pub-card')];
+    if(allCards.length>LIMIT){
+      allCards.slice(LIMIT).forEach(c=>c.classList.add('pub-hidden'));
+      const btn=document.createElement('button');
+      btn.className='pub-show-more';
+      btn.textContent='Show more (+'+(allCards.length-LIMIT)+')';
+      btn.addEventListener('click',()=>{
+        const hidden=[...grid.querySelectorAll('.pub-card.pub-hidden')];
+        if(hidden.length){
+          hidden.forEach(c=>c.classList.remove('pub-hidden'));
+          btn.textContent='Show less';
+        } else {
+          allCards.slice(LIMIT).forEach(c=>c.classList.add('pub-hidden'));
+          btn.textContent='Show more (+'+(allCards.length-LIMIT)+')';
+          grid.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      });
+      grid.appendChild(btn);
+    }
+
     // Attribution note
     const note=document.createElement('p');
     note.className='pub-api-note';
@@ -3313,14 +3342,23 @@ bttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
       const years=[...document.querySelectorAll('input[name="pub-year"]:checked')].map(el=>el.value);
       const authors=[...document.querySelectorAll('input[name="pub-author"]:checked')].map(el=>el.value);
       const themes=[...document.querySelectorAll('input[name="pub-theme"]:checked')].map(el=>el.value);
+      const filtering=years.length||authors.length||themes.length;
       let vis=0;
       cards.forEach(card=>{
-        const show=(!years.length||years.includes(card.dataset.year))&&
-                   (!authors.length||authors.some(a=>card.dataset.authors.split(',').includes(a)))&&
-                   (!themes.length||themes.includes(card.dataset.theme));
-        card.style.display=show?'':'none';
-        if(show)vis++;
+        const match=(!years.length||years.includes(card.dataset.year))&&
+                    (!authors.length||authors.some(a=>card.dataset.authors.split(',').includes(a)))&&
+                    (!themes.length||themes.includes(card.dataset.theme));
+        // When filters active: show all matches regardless of pub-hidden; when cleared: restore pub-hidden
+        if(filtering){
+          card.style.display=match?'':'none';
+        } else {
+          card.style.display='';  // let pub-hidden class handle visibility
+        }
+        if(match&&(filtering||!card.classList.contains('pub-hidden')))vis++;
       });
+      // Show/hide show-more btn when filtering
+      const showMoreBtn=grid.querySelector('.pub-show-more');
+      if(showMoreBtn)showMoreBtn.style.display=filtering?'none':'';
       let msg=grid.querySelector('.pub-no-results');
       if(!vis){if(!msg){msg=document.createElement('p');msg.className='pub-no-results';msg.textContent='No publications match the selected filters.';grid.insertBefore(msg,grid.querySelector('.pub-api-note'));}}
       else if(msg)msg.remove();
