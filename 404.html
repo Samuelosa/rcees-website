@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>404 — Page Not Found | RCEES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#072E5C;--gold:#c9aa52;--sans:'Source Sans 3',sans-serif;--serif:'DM Serif Display',Georgia,serif}
+body{font-family:var(--sans);background:#f4f6f9;color:#1a1c23;min-height:100vh;
+  display:flex;flex-direction:column}
+header{background:var(--blue);padding:1rem 2rem;display:flex;align-items:center;gap:.8rem}
+header img{height:36px;width:auto}
+header span{color:#fff;font-size:1rem;font-weight:600}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:3rem 1rem}
+.card{background:#fff;border-radius:16px;padding:3rem 2.5rem;text-align:center;
+  max-width:460px;width:100%;box-shadow:0 4px 24px rgba(7,46,92,.09)}
+.code{font-size:5rem;font-weight:800;color:var(--blue);font-family:var(--serif);line-height:1}
+.title{font-size:1.4rem;font-weight:600;margin:.6rem 0 .4rem}
+.desc{color:#666;font-size:.95rem;margin-bottom:1.8rem;line-height:1.6}
+.btn{display:inline-block;background:var(--blue);color:#fff;border-radius:8px;
+  padding:.65rem 1.6rem;font-size:.9rem;font-weight:600;text-decoration:none;
+  transition:opacity .2s}
+.btn:hover{opacity:.88}
+footer{text-align:center;padding:1.2rem;font-size:.8rem;color:#888;
+  border-top:1px solid #e0e5ea;background:#fff}
+@media(prefers-color-scheme:dark){
+  body{background:#0a1628;color:#e8f0f8}
+  .card{background:#0d2140;box-shadow:0 4px 24px rgba(0,0,0,.3)}
+  .code{color:#5aacee}
+  .desc{color:#8aaccc}
+  footer{background:#041d3a;border-color:#1e3a5a;color:#4a7fa5}
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="cropped-RCEES-LOGO-web-2048x641.png" alt="RCEES Logo">
+</header>
+<main>
+  <div class="card">
+    <div class="code">404</div>
+    <h1 class="title">Page not found</h1>
+    <p class="desc">The page you're looking for doesn't exist or may have been moved.</p>
+    <a href="index.html" class="btn">← Back to RCEES Homepage</a>
+  </div>
+</main>
+<footer>RCEES — University of Energy and Natural Resources, Sunyani, Ghana</footer>
+</body>
+</html>
