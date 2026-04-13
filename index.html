@@ -506,6 +506,43 @@ section{padding:5rem 0}
   .nm-content{padding:1.25rem}
 }
 
+/* ======== EVENTS ======== */
+#events{background:var(--white);border-top:1px solid var(--gray-100)}
+.events-tabs{display:flex;gap:.5rem;margin-bottom:2rem}
+.ev-tab{padding:.45rem 1.2rem;border-radius:20px;border:1.5px solid var(--gray-200);
+  background:none;font-family:var(--sans);font-size:.85rem;font-weight:600;
+  color:var(--gray-500);cursor:pointer;transition:all .2s}
+.ev-tab.active{background:var(--blue);color:var(--white);border-color:var(--blue)}
+.ev-tab:hover:not(.active){border-color:var(--blue);color:var(--blue)}
+.ev-list{display:flex;flex-direction:column;gap:1rem}
+.ev-item{display:flex;gap:1.2rem;align-items:flex-start;
+  background:var(--gray-50);border-radius:10px;padding:1.1rem 1.2rem;
+  border:1px solid var(--gray-100);transition:box-shadow .2s}
+.ev-item:hover{box-shadow:0 4px 16px rgba(7,46,92,.08)}
+.ev-date-block{min-width:52px;text-align:center;background:var(--blue);
+  color:var(--white);border-radius:8px;padding:.5rem .4rem;line-height:1}
+.ev-date-block.gold{background:var(--gold);color:var(--gray-900)}
+.ev-month{font-size:.65rem;font-weight:700;text-transform:uppercase;
+  opacity:.8;display:block;margin-bottom:.2rem}
+.ev-day{font-size:1.5rem;font-weight:800;display:block}
+.ev-body{flex:1}
+.ev-title{font-weight:600;color:var(--blue);margin-bottom:.25rem;font-size:.95rem}
+.ev-location{font-size:.82rem;color:var(--gray-500);margin-bottom:.3rem}
+.ev-badge{display:inline-block;font-size:.72rem;font-weight:600;
+  border-radius:4px;padding:.15rem .5rem}
+.ev-badge.open{background:var(--green-light);color:var(--green-dark)}
+.ev-badge.online{background:#e8f0fb;color:#1a5cb0}
+.ev-badge.past{background:var(--gray-50);color:var(--gray-500);
+  border:1px solid var(--gray-200)}
+@media(prefers-color-scheme:dark){
+  #events{background:#0a1628;border-color:#1e3a5a}
+  .ev-item{background:#0d2140;border-color:#1e3a5a}
+  .ev-title{color:#e8f0f8}
+  .ev-location{color:#8aaccc}
+  .ev-tab{border-color:#2a4a6e;color:#8aaccc}
+  .ev-tab.active{background:#1e6bb8;border-color:#1e6bb8;color:#fff}
+}
+
 /* ======== GALLERY ======== */
 #gallery{background:var(--blue-dark);padding:4rem 0;position:relative;overflow:hidden}
 #gallery .sec-eyebrow,#gallery .sec-title,#gallery .sec-desc{color:var(--white)}
@@ -959,6 +996,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
     <li><a href="#programs">Programmes</a></li>
     <li><a href="#team">People</a></li>
     <li><a href="#news">News</a></li>
+    <li><a href="#events">Events</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="https://uenr.edu.gh/admission-details/" target="_blank" class="nav-cta">Apply Now</a></li>
   </ul>
@@ -1523,6 +1561,72 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
     </div>
   </div>
 </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="container">
+    <div class="sec-header">
+      <p class="sec-eyebrow">What's On</p>
+      <h2 class="sec-title">Events</h2>
+      <p class="sec-desc">Conferences, workshops, short courses, and public lectures hosted by RCEES.</p>
+    </div>
+
+    <div class="events-tabs">
+      <button class="ev-tab active" data-ev-tab="upcoming" aria-pressed="true">Upcoming</button>
+      <button class="ev-tab" data-ev-tab="past" aria-pressed="false">Past</button>
+    </div>
+
+    <div class="ev-list" id="evUpcoming">
+      <div class="ev-item">
+        <div class="ev-date-block">
+          <span class="ev-month">May</span>
+          <span class="ev-day">14</span>
+        </div>
+        <div class="ev-body">
+          <p class="ev-title" data-edit-id="ev-title-0">Annual Energy Symposium 2025</p>
+          <p class="ev-location">📍 UENR Main Auditorium, Sunyani &middot; 9:00 AM</p>
+          <span class="ev-badge open">Registration open</span>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-date-block gold">
+          <span class="ev-month">Jun</span>
+          <span class="ev-day">3</span>
+        </div>
+        <div class="ev-body">
+          <p class="ev-title" data-edit-id="ev-title-1">Short Course: Solar PV System Design</p>
+          <p class="ev-location">📍 RCEES Training Laboratory &middot; 5 days</p>
+          <span class="ev-badge open">Registration open</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ev-list" id="evPast" style="display:none">
+      <div class="ev-item">
+        <div class="ev-date-block" style="background:var(--gray-300)">
+          <span class="ev-month">Nov</span>
+          <span class="ev-day">8</span>
+        </div>
+        <div class="ev-body">
+          <p class="ev-title" data-edit-id="ev-title-2">Climate Policy Workshop 2024</p>
+          <p class="ev-location">📍 Online (Zoom)</p>
+          <span class="ev-badge past">Completed</span>
+        </div>
+      </div>
+      <div class="ev-item">
+        <div class="ev-date-block" style="background:var(--gray-300)">
+          <span class="ev-month">Mar</span>
+          <span class="ev-day">22</span>
+        </div>
+        <div class="ev-body">
+          <p class="ev-title" data-edit-id="ev-title-3">World Water Day Public Lecture 2024</p>
+          <p class="ev-location">📍 UENR Senate Chamber</p>
+          <span class="ev-badge past">Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- MEDIA GALLERY -->
@@ -3691,6 +3795,24 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
   window.openCropper=openCropper;
 })();
 
+// ========== EVENTS TABS ==========
+(function(){
+  const tabs=document.querySelectorAll('.ev-tab');
+  const upcoming=document.getElementById('evUpcoming');
+  const past=document.getElementById('evPast');
+  if(!tabs.length) return;
+  tabs.forEach(tab=>{
+    tab.addEventListener('click',function(){
+      tabs.forEach(t=>{t.classList.remove('active');t.setAttribute('aria-pressed','false');});
+      this.classList.add('active');
+      this.setAttribute('aria-pressed','true');
+      const which=this.dataset.evTab;
+      upcoming.style.display=which==='upcoming'?'flex':'none';
+      past.style.display=which==='past'?'flex':'none';
+    });
+  });
+})();
+
 // ========== EDIT MODE ==========
 (function(){
   const fab=document.getElementById('editFab');
@@ -3717,7 +3839,7 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
   });
 
   // Editable selectors: all visible text elements
-  const editableSelector='h1,h2,h3,h4,p,.slide-title,.slide-desc,.slide-eyebrow,.pi-name,.pi-sub,.about-text p,.about-highlight blockquote,.about-highlight cite,.ml-year,.ml-title,.ml-desc,.sec-eyebrow,.sec-title,.sec-desc,.r-card p,.r-card h3,.pj-body h3,.pj-body p,.pj-partners,.pj-funded,.pj-amount,.pm-val,.pm-label,.nf-body h3,.nf-body p,.nf-date,.n-item h4,.n-item p,.res-card h4,.res-card p,.res-authors,.res-journal,.t-bio,.t-role,.t-card h3,.stat-label,.ic-label,.prog-note,.nl-text h3,.nl-text p,.ci h4,.ci p,.ft-brand p,.ft-col h4,.logo-text strong,.logo-text small,.pub-title,.pub-link';
+  const editableSelector='h1,h2,h3,h4,p,.slide-title,.slide-desc,.slide-eyebrow,.pi-name,.pi-sub,.about-text p,.about-highlight blockquote,.about-highlight cite,.ml-year,.ml-title,.ml-desc,.sec-eyebrow,.sec-title,.sec-desc,.r-card p,.r-card h3,.pj-body h3,.pj-body p,.pj-partners,.pj-funded,.pj-amount,.pm-val,.pm-label,.nf-body h3,.nf-body p,.nf-date,.n-item h4,.n-item p,.res-card h4,.res-card p,.res-authors,.res-journal,.t-bio,.t-role,.t-card h3,.stat-label,.ic-label,.prog-note,.nl-text h3,.nl-text p,.ci h4,.ci p,.ft-brand p,.ft-col h4,.logo-text strong,.logo-text small,.pub-title,.pub-link,.ev-title';
 
   function showToast(msg,dur){
     toast.textContent=msg;
