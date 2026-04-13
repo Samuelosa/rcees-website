@@ -4365,11 +4365,7 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     }
   }
 
-  // Auto-unlock if session < 30 days old
-  (function checkSession(){
-    const ts=parseInt(localStorage.getItem('rcees_edit_unlocked')||'0');
-    if(ts && Date.now()-ts < 30*24*60*60*1000) unlockEdit();
-  })();
+  // No auto-unlock on page load — FAB stays hidden until Ctrl+Shift+E + password
 
   unlockBtn.addEventListener('click',tryUnlock);
   unlockInput.addEventListener('keydown',e=>{if(e.key==='Enter')tryUnlock();});
