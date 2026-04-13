@@ -4243,19 +4243,101 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     const owner='Samuelosa',repo='rcees-website';
     const h={'Authorization':'token '+token,'Content-Type':'application/json'};
 
-    // ── STEP 1: Extract any base64 images from HTML ──
+    // ── STEP 0: toWebP helper ──
+    async function toWebP(b64,mime){
+      return new Promise(resolve=>{
+        const img=new Image();
+        img.onload=()=>{
+          try{
+            const c=document.createElement('canvas');
+            c.width=img.naturalWidth;c.height=img.naturalHeight;
+            c.getContext('2d').drawImage(img,0,0);
+            const webp=c.toDataURL('image/webp',0.85);
+            if(webp.startsWith('data:image/webp')&&webp.length<('data:'+mime+';base64,'+b64).length){
+              const wb64=webp.replace('data:image/webp;base64,','');
+              resolve({b64:wb64,mime:'image/webp'});
+            } else {
+              resolve({b64,mime});
+            }
+          }catch{resolve({b64,mime});}
+        };
+        img.onerror=()=>resolve({b64,mime});
+        img.src='data:'+mime+';base64,'+b64;
+      });
+    }
+
+    // ── Generate sw.js ──
+    const cacheVersion='rcees-'+Date.now();
+    const swContent=`const CACHE='${cacheVersion}';
+const PRECACHE=['./','.\/index.html','.\/cropped-RCEES-LOGO-web-2048x641.png'];
+self.addEventListener('install',e=>{
+  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(PRECACHE)).then(()=>self.skipWaiting()));
+});
+self.addEventListener('activate',e=>{
+  e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));
+});
+self.addEventListener('fetch',e=>{
+  const url=new URL(e.request.url);
+  const isImage=url.pathname.startsWith('/rcees-website/images/');
+  const isHTML=url.pathname.endsWith('.html')||url.pathname.endsWith('/');
+  if(isImage){
+    e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(res=>{
+      const clone=res.clone();
+      caches.open(CACHE).then(c=>c.put(e.request,clone));
+      return res;
+    })));
+  } else if(isHTML){
+    e.respondWith(fetch(e.request).then(res=>{
+      const clone=res.clone();
+      caches.open(CACHE).then(c=>c.put(e.request,clone));
+      return res;
+    }).catch(()=>caches.match(e.request)));
+  } else {
+    e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)));
+  }
+});`;
+
+    // ── Generate sitemap.xml ──
+    const base='https://samuelosa.github.io/rcees-website';
+    const sections=['','#about','#research','#publications','#projects',
+      '#programs','#team','#news','#events','#gallery','#contact'];
+    const sitemapContent=`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sections.map(s=>`  <url><loc>${base}/${s}</loc></url>`).join('\n')}
+</urlset>`;
+
+    // ── Generate robots.txt ──
+    const robotsContent=`User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml`;
+
+    // ── STEP 1: Extract + convert base64 images to WebP ──
     const extMap={'image/jpeg':'jpg','image/jpg':'jpg','image/png':'png','image/gif':'gif','image/webp':'webp','image/svg+xml':'svg'};
     function imgHash(s){let h=0;for(let i=0;i<Math.min(s.length,500);i++){h=((h<<5)-h)+s.charCodeAt(i);h|=0;}return Math.abs(h).toString(36).padStart(8,'0');}
-    const seen=new Map(); // b64 → filename
-    const newImages=[]; // {path, b64} to upload
-    const cleanHtml=html.replace(/data:(image\/[^;]+);base64,([A-Za-z0-9+/=]+)/g,(match,mime,b64)=>{
-      if(seen.has(b64))return'images/'+seen.get(b64);
-      const ext=extMap[mime]||'bin';
-      const fname='img-'+imgHash(b64)+'.'+ext;
-      seen.set(b64,fname);
-      newImages.push({path:'images/'+fname,b64});
-      return'images/'+fname;
+    const seen=new Map();
+    const newImages=[];
+    const imageQueue=[];
+    let pidx=0;
+    const preClean=html.replace(/data:(image\/[^;]+);base64,([A-Za-z0-9+/=]+)/g,(match,mime,b64)=>{
+      if(seen.has(b64))return'__IMG_'+seen.get(b64)+'__';
+      const placeholder='__IMGQ'+pidx+'__';
+      imageQueue.push({mime,b64,placeholder,idx:pidx});
+      seen.set(b64,placeholder);
+      pidx++;
+      return placeholder;
     });
+    // Convert to WebP in parallel
+    const converted=await Promise.all(imageQueue.map(async item=>{
+      const result=await toWebP(item.b64,item.mime);
+      const ext=result.mime==='image/webp'?'webp':(extMap[item.mime]||'bin');
+      const fname='img-'+imgHash(item.b64)+'.'+ext;
+      newImages.push({path:'images/'+fname,b64:result.b64});
+      return{placeholder:item.placeholder,fname};
+    }));
+    // Replace placeholders with final filenames
+    let cleanHtml=preClean;
+    converted.forEach(({placeholder,fname})=>{
+      cleanHtml=cleanHtml.split(placeholder).join('images/'+fname);
+    });
+    cleanHtml=cleanHtml.replace(/__IMG_([^_]+)__/g,(m,fname)=>'images/'+fname);
 
     // ── STEP 2: Upload new image blobs in parallel ──
     if(newImages.length)showToast('Publishing\u2026 extracting '+newImages.length+' image(s)',60000);
@@ -4276,6 +4358,27 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     if(!htmlBlobRes.ok)throw new Error('HTML blob failed ('+htmlBlobRes.status+')');
     const htmlBlob=await htmlBlobRes.json();
 
+    // ── Upload sw.js blob ──
+    const swBlobRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
+      method:'POST',headers:h,body:JSON.stringify({content:swContent,encoding:'utf-8'})
+    });
+    if(!swBlobRes.ok)throw new Error('sw.js blob failed');
+    const swBlob=await swBlobRes.json();
+
+    // ── Upload sitemap.xml + robots.txt blobs ──
+    const [sitemapBlobRes,robotsBlobRes]=await Promise.all([
+      fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
+        method:'POST',headers:h,body:JSON.stringify({content:sitemapContent,encoding:'utf-8'})
+      }),
+      fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/blobs',{
+        method:'POST',headers:h,body:JSON.stringify({content:robotsContent,encoding:'utf-8'})
+      })
+    ]);
+    if(!sitemapBlobRes.ok)throw new Error('sitemap blob failed');
+    if(!robotsBlobRes.ok)throw new Error('robots blob failed');
+    const sitemapBlob=await sitemapBlobRes.json();
+    const robotsBlob=await robotsBlobRes.json();
+
     // ── STEP 4: Get HEAD commit + tree ──
     const refRes=await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/ref/heads/main',{headers:h});
     if(!refRes.ok)throw new Error('Could not read branch');
@@ -4283,8 +4386,13 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     const commitData=await(await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/commits/'+headSha,{headers:h})).json();
 
     // ── STEP 5: Create tree with HTML + any new images ──
-    const treeItems=[{path:'index.html',mode:'100644',type:'blob',sha:htmlBlob.sha},
-      ...imageBlobs.map(img=>({path:img.path,mode:'100644',type:'blob',sha:img.sha}))];
+    const treeItems=[
+      {path:'index.html',mode:'100644',type:'blob',sha:htmlBlob.sha},
+      {path:'sw.js',mode:'100644',type:'blob',sha:swBlob.sha},
+      {path:'sitemap.xml',mode:'100644',type:'blob',sha:sitemapBlob.sha},
+      {path:'robots.txt',mode:'100644',type:'blob',sha:robotsBlob.sha},
+      ...imageBlobs.map(img=>({path:img.path,mode:'100644',type:'blob',sha:img.sha}))
+    ];
     const treeData=await(await fetch('https://api.github.com/repos/'+owner+'/'+repo+'/git/trees',{
       method:'POST',headers:h,
       body:JSON.stringify({base_tree:commitData.tree.sha,tree:treeItems})
@@ -5798,4 +5906,9 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
 
 
 
+<script>
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('./sw.js').catch(()=>{});
+}
+</script>
 </body></html>
