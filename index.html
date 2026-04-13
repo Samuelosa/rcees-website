@@ -4237,10 +4237,12 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
   // Editable selectors: all visible text elements
   const editableSelector='h1,h2,h3,h4,p,.slide-title,.slide-desc,.slide-eyebrow,.pi-name,.pi-sub,.about-text p,.about-highlight blockquote,.about-highlight cite,.ml-year,.ml-title,.ml-desc,.sec-eyebrow,.sec-title,.sec-desc,.r-card p,.r-card h3,.pj-body h3,.pj-body p,.pj-partners,.pj-funded,.pj-amount,.pm-val,.pm-label,.nf-body h3,.nf-body p,.nf-date,.n-item h4,.n-item p,.res-card h4,.res-card p,.res-authors,.res-journal,.t-bio,.t-role,.t-card h3,.stat-label,.ic-label,.prog-note,.nl-text h3,.nl-text p,.ci h4,.ci p,.ft-brand p,.ft-col h4,.logo-text strong,.logo-text small,.pub-title,.pub-link,.ev-title';
 
+  let _toastTimer=null;
   function showToast(msg,dur){
+    clearTimeout(_toastTimer);
     toast.textContent=msg;
     toast.classList.add('show');
-    setTimeout(()=>toast.classList.remove('show'),dur||2500);
+    _toastTimer=setTimeout(()=>toast.classList.remove('show'),dur||2500);
   }
 
   function enterEditMode(){
@@ -4754,7 +4756,7 @@ self.addEventListener('fetch',e=>{
     return path; // e.g. "images/img-abc12345.jpg"
   }
 
-  function applyGalleryImage(index,url){
+  function applyGalleryImage(index,url,silent){
     const items=document.querySelectorAll('.gal-item');
     const item=items[index];
     if(!item) return;
@@ -4763,7 +4765,7 @@ self.addEventListener('fetch',e=>{
       img.src=url;
       img.removeAttribute('data-bg'); // src is the source of truth; data-bg would double the base64 in HTML
     }
-    showToast('Gallery photo updated!');
+    if(!silent) showToast('Gallery photo updated!');
   }
 
   // Add a new gallery photo
@@ -5729,16 +5731,16 @@ self.addEventListener('fetch',e=>{
             const mime=croppedUrl.split(';')[0].replace('data:','');
             const path=await uploadImageToGitHub(b64,mime);
             if(path){
-              applyGalleryImage(i,path);
+              applyGalleryImage(i,path,true); // silent — we show our own toast
               const preview=document.getElementById('gal-preview-'+i);
               if(preview){preview.src=croppedUrl;preview.classList.add('show')}
               showToast('\u2713 Image uploaded! Click Save HTML to publish.',4000);
             } else {
               // Fallback: store as base64 and extract on save
-              applyGalleryImage(i,croppedUrl);
+              applyGalleryImage(i,croppedUrl,true);
               const preview=document.getElementById('gal-preview-'+i);
               if(preview){preview.src=croppedUrl;preview.classList.add('show')}
-              showToast('Image saved locally \u2014 will upload when you Save HTML.',4000);
+              showToast('Image ready \u2014 click Save HTML to publish.',4000);
             }
           });
         };
