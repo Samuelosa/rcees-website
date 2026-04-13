@@ -1,4 +1,4 @@
-const CACHE='rcees-v1-1776075775646';
+const CACHE='rcees-v1-1776096344437';
 const PRECACHE=['./','./index.html','./cropped-RCEES-LOGO-web-2048x641.png'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(PRECACHE)).then(()=>self.skipWaiting()));
