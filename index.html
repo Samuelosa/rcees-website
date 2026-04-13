@@ -4862,10 +4862,15 @@ self.addEventListener('fetch',e=>{
           const h=Math.round(img.naturalHeight*scale);
           const canvas=document.createElement('canvas');
           canvas.width=w;canvas.height=h;
-          canvas.getContext('2d').drawImage(img,0,0,w,h);
-          const dataUrl=canvas.toDataURL('image/webp',0.88);
-          canvas.width=0; // free memory
-          resolve({b64:dataUrl.split(',')[1],mime:'image/webp'});
+          const ctx=canvas.getContext('2d');
+          if(!ctx){reject(new Error('Could not get 2D context'));return;}
+          ctx.drawImage(img,0,0,w,h);
+          try{
+            const dataUrl=canvas.toDataURL('image/webp',0.88);
+            resolve({b64:dataUrl.split(',')[1],mime:'image/webp'});
+          }finally{
+            canvas.width=0; // free memory
+          }
         };
         img.src=ev.target.result;
       };
