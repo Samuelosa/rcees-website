@@ -423,15 +423,13 @@ section{padding:5rem 0}
 
 /* ======== PROGRAMS (TABBED) ======== */
 #programs{background:linear-gradient(180deg,var(--blue-pale) 0%,#eaf0f7 100%)}
-.prog-tabs{display:flex;gap:.35rem;margin-bottom:2.5rem;flex-wrap:wrap;border-bottom:2px solid var(--gray-100);padding-bottom:0}
-.prog-tab{font-family:var(--sans);font-size:.95rem;font-weight:600;padding:.75rem 1.25rem;border:none;background:transparent;color:var(--gray-300);cursor:pointer;position:relative;transition:color .25s ease}
-.prog-tab::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:var(--blue);transform:scaleX(0);transition:transform .3s var(--ease-out)}
-.prog-tab:hover{color:var(--gray-700)}
-.prog-tab.active{color:var(--blue)}
-.prog-tab.active::after{transform:scaleX(1)}
+.prog-tabs{display:none}
 
-.prog-panel{display:none}
-.prog-panel.active{display:block;animation:fadeUp .4s var(--ease)}
+.prog-panel{display:block!important;margin-bottom:3rem}
+.prog-panel:last-of-type{margin-bottom:0}
+.prog-group-title{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem}
+.prog-group-title h3{font-family:var(--serif);font-size:1.35rem;color:var(--blue-dark);margin:0}
+.prog-group-title::after{content:'';flex:1;height:1px;background:var(--gray-100)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
 .prog-list{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
