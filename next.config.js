@@ -2,15 +2,15 @@
 const isProd = process.env.NODE_ENV === "production";
 
 // Deploy targets:
-//   - GitHub Pages project site: DEPLOY_TARGET=pages  -> basePath /rcees-website
-//   - Vercel / any root domain:  DEPLOY_TARGET unset  -> no basePath
-// In prod we default to the Pages layout to keep the existing deploy
-// working; Vercel's project settings override DEPLOY_TARGET to "vercel".
+//   - GitHub Pages project site: DEPLOY_TARGET=pages  -> static export + /rcees-website basePath
+//   - Vercel / any root domain:  DEPLOY_TARGET=vercel -> standard Next.js build, no basePath
+//   - Local dev: unset -> standard Next.js dev server
 const target = process.env.DEPLOY_TARGET || (isProd ? "pages" : "dev");
-const basePath = target === "pages" ? "/rcees-website" : "";
+const isPages = target === "pages";
+const basePath = isPages ? "/rcees-website" : "";
 
 const nextConfig = {
-  output: "export",
+  ...(isPages ? { output: "export" } : {}),
   basePath,
   assetPrefix: basePath || undefined,
   images: {
