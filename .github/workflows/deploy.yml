@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
 
 permissions:
   contents: read
@@ -29,6 +31,10 @@ jobs:
           bun-version: latest
 
       - run: bun install --frozen-lockfile
+
+      - name: Fetch latest publications from OpenAlex
+        run: bun run scripts/fetch-publications.mjs
+        continue-on-error: true
 
       - run: bun run build
         env:

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { researchThemes, images } from "@/lib/constants";
+import { PublicationsExplorer } from "@/components/research/PublicationsExplorer";
 
 export const metadata: Metadata = {
   title: "Research",
@@ -36,31 +37,24 @@ export default function ResearchPage() {
       </section>
 
       <section className="border-y border-rule bg-mist">
-        <div className="container-rcees py-24 grid gap-12 md:grid-cols-2">
-          <div>
-            <SectionHeading eyebrow="Publications" title="Scopus-indexed output." />
-            <div className="mt-8 space-y-5 text-[1.025rem] leading-relaxed text-ink/80">
-              <p>
-                RCEES's faculty and doctoral students publish in Scopus-indexed journals across engineering,
-                environmental science, economics and policy. All programme candidates are expected to meet
-                the Centre's publishing standards as a condition of graduation.
-              </p>
-              <p>
-                A curated list of recent publications is available through the UENR library and the ACE
-                Impact research repository.
+        <div className="container-rcees py-24">
+          <div className="grid gap-12 md:grid-cols-[2fr_1fr] md:items-end">
+            <div>
+              <SectionHeading eyebrow="Publications" title="Peer-reviewed output." />
+              <p className="mt-6 max-w-2xl text-[1.025rem] leading-relaxed text-ink/80">
+                The corpus below is pulled live from OpenAlex — an open scholarly
+                database that indexes Scopus, Crossref and the broader literature —
+                for works affiliated with RCEES and the University of Energy and
+                Natural Resources. The list refreshes automatically whenever new
+                work is indexed upstream.
               </p>
             </div>
-          </div>
-          <div>
-            <SectionHeading eyebrow="Projects" title="Research in the field." />
-            <div className="mt-8 space-y-5 text-[1.025rem] leading-relaxed text-ink/80">
-              <p>
-                Our research is funded by the World Bank, Horizon Europe, DAAD, GIZ and international
-                university partners. Current projects span eight active research consortia.
-              </p>
+            <div className="md:text-right">
+              <Link href="/projects" className="btn-primary">View research projects</Link>
             </div>
-            <Link href="/projects" className="mt-8 inline-block btn-primary">View projects</Link>
           </div>
+
+          <PublicationsExplorer />
         </div>
       </section>
     </>

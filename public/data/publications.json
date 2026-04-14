@@ -1,0 +1,6214 @@
+{
+  "source": "openalex",
+  "fetchedAt": "2026-04-14T09:43:16.715Z",
+  "count": 131,
+  "publications": [
+    {
+      "id": "https://openalex.org/W7147319019",
+      "doi": "https://doi.org/10.1016/j.catena.2026.110043",
+      "title": "Soil erosion assessment in the White Volta River Basin using USLE and RUSLE models: implications on the Pwalugu Multipurpose Dam Project",
+      "year": 2026,
+      "date": "2026-03-31",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Evelyn Kyeraa Boakye",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Jasmine Korkor Ankrah",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Chrisentus Bangkewa Kuunifaa",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Nana Ekow Nkwa Sey",
+          "orcid": "https://orcid.org/0000-0001-8143-3825",
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Amprofi Ampah Amproche",
+          "orcid": "https://orcid.org/0000-0002-1208-7006",
+          "isRcees": false
+        },
+        {
+          "name": "Ransford Bakuri Wusah",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "CATENA",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.catena.2026.110043",
+      "topics": [
+        "Environmental science",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7130347986",
+      "doi": "https://doi.org/10.1016/j.egycc.2026.100241",
+      "title": "Integrating energy access and climate policy in Ghana: Household carbon footprints and pathways to synergistic outcomes",
+      "year": 2026,
+      "date": "2026-02-18",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Sidique Gawusu",
+          "orcid": "https://orcid.org/0000-0003-1877-1092",
+          "isRcees": false
+        },
+        {
+          "name": "Xiao-Bing Zhang",
+          "orcid": "https://orcid.org/0000-0001-8155-5769",
+          "isRcees": false
+        },
+        {
+          "name": "Sufyan Yakubu",
+          "orcid": "https://orcid.org/0000-0001-8662-2887",
+          "isRcees": true
+        },
+        {
+          "name": "Haneesh Venkata Sai Sigirisetty",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy and Climate Change",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egycc.2026.100241",
+      "topics": [
+        "Natural resource economics",
+        "Business",
+        "Environmental economics",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4407635875",
+      "doi": "https://doi.org/10.1016/j.energy.2025.135099",
+      "title": "Optimizing solar photovoltaic system performance: Insights and strategies for enhanced efficiency",
+      "year": 2025,
+      "date": "2025-02-17",
+      "type": "article",
+      "citations": 7,
+      "authors": [
+        {
+          "name": "Sidique Gawusu",
+          "orcid": "https://orcid.org/0000-0003-1877-1092",
+          "isRcees": false
+        },
+        {
+          "name": "Xiao-Bing Zhang",
+          "orcid": "https://orcid.org/0000-0001-8155-5769",
+          "isRcees": false
+        },
+        {
+          "name": "Sufyan Yakubu",
+          "orcid": "https://orcid.org/0000-0001-8662-2887",
+          "isRcees": true
+        },
+        {
+          "name": "Seth Kofi Debrah",
+          "orcid": "https://orcid.org/0000-0002-0593-8124",
+          "isRcees": false
+        },
+        {
+          "name": "Oisik Das",
+          "orcid": "https://orcid.org/0000-0002-5474-1512",
+          "isRcees": false
+        },
+        {
+          "name": "Nishant Singh Bundela",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.energy.2025.135099",
+      "topics": [
+        "Engineering physics",
+        "Process engineering",
+        "Environmental science",
+        "Materials science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4409884901",
+      "doi": "https://doi.org/10.1016/j.sajce.2025.04.019",
+      "title": "Optimization of biodiesel production using oil extracted from microalgae harvested in Ghana",
+      "year": 2025,
+      "date": "2025-04-28",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Moustafa Acakpo",
+          "orcid": "https://orcid.org/0000-0002-4471-0827",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Johannes A. M. Awudza",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Benjamin Kwadzo Kokloku",
+          "orcid": "https://orcid.org/0000-0003-4391-7823",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        }
+      ],
+      "venue": "South African Journal of Chemical Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sajce.2025.04.019",
+      "topics": [
+        "Pulp and paper industry",
+        "Environmental science",
+        "Botany",
+        "Food science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4407639145",
+      "doi": "https://doi.org/10.3390/en18040947",
+      "title": "An Evaluation of Biogas Potential of Cassava, Yam and Plantain Peel Mixtures Using Theoretical Models and Hohenheim Biogas Yield Test-Based Experiments",
+      "year": 2025,
+      "date": "2025-02-16",
+      "type": "article",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Joseph Yankyera Kusi",
+          "orcid": "https://orcid.org/0000-0002-2750-8619",
+          "isRcees": true
+        },
+        {
+          "name": "Florian Empl",
+          "orcid": "https://orcid.org/0000-0001-9587-0364",
+          "isRcees": false
+        },
+        {
+          "name": "Ralf Müller",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Stefan Pelz",
+          "orcid": "https://orcid.org/0000-0003-3205-7282",
+          "isRcees": false
+        },
+        {
+          "name": "Jens Poetsch",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Gregor Sailer",
+          "orcid": "https://orcid.org/0000-0002-8893-7150",
+          "isRcees": false
+        },
+        {
+          "name": "Rainer Kirchhof",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        }
+      ],
+      "venue": "Energies",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/1996-1073/18/4/947/pdf?version=1739782539",
+      "topics": [
+        "Environmental science",
+        "Agricultural engineering",
+        "Agronomy",
+        "Waste management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4406199449",
+      "doi": "https://doi.org/10.1016/j.sciaf.2025.e02542",
+      "title": "Assessing the environmental and socio-economic impacts of small-scale mining activities in the Atiwa East District of Ghana",
+      "year": 2025,
+      "date": "2025-01-09",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Samuel Kofi Mensah",
+          "orcid": "https://orcid.org/0000-0002-8826-7441",
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": "https://orcid.org/0000-0001-7161-856X",
+          "isRcees": true
+        },
+        {
+          "name": "Gwendolyn Patience Mensah",
+          "orcid": "https://orcid.org/0000-0002-9943-1622",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Peter Donkor",
+          "orcid": "https://orcid.org/0000-0003-4625-1502",
+          "isRcees": false
+        },
+        {
+          "name": "Sarah Elikplim Siabi",
+          "orcid": "https://orcid.org/0000-0002-5300-7156",
+          "isRcees": false
+        },
+        {
+          "name": "Thomas Bandoh",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Prosper Achaw Owusu",
+          "orcid": "https://orcid.org/0000-0002-0822-6296",
+          "isRcees": false
+        },
+        {
+          "name": "Christopher Vuu",
+          "orcid": "https://orcid.org/0000-0003-2766-5080",
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2025.e02542",
+      "topics": [
+        "Geography",
+        "Socioeconomics",
+        "Environmental planning",
+        "Environmental resource management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4407136199",
+      "doi": "https://doi.org/10.1007/s42108-025-00345-z",
+      "title": "Assessing small-scale biogas digester adoption challenges and prospects in Ghana: Challenges and prospects of biogas adoption in Ghana",
+      "year": 2025,
+      "date": "2025-02-04",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Mubarick Issahaku",
+          "orcid": "https://orcid.org/0000-0003-1808-5252",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Kemausuor",
+          "orcid": "https://orcid.org/0000-0001-5507-8399",
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Energy and Water Resources",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s42108-025-00345-z",
+      "topics": [
+        "Business",
+        "Waste management",
+        "Environmental science",
+        "Natural resource economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4410014493",
+      "doi": "https://doi.org/10.1016/j.sciaf.2025.e02727",
+      "title": "Socio-economic factors influencing the adoption of solar home systems: the case study of Ghana",
+      "year": 2025,
+      "date": "2025-05-01",
+      "type": "article",
+      "citations": 2,
+      "authors": [
+        {
+          "name": "Emmanuel Effah",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2025.e02727",
+      "topics": [
+        "Business",
+        "Environmental economics",
+        "Natural resource economics",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4407741441",
+      "doi": "https://doi.org/10.1016/j.solcom.2025.100111",
+      "title": "Time series forecast of power output of a 50MWp solar farm in Ghana",
+      "year": 2025,
+      "date": "2025-02-19",
+      "type": "article",
+      "citations": 2,
+      "authors": [
+        {
+          "name": "Alhassan Sulemana Puziem",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Peter Acheampong",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Mathew Atinsia Anabadongo",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Dampaak Abdulai",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Solar Compass",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.solcom.2025.100111",
+      "topics": [
+        "Environmental science",
+        "Meteorology",
+        "Mathematics",
+        "Climatology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4406713911",
+      "doi": "https://doi.org/10.1016/j.solcom.2025.100107",
+      "title": "Post technical assessment and field manual for solar home systems in island communities: The case of Ghana",
+      "year": 2025,
+      "date": "2025-01-22",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Emmanuel Effah",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Mathew Anabadongo Atinsia",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Solar Compass",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.solcom.2025.100107",
+      "topics": [
+        "Geography",
+        "Environmental resource management",
+        "Environmental planning",
+        "Environmental science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4413276085",
+      "doi": "https://doi.org/10.1016/j.resourpol.2025.105719",
+      "title": "Assessing the impact of small-scale mining activities on land use land cover and the sustainability of mining practices in Ghana: A case of the Atiwa East district",
+      "year": 2025,
+      "date": "2025-08-18",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Samuel Kofi Mensah",
+          "orcid": "https://orcid.org/0000-0002-8826-7441",
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": "https://orcid.org/0000-0001-7161-856X",
+          "isRcees": true
+        },
+        {
+          "name": "Gwendolyn Patience Mensah",
+          "orcid": "https://orcid.org/0000-0002-9943-1622",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Peter Donkor",
+          "orcid": "https://orcid.org/0000-0003-4625-1502",
+          "isRcees": false
+        },
+        {
+          "name": "Sarah Elikplim Siabi",
+          "orcid": "https://orcid.org/0000-0002-5300-7156",
+          "isRcees": false
+        }
+      ],
+      "venue": "Resources Policy",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.resourpol.2025.105719",
+      "topics": [
+        "Business",
+        "Environmental planning",
+        "Environmental resource management",
+        "Natural resource economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4411157791",
+      "doi": "https://doi.org/10.1155/je/8786462",
+      "title": "Comparative Analysis of Power Quality of Solar PV Power Only, Hybrid Solar PV–Grid Power, and National Grid Power Only for SMEs: The Case of a Laundry Shop in Ghana",
+      "year": 2025,
+      "date": "2025-01-01",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Godwill Nkrumah Yeboah",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Richard Opoku",
+          "orcid": "https://orcid.org/0000-0001-8766-3402",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": true
+        },
+        {
+          "name": "Gidphil Mensah",
+          "orcid": "https://orcid.org/0000-0003-2702-6465",
+          "isRcees": false
+        },
+        {
+          "name": "Charles Kofi Kafui Sekere",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/je/8786462",
+      "topics": [
+        "Electrical engineering",
+        "Automotive engineering",
+        "Computer science",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4415914875",
+      "doi": "https://doi.org/10.1007/s43926-025-00223-4",
+      "title": "An assessment of a solar PV-powered IoT monitoring system for small-scale biogas digesters",
+      "year": 2025,
+      "date": "2025-11-05",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Mubarick Issahaku",
+          "orcid": "https://orcid.org/0000-0003-1808-5252",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Kemausuor",
+          "orcid": "https://orcid.org/0000-0001-5507-8399",
+          "isRcees": false
+        }
+      ],
+      "venue": "Discover Internet of Things",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://link.springer.com/content/pdf/10.1007/s43926-025-00223-4.pdf",
+      "topics": [
+        "Waste management",
+        "Environmental science",
+        "Environmental economics",
+        "Process engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4416420413",
+      "doi": "https://doi.org/10.1016/j.seja.2025.100124",
+      "title": "In-situ PV generation forecasting of utility-scale solar power plants in Ghana: Single and hybrid machine learning approaches",
+      "year": 2025,
+      "date": "2025-01-01",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Mohammed Okoe Alhassan",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Maxmillian Kwarteng",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Solar Energy Advances",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.seja.2025.100124",
+      "topics": [
+        "Machine learning",
+        "Computer science",
+        "Artificial intelligence",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4416566714",
+      "doi": "https://doi.org/10.30564/jasr.v8i4.11904",
+      "title": "Impact of Climate Change on the Streamflow in the Region of the Proposed Pwalugu Hydropower Plant",
+      "year": 2025,
+      "date": "2025-09-20",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Emmanuel Kekle Ahialey",
+          "orcid": "https://orcid.org/0000-0002-4904-9740",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        }
+      ],
+      "venue": "Journal of Atmospheric Science Research",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://journals.bilpubgroup.com/index.php/jasr/article/download/11904/7504",
+      "topics": [
+        "Environmental science",
+        "Climatology",
+        "Water resource management",
+        "Environmental resource management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4411244247",
+      "doi": "https://doi.org/10.2139/ssrn.5290352",
+      "title": "Kinetic Modelling and Simulation of Anaerobic Digestion of Fibrous Waste Materials and Slaughterhouse Waste",
+      "year": 2025,
+      "date": "2025-01-01",
+      "type": "preprint",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Joseph Yankyera Kusi",
+          "orcid": "https://orcid.org/0000-0002-2750-8619",
+          "isRcees": true
+        },
+        {
+          "name": "Ralf Müller",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Florian Empl",
+          "orcid": "https://orcid.org/0000-0001-9587-0364",
+          "isRcees": false
+        },
+        {
+          "name": "Stefan Pelz",
+          "orcid": "https://orcid.org/0000-0003-3205-7282",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": false
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": false
+        }
+      ],
+      "venue": "SSRN Electronic Journal",
+      "venueType": "repository",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.2139/ssrn.5290352",
+      "topics": [
+        "Waste management",
+        "Environmental science",
+        "Chemistry",
+        "Biochemical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W7117355133",
+      "doi": "https://doi.org/10.1007/s10668-025-07152-w",
+      "title": "Adaptive solar energy modeling for sustainable urban infrastructure: addressing Non-Linear conversion challenges",
+      "year": 2025,
+      "date": "2025-12-27",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Sidique Gawusu",
+          "orcid": "https://orcid.org/0000-0003-1877-1092",
+          "isRcees": false
+        },
+        {
+          "name": "Xiao-Bing Zhang",
+          "orcid": "https://orcid.org/0000-0001-8155-5769",
+          "isRcees": false
+        },
+        {
+          "name": "Seidu Abdulai Jamatutu",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Kyei Yeboah",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Marizuk Waris Tizumah",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Sufyan Yakubu",
+          "orcid": "https://orcid.org/0000-0001-8662-2887",
+          "isRcees": true
+        }
+      ],
+      "venue": "Environment Development and Sustainability",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s10668-025-07152-w",
+      "topics": [
+        "Environmental science",
+        "Meteorology",
+        "Atmospheric sciences",
+        "Computer science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4406018243",
+      "doi": "https://doi.org/10.1080/00207233.2024.2444850",
+      "title": "Particulate matter levels in the atmosphere and their temporal variations in an urban fish smoking community and a busy highway interchange",
+      "year": 2025,
+      "date": "2025-01-02",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Godfred Safo-Adu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Gorman Ofosu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "International Journal of Environmental Studies",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1080/00207233.2024.2444850",
+      "topics": [
+        "Environmental science",
+        "Geography",
+        "Environmental engineering",
+        "Atmospheric sciences"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4416111749",
+      "doi": "https://doi.org/10.1007/s43937-025-00099-z",
+      "title": "Assessment of the biogas potential of a small-scale biodigester using ASPEN plus simulation",
+      "year": 2025,
+      "date": "2025-11-11",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Mubarick Issahaku",
+          "orcid": "https://orcid.org/0000-0003-1808-5252",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Kemausuor",
+          "orcid": "https://orcid.org/0000-0001-5507-8399",
+          "isRcees": false
+        }
+      ],
+      "venue": "Discover Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://link.springer.com/content/pdf/10.1007/s43937-025-00099-z.pdf",
+      "topics": [
+        "Waste management",
+        "Environmental science",
+        "Environmental engineering",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4416614065",
+      "doi": "https://doi.org/10.1186/s12982-025-01121-4",
+      "title": "Black carbon and elemental composition of PM2.5 aerosol in Ghana: concentrations, correlation and health risk assessment in urban neighbourhoods",
+      "year": 2025,
+      "date": "2025-11-25",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Godfred Safo-Adu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Gorman Ofosu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "O. Gyampo",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "H. Ahiamadjie",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Joseph Kwabena Essibu",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Discover Public Health",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://link.springer.com/content/pdf/10.1186/s12982-025-01121-4.pdf",
+      "topics": [
+        "Environmental science",
+        "Environmental chemistry",
+        "Chemistry",
+        "Atmospheric sciences"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4417490410",
+      "doi": "https://doi.org/10.1007/s10452-025-10250-6",
+      "title": "Assessment of residential solid waste management practices along Lake Volta, Ghana",
+      "year": 2025,
+      "date": "2025-12-19",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Collins Nana Andoh",
+          "orcid": "https://orcid.org/0000-0001-7914-2105",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": true
+        },
+        {
+          "name": "Mary Antwi",
+          "orcid": "https://orcid.org/0000-0002-6226-5464",
+          "isRcees": false
+        },
+        {
+          "name": "Etornyo Agbeko",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Kofi Adu‐Boahen",
+          "orcid": "https://orcid.org/0000-0002-8275-0977",
+          "isRcees": false
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        }
+      ],
+      "venue": "Aquatic Ecology",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s10452-025-10250-6",
+      "topics": [
+        "Business",
+        "Waste management",
+        "Environmental planning",
+        "Environmental science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4413641492",
+      "doi": "https://doi.org/10.1007/s42108-025-00417-0",
+      "title": "Charting pollution: spatial modeling of microplastics distribution in sediments and surface water from Lake Volta, Ghana, using ArcGIS",
+      "year": 2025,
+      "date": "2025-08-26",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Collins Nana Andoh",
+          "orcid": "https://orcid.org/0000-0001-7914-2105",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": true
+        },
+        {
+          "name": "Mary Antwi",
+          "orcid": "https://orcid.org/0000-0002-6226-5464",
+          "isRcees": false
+        },
+        {
+          "name": "Etornyo Agbeko",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Kofi Adu‐Boahen",
+          "orcid": "https://orcid.org/0000-0002-8275-0977",
+          "isRcees": false
+        },
+        {
+          "name": "Kofi Ferni Anyan",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Energy and Water Resources",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s42108-025-00417-0",
+      "topics": [
+        "Environmental science",
+        "Water resource management",
+        "Geography",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4390547747",
+      "doi": "https://doi.org/10.1016/j.heliyon.2024.e24019",
+      "title": "A systematic review of the design considerations for the operation and maintenance of small-scale biogas digesters",
+      "year": 2024,
+      "date": "2024-01-01",
+      "type": "review",
+      "citations": 50,
+      "authors": [
+        {
+          "name": "Mubarick Issahaku",
+          "orcid": "https://orcid.org/0000-0003-1808-5252",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Kemausuor",
+          "orcid": "https://orcid.org/0000-0001-5507-8399",
+          "isRcees": false
+        }
+      ],
+      "venue": "Heliyon",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "http://www.cell.com/article/S2405844024000501/pdf",
+      "topics": [
+        "Engineering",
+        "Environmental economics",
+        "Waste management",
+        "Computer science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4403262457",
+      "doi": "https://doi.org/10.1016/j.egyr.2024.09.074",
+      "title": "Evaluation of research progress and trends in mini-grids for rural electrification: A bibliometric analysis",
+      "year": 2024,
+      "date": "2024-10-09",
+      "type": "article",
+      "citations": 16,
+      "authors": [
+        {
+          "name": "Flavio Odoi-Yorke",
+          "orcid": "https://orcid.org/0000-0002-7270-0159",
+          "isRcees": false
+        },
+        {
+          "name": "Agnes Abeley Abbey",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Stephen Abaase",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Mudasiru Mahama",
+          "orcid": "https://orcid.org/0000-0002-1279-3226",
+          "isRcees": true
+        }
+      ],
+      "venue": "Energy Reports",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egyr.2024.09.074",
+      "topics": [
+        "Regional science",
+        "Data science",
+        "Computer science",
+        "Management science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4401540554",
+      "doi": "https://doi.org/10.1016/j.scitotenv.2024.175502",
+      "title": "Tracing sulfate sources in a tropical agricultural catchment with a stable isotope Bayesian mixing model",
+      "year": 2024,
+      "date": "2024-08-13",
+      "type": "article",
+      "citations": 14,
+      "authors": [
+        {
+          "name": "David Saka",
+          "orcid": "https://orcid.org/0000-0002-0560-3922",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Grzegorz Skrzypek",
+          "orcid": "https://orcid.org/0000-0002-5686-2393",
+          "isRcees": false
+        },
+        {
+          "name": "Joseph Adu-Gyamfi",
+          "orcid": "https://orcid.org/0009-0006-7273-0223",
+          "isRcees": false
+        },
+        {
+          "name": "Lee Yook Heng",
+          "orcid": "https://orcid.org/0000-0001-9843-9182",
+          "isRcees": false
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        }
+      ],
+      "venue": "The Science of The Total Environment",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.scitotenv.2024.175502",
+      "topics": [
+        "Environmental science",
+        "Water resource management",
+        "Geography",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4393238474",
+      "doi": "https://doi.org/10.1016/j.seja.2024.100058",
+      "title": "Criticality and severity of adverse effects of the sun on performance of solar PV systems",
+      "year": 2024,
+      "date": "2024-01-01",
+      "type": "article",
+      "citations": 13,
+      "authors": [
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": true
+        },
+        {
+          "name": "Michael Obeng",
+          "orcid": "https://orcid.org/0000-0002-2142-377X",
+          "isRcees": false
+        },
+        {
+          "name": "Forson Peprah",
+          "orcid": "https://orcid.org/0000-0002-9813-3316",
+          "isRcees": false
+        }
+      ],
+      "venue": "Solar Energy Advances",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.seja.2024.100058",
+      "topics": [
+        "Environmental science",
+        "Engineering",
+        "Physics",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4392360451",
+      "doi": "https://doi.org/10.1016/j.prime.2024.100486",
+      "title": "Analysis of contingency scenarios towards a suitable transmission pathway in the southern interconnected grid (SIG) of Cameroon",
+      "year": 2024,
+      "date": "2024-03-01",
+      "type": "article",
+      "citations": 11,
+      "authors": [
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Effah-Donyina",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Tanyi",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "e-Prime - Advances in Electrical Engineering Electronics and Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.prime.2024.100486",
+      "topics": [
+        "Reliability engineering",
+        "Computer science",
+        "Engineering",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4399082462",
+      "doi": "https://doi.org/10.1016/j.energy.2024.131849",
+      "title": "Predicting climate-driven changes in reservoir inflows and hydropower in Côte d'Ivoire using machine learning modeling",
+      "year": 2024,
+      "date": "2024-05-28",
+      "type": "article",
+      "citations": 10,
+      "authors": [
+        {
+          "name": "Salomon Obahoundjé",
+          "orcid": "https://orcid.org/0000-0001-8093-5241",
+          "isRcees": false
+        },
+        {
+          "name": "Arona Diédhiou",
+          "orcid": "https://orcid.org/0000-0003-3841-1027",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        },
+        {
+          "name": "Kouakou Lazare Kouassı",
+          "orcid": "https://orcid.org/0000-0002-8514-9714",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Didier Guy Marcel Kouame",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.energy.2024.131849",
+      "topics": [
+        "Environmental science",
+        "Engineering",
+        "Geology",
+        "Oceanography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4398193614",
+      "doi": "https://doi.org/10.1016/j.envadv.2024.100548",
+      "title": "Assessment of dumpsites leachate, geotechnical properties of the soil, and their impacts on surface and groundwater quality of Sunyani, Ghana",
+      "year": 2024,
+      "date": "2024-05-22",
+      "type": "article",
+      "citations": 9,
+      "authors": [
+        {
+          "name": "Daniel Gyabaah",
+          "orcid": "https://orcid.org/0000-0002-2200-6433",
+          "isRcees": true
+        },
+        {
+          "name": "Esi Awuah",
+          "orcid": "https://orcid.org/0000-0003-0722-8801",
+          "isRcees": true
+        },
+        {
+          "name": "Richard Amankwah Kuffour",
+          "orcid": "https://orcid.org/0000-0001-7704-2645",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Wiafe",
+          "orcid": "https://orcid.org/0000-0003-2439-7631",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Boamah Asiedu",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Environmental Advances",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.envadv.2024.100548",
+      "topics": [
+        "Environmental science",
+        "Geology",
+        "Geotechnical engineering",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4400798367",
+      "doi": "https://doi.org/10.1016/j.prime.2024.100691",
+      "title": "Development of an ARIMAX model for forecasting airport electricity consumption in Accra-Ghana: The role of weather and air passenger traffic",
+      "year": 2024,
+      "date": "2024-07-18",
+      "type": "article",
+      "citations": 8,
+      "authors": [
+        {
+          "name": "Romeo Djimasbe",
+          "orcid": "https://orcid.org/0009-0003-9022-3450",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": false
+        },
+        {
+          "name": "Bonheur Ngontoloum Ribar",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "e-Prime - Advances in Electrical Engineering Electronics and Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.prime.2024.100691",
+      "topics": [
+        "Meteorology",
+        "Business",
+        "Transport engineering",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4401394880",
+      "doi": "https://doi.org/10.2166/wh.2024.186",
+      "title": "Water, environment, and health nexus: understanding the risk factors for waterborne diseases in communities along the Tano River Basin, Ghana",
+      "year": 2024,
+      "date": "2024-08-01",
+      "type": "article",
+      "citations": 8,
+      "authors": [
+        {
+          "name": "Saeed Ibn Idris Kofi Yeboah",
+          "orcid": "https://orcid.org/0000-0002-8088-4920",
+          "isRcees": true
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": true
+        }
+      ],
+      "venue": "Journal of Water and Health",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://iwaponline.com/jwh/article-pdf/22/8/1556/1468850/jwh2024186.pdf",
+      "topics": [
+        "Water resource management",
+        "Environmental protection",
+        "Geography",
+        "Environmental science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4396608661",
+      "doi": "https://doi.org/10.1016/j.solcom.2024.100075",
+      "title": "Integration of multiple distributed solar PV (DSP) into the grid: The case of the distribution network in Freetown, Sierra Leone",
+      "year": 2024,
+      "date": "2024-05-03",
+      "type": "article",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "M Mansaray",
+          "orcid": "https://orcid.org/0009-0007-8014-503X",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Benjamin Bantinge",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Solar Compass",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.solcom.2024.100075",
+      "topics": [
+        "Computer science",
+        "Environmental science",
+        "Geography",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4390704381",
+      "doi": "https://doi.org/10.2166/wh.2024.324",
+      "title": "Assessment of current water, sanitation, and hygiene (WASH) practices in the third and ninth districts of N'Djamena, Chad",
+      "year": 2024,
+      "date": "2024-01-10",
+      "type": "article",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "Daniel Mangueina",
+          "orcid": "https://orcid.org/0009-0003-2857-7338",
+          "isRcees": true
+        },
+        {
+          "name": "Esi Awuah",
+          "orcid": "https://orcid.org/0000-0003-0722-8801",
+          "isRcees": false
+        },
+        {
+          "name": "Mathias Fru Fonteh",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Tao Nadji",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Water and Health",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://iwaponline.com/jwh/article-pdf/doi/10.2166/wh.2024.324/1352101/jwh2024324.pdf",
+      "topics": [
+        "Environmental health",
+        "Environmental science",
+        "Waste management",
+        "Medicine"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4396975546",
+      "doi": "https://doi.org/10.1007/s40808-024-02041-z",
+      "title": "Delineation of flood risk terrains and rainfall visualisation in the North Western part of Ghana",
+      "year": 2024,
+      "date": "2024-05-16",
+      "type": "article",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "Benjamin Wullobayi Dekongmen",
+          "orcid": "https://orcid.org/0000-0001-7047-7937",
+          "isRcees": false
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": false
+        },
+        {
+          "name": "Geophrey K. Anornu",
+          "orcid": "https://orcid.org/0000-0003-3691-5635",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        },
+        {
+          "name": "Mark Amo-Boateng",
+          "orcid": "https://orcid.org/0000-0002-8564-6307",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Edward Boamah",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Daanoba Sunkari",
+          "orcid": "https://orcid.org/0000-0002-0898-2286",
+          "isRcees": false
+        }
+      ],
+      "venue": "Modeling Earth Systems and Environment",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s40808-024-02041-z",
+      "topics": [
+        "Geography",
+        "Physical geography",
+        "Cartography",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4404892680",
+      "doi": "https://doi.org/10.1080/15275922.2024.2431321",
+      "title": "Assessment of Chemical Composition and Health Implications Associated with PM <sub>10</sub> Exposure: A Comparative Study of an Urban Road Intersection and a Wood-Burning Vicinity",
+      "year": 2024,
+      "date": "2024-12-01",
+      "type": "article",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "Godfred Safo-Adu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Gorman Ofosu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "O. Gyampo",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "H. Ahiamadjie",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Environmental Forensics",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1080/15275922.2024.2431321",
+      "topics": [
+        "Environmental science",
+        "Environmental chemistry",
+        "Transport engineering",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4396695777",
+      "doi": "https://doi.org/10.1080/23311916.2024.2345506",
+      "title": "Assessment of climate change in the North-East region of Côte d‘Ivoire: Future precipitation, temperature, and meteorological drought using CMIP6 models",
+      "year": 2024,
+      "date": "2024-05-07",
+      "type": "article",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "Kouamé Donald Kouman",
+          "orcid": "https://orcid.org/0000-0003-3911-4112",
+          "isRcees": true
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        },
+        {
+          "name": "Boyossoro Hélène Kouadio",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": false
+        },
+        {
+          "name": "Moctar Dembélé",
+          "orcid": "https://orcid.org/0000-0002-0689-2033",
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": true
+        },
+        {
+          "name": "Jacob Kofi Mensah",
+          "orcid": "https://orcid.org/0000-0003-1997-2291",
+          "isRcees": false
+        }
+      ],
+      "venue": "Cogent Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/23311916.2024.2345506?needAccess=true",
+      "topics": [
+        "Climatology",
+        "Environmental science",
+        "Meteorology",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4391933574",
+      "doi": "https://doi.org/10.1016/j.clwat.2024.100009",
+      "title": "Crescentia cujete fruit shell as green and efficient coagulant for water purification",
+      "year": 2024,
+      "date": "2024-02-19",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Augustine Boakye",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Cleaner Water",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.clwat.2024.100009",
+      "topics": [
+        "Chemistry",
+        "Environmental science",
+        "Pulp and paper industry",
+        "Materials science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4392589972",
+      "doi": "https://doi.org/10.1016/j.solcom.2024.100071",
+      "title": "Assessing the performance of hydro-solar hybrid (HSH) grid integration: A case study of Bui Generating Station, Ghana",
+      "year": 2024,
+      "date": "2024-03-08",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Francisca Asare-Bediako",
+          "orcid": "https://orcid.org/0009-0005-4408-129X",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Charles Dzikunu",
+          "orcid": "https://orcid.org/0009-0007-2292-1133",
+          "isRcees": true
+        }
+      ],
+      "venue": "Solar Compass",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.solcom.2024.100071",
+      "topics": [
+        "Environmental science",
+        "Engineering",
+        "Electrical engineering",
+        "Software engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4405012101",
+      "doi": "https://doi.org/10.1016/j.atmosenv.2024.120973",
+      "title": "Polycyclic aromatic compounds in ambient PM2.5 in the central region of Ghana: Molecular distribution, origin and cancer risk assessment",
+      "year": 2024,
+      "date": "2024-12-04",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Godfred Safo-Adu",
+          "orcid": "https://orcid.org/0000-0001-5964-9734",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Gorman Ofosu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Linda Naa Dede Maud",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Ellis Enimil",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Atmospheric Environment",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.atmosenv.2024.120973",
+      "topics": [
+        "Environmental chemistry",
+        "Environmental science",
+        "Environmental health",
+        "Chemistry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4404102592",
+      "doi": "https://doi.org/10.1109/sege62220.2024.10739595",
+      "title": "Advancing Africa's Sustainable Energy Development Through Small Modular Reactors (SMRs) as Low-Carbon Power Solution",
+      "year": 2024,
+      "date": "2024-08-18",
+      "type": "article",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Mark Amoah Nyasapoh",
+          "orcid": "https://orcid.org/0000-0002-4722-6256",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Seth Kofi Debrah",
+          "orcid": "https://orcid.org/0000-0002-0593-8124",
+          "isRcees": false
+        },
+        {
+          "name": "Hossam A. Gabbar",
+          "orcid": "https://orcid.org/0000-0002-8495-5343",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": false
+        }
+      ],
+      "venue": null,
+      "venueType": null,
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1109/sege62220.2024.10739595",
+      "topics": [
+        "Environmental science",
+        "Computer science",
+        "Political science",
+        "Physics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4404075291",
+      "doi": "https://doi.org/10.3390/en17225522",
+      "title": "Evaluation of Energetic Potential of Slaughterhouse Waste and Its Press Water Obtained by Pressure-Induced Separation via Anaerobic Digestion",
+      "year": 2024,
+      "date": "2024-11-05",
+      "type": "article",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Joseph Yankyera Kusi",
+          "orcid": "https://orcid.org/0000-0002-2750-8619",
+          "isRcees": true
+        },
+        {
+          "name": "Florian Empl",
+          "orcid": "https://orcid.org/0000-0001-9587-0364",
+          "isRcees": false
+        },
+        {
+          "name": "Ralf Müller",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Stefan Pelz",
+          "orcid": "https://orcid.org/0000-0003-3205-7282",
+          "isRcees": false
+        },
+        {
+          "name": "Jens Poetsch",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Gregor Sailer",
+          "orcid": "https://orcid.org/0000-0002-8893-7150",
+          "isRcees": false
+        },
+        {
+          "name": "Rainer Kirchhof",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Sarah Elikplim Siabi",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Energies",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/1996-1073/17/22/5522/pdf?version=1730798432",
+      "topics": [
+        "Waste management",
+        "Chemistry",
+        "Environmental science",
+        "Pulp and paper industry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4399997744",
+      "doi": "https://doi.org/10.1016/j.sciaf.2024.e02293",
+      "title": "Improved greywater quality after biofiltration with a fibre-biofilter derived from plantain pseudo stem",
+      "year": 2024,
+      "date": "2024-06-25",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Abdul Rahim Mohammed",
+          "orcid": "https://orcid.org/0000-0002-7214-659X",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": "https://orcid.org/0000-0003-0707-5526",
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2024.e02293",
+      "topics": [
+        "Environmental science",
+        "Environmental engineering",
+        "Epistemology",
+        "Philosophy"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4403215855",
+      "doi": "https://doi.org/10.1155/2024/5394978",
+      "title": "Transformer Outage Contingency in the Southern Interconnected Grid of Cameroon Based on Dynamic Power Flow Simulation",
+      "year": 2024,
+      "date": "2024-01-01",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Wirnkar Basil Nsanyuy",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Nde Donatus Nguti",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Tanyi",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/2024/5394978",
+      "topics": [
+        "Electrical engineering",
+        "Computer science",
+        "Engineering",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4407233539",
+      "doi": "https://doi.org/10.1007/978-3-031-65357-5_51",
+      "title": "Advancing Access to Affordable and Reliable Electricity Through Nuclear and Renewable Hybrid Energy Systems",
+      "year": 2024,
+      "date": "2024-01-01",
+      "type": "book-chapter",
+      "citations": 2,
+      "authors": [
+        {
+          "name": "Mark Amoah Nyasapoh",
+          "orcid": "https://orcid.org/0000-0002-4722-6256",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Seth Kofi Debrah",
+          "orcid": "https://orcid.org/0000-0002-0593-8124",
+          "isRcees": false
+        },
+        {
+          "name": "Hossam A. Gabbar",
+          "orcid": "https://orcid.org/0000-0002-8495-5343",
+          "isRcees": false
+        },
+        {
+          "name": "N. S. Agyemang-Derkyi",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": null,
+      "venueType": null,
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/978-3-031-65357-5_51",
+      "topics": [
+        "Environmental economics",
+        "Business",
+        "Natural resource economics",
+        "Environmental science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4401278602",
+      "doi": "https://doi.org/10.24294/jgc.v7i2.8282",
+      "title": "LULC changes in the region of the proposed Pwalugu hydropower project using GIS and remote sensing technique",
+      "year": 2024,
+      "date": "2024-08-01",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Emmanuel Kekle Ahialey",
+          "orcid": "https://orcid.org/0000-0002-4904-9740",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        }
+      ],
+      "venue": "Journal of Geography and Cartography",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://systems.enpress-publisher.com/index.php/JGC/article/download/8282/3287",
+      "topics": [
+        "Remote sensing",
+        "Cartography",
+        "Geography",
+        "Environmental science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4403245815",
+      "doi": "https://doi.org/10.1007/s11356-024-35123-7",
+      "title": "Modeling the fate and transport of E. coli pathogens in the Tano River Basin of Ghana under climate change and socioeconomic scenarios",
+      "year": 2024,
+      "date": "2024-10-09",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Saeed Ibn Idris Kofi Yeboah",
+          "orcid": "https://orcid.org/0000-0002-8088-4920",
+          "isRcees": true
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": true
+        }
+      ],
+      "venue": "Environmental Science and Pollution Research",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s11356-024-35123-7",
+      "topics": [
+        "Environmental science",
+        "Water resource management",
+        "Ecology",
+        "Environmental protection"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4402938128",
+      "doi": "https://doi.org/10.1155/2024/5587946",
+      "title": "Assessing Peak Load Reduction Potential on Distribution Network: A Case Study of Residential Households in Freetown, Sierra Leone",
+      "year": 2024,
+      "date": "2024-01-01",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Joseph Kugbea Rogers",
+          "orcid": "https://orcid.org/0009-0005-1409-0072",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Energy Research",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/2024/5587946",
+      "topics": [
+        "Geography",
+        "Environmental science",
+        "Socioeconomics",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4404192671",
+      "doi": "https://doi.org/10.1016/b978-0-443-23627-3.00009-0",
+      "title": "Electricity prosumption adoption: what to know and what you can do",
+      "year": 2024,
+      "date": "2024-11-08",
+      "type": "book-chapter",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Forson Peprah",
+          "orcid": "https://orcid.org/0000-0002-9813-3316",
+          "isRcees": true
+        },
+        {
+          "name": "Asante Kwame",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": false
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-443-23627-3.00009-0",
+      "topics": [
+        "Business",
+        "Computer science",
+        "Computer security"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4399499707",
+      "doi": "https://doi.org/10.14445/23488360/ijme-v11i5p106",
+      "title": "Assessment of Post-Combustion CO2, CO and PM2.5 Levels from Selected Improved Biomass Cookstoves in Sierra Leone",
+      "year": 2024,
+      "date": "2024-05-31",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Umar Museheeh Lahai",
+          "orcid": "https://orcid.org/0000-0002-1843-4494",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Joseph Ngegba Williams",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Albert Tommy Sheku",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Mechanical Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.internationaljournalssrg.org/../IJME/2024/Volume11-Issue5/IJME-V11I5P106.pdf",
+      "topics": [
+        "Environmental science",
+        "Waste management",
+        "Environmental health",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4392624269",
+      "doi": "https://doi.org/10.5194/egusphere-egu24-15670",
+      "title": "Hydro-meteorological and Agricultural drought assessment under Solar Radiation Modification over the Niger river basin in West Africa",
+      "year": 2024,
+      "date": "2024-03-09",
+      "type": "preprint",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Amadou Coulibaly",
+          "orcid": "https://orcid.org/0000-0002-5846-4161",
+          "isRcees": false
+        },
+        {
+          "name": "Abdoulaye Ballo",
+          "orcid": "https://orcid.org/0000-0001-8523-5914",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Windmanagda Sawadogo",
+          "orcid": "https://orcid.org/0000-0001-7641-4179",
+          "isRcees": false
+        },
+        {
+          "name": "Amadou Coulibaly1*",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": null,
+      "venueType": null,
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.5194/egusphere-egu24-15670",
+      "topics": [
+        "Environmental science",
+        "Geography",
+        "Climatology",
+        "Water resource management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4404192010",
+      "doi": "https://doi.org/10.1016/b978-0-443-23627-3.00018-1",
+      "title": "List of contributors",
+      "year": 2024,
+      "date": "2024-11-08",
+      "type": "book-chapter",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Daud Abdul",
+          "orcid": "https://orcid.org/0000-0002-9920-194X",
+          "isRcees": false
+        },
+        {
+          "name": "Alhassan Abdul-Wadud",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": false
+        },
+        {
+          "name": "Muhammad Abubakar",
+          "orcid": "https://orcid.org/0009-0000-6005-6549",
+          "isRcees": false
+        },
+        {
+          "name": "Abubakari Ahmed",
+          "orcid": "https://orcid.org/0000-0001-5574-614X",
+          "isRcees": false
+        },
+        {
+          "name": "Ernest Nii Teiko Aryee",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Dunee Donatus",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Bo Feng",
+          "orcid": "https://orcid.org/0000-0002-7045-6455",
+          "isRcees": false
+        },
+        {
+          "name": "Junwen Feng",
+          "orcid": "https://orcid.org/0000-0003-2273-5588",
+          "isRcees": false
+        },
+        {
+          "name": "Sidique Gawusu",
+          "orcid": "https://orcid.org/0000-0003-1877-1092",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Issah Imoro",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Seidu Abdulai Jamatutu",
+          "orcid": "https://orcid.org/0000-0002-1363-6345",
+          "isRcees": false
+        },
+        {
+          "name": "Siddartha Ramakanth Keshavadasu",
+          "orcid": "https://orcid.org/0000-0003-2153-2981",
+          "isRcees": false
+        },
+        {
+          "name": "Owusu Sarfo Kwabena",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Asante Kwame",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Abdul-Latif Mohammed",
+          "orcid": "https://orcid.org/0000-0002-0035-711X",
+          "isRcees": false
+        },
+        {
+          "name": "Sherif Nurudeen",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Frimpong Atta Junior Osei",
+          "orcid": "https://orcid.org/0000-0003-4980-9946",
+          "isRcees": false
+        },
+        {
+          "name": "De-Graft Owusu-Manu",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Sherry Oyagha",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Forson Peprah",
+          "orcid": "https://orcid.org/0000-0002-9813-3316",
+          "isRcees": false
+        },
+        {
+          "name": "Salia Raqib Abu",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Rafiw Seidu",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Moomin Solahudeen Tando",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Huaming Song",
+          "orcid": "https://orcid.org/0000-0001-5773-4230",
+          "isRcees": false
+        },
+        {
+          "name": "Arsalan Tanveer",
+          "orcid": "https://orcid.org/0000-0003-4519-0701",
+          "isRcees": false
+        },
+        {
+          "name": "Ibrahim Nandom Yakubu",
+          "orcid": "https://orcid.org/0000-0003-4424-996X",
+          "isRcees": false
+        },
+        {
+          "name": "Sufyan Yakubu",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Kyei Emmanuel Yeboah",
+          "orcid": "https://orcid.org/0009-0002-6645-9263",
+          "isRcees": false
+        },
+        {
+          "name": "Ijaz Younis",
+          "orcid": "https://orcid.org/0000-0001-9828-8441",
+          "isRcees": false
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/b978-0-443-23627-3.00018-1",
+      "topics": [
+        "Computer science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4399283834",
+      "doi": "https://doi.org/10.1007/s41403-024-00485-4",
+      "title": "Assessment of Health Impacts of Rock Blasting Activities on Ntotoroso and Gyedu Communities, Ahafo Region, Ghana",
+      "year": 2024,
+      "date": "2024-06-03",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Sam Knight Owusu Awuah",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": "https://orcid.org/0000-0001-7161-856X",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Appiah-Adjei",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": true
+        },
+        {
+          "name": "Saeed Ibn Idris Kofi Yeboah",
+          "orcid": "https://orcid.org/0000-0002-8088-4920",
+          "isRcees": true
+        },
+        {
+          "name": "J. K. Borkloe",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": true
+        },
+        {
+          "name": "Clement Apuri Wezenamo",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Michael Owusu",
+          "orcid": "https://orcid.org/0000-0001-5066-150X",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Adu-Tutu",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Transactions of Indian National Academy of Engineering",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "http://dx.doi.org/10.1007/s41403-024-00485-4",
+      "topics": [
+        "Geography",
+        "Mining engineering",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4405186900",
+      "doi": "https://doi.org/10.1016/j.sciaf.2024.e02497",
+      "title": "Stochastic behaviour of Ghana power grid with massive electro-mobility penetration",
+      "year": 2024,
+      "date": "2024-12-09",
+      "type": "article",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Abass Ishaq",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Jonas Yeboah",
+          "orcid": "https://orcid.org/0000-0001-9997-3555",
+          "isRcees": false
+        },
+        {
+          "name": "William Duodu Asihene",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2024.e02497",
+      "topics": [
+        "Electrical engineering",
+        "Physics",
+        "Mathematics",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4362716217",
+      "doi": "https://doi.org/10.1016/j.envpol.2023.121589",
+      "title": "Disentangling nitrate pollution sources and apportionment in a tropical agricultural ecosystem using a multi-stable isotope model",
+      "year": 2023,
+      "date": "2023-04-06",
+      "type": "article",
+      "citations": 48,
+      "authors": [
+        {
+          "name": "David Saka",
+          "orcid": "https://orcid.org/0000-0002-0560-3922",
+          "isRcees": true
+        },
+        {
+          "name": "Joseph Adu-Gyamfi",
+          "orcid": "https://orcid.org/0009-0006-7273-0223",
+          "isRcees": false
+        },
+        {
+          "name": "Grzegorz Skrzypek",
+          "orcid": "https://orcid.org/0000-0002-5686-2393",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Lee Heng",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Juan Antonio Torres- Martínez",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Environmental Pollution",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.envpol.2023.121589",
+      "topics": [
+        "Environmental science",
+        "Environmental chemistry",
+        "Ecology",
+        "Chemistry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4389323224",
+      "doi": "https://doi.org/10.1155/2023/8823507",
+      "title": "The Role of Nuclear Energy in Reducing Greenhouse Gas (GHG) Emissions and Energy Security: A Systematic Review",
+      "year": 2023,
+      "date": "2023-12-04",
+      "type": "review",
+      "citations": 33,
+      "authors": [
+        {
+          "name": "Emmanuel Kusi Addo",
+          "orcid": "https://orcid.org/0009-0001-9241-1645",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Seth Kofi Debrah",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Energy Research",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://downloads.hindawi.com/journals/ijer/2023/8823507.pdf",
+      "topics": [
+        "Environmental science",
+        "Natural resource economics",
+        "Environmental resource management",
+        "Business"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4386912780",
+      "doi": "https://doi.org/10.1016/j.egyr.2023.09.073",
+      "title": "Techno-economic and environmental estimation assessment of floating solar PV power generation on Akosombo dam reservoir in Ghana",
+      "year": 2023,
+      "date": "2023-09-22",
+      "type": "article",
+      "citations": 32,
+      "authors": [
+        {
+          "name": "Mohammed Okoe Alhassan",
+          "orcid": "https://orcid.org/0000-0002-2294-3072",
+          "isRcees": false
+        },
+        {
+          "name": "Richard Opoku",
+          "orcid": "https://orcid.org/0000-0001-8766-3402",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": true
+        },
+        {
+          "name": "George Yaw Obeng",
+          "orcid": "https://orcid.org/0000-0002-5539-6095",
+          "isRcees": false
+        },
+        {
+          "name": "Charles K.K. Sekyere",
+          "orcid": "https://orcid.org/0000-0002-6987-9047",
+          "isRcees": false
+        },
+        {
+          "name": "Peter Nyanor",
+          "orcid": "https://orcid.org/0000-0003-4388-2771",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Reports",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egyr.2023.09.073",
+      "topics": [
+        "Environmental science",
+        "Environmental engineering",
+        "Engineering",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4383534381",
+      "doi": "https://doi.org/10.1080/14786451.2023.2227294",
+      "title": "A review of hybrid renewable energies optimisation: design, methodologies, and criteria",
+      "year": 2023,
+      "date": "2023-07-07",
+      "type": "review",
+      "citations": 31,
+      "authors": [
+        {
+          "name": "Olalekan Kunle Ajiboye",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Chimere Victor Ochiegbu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        }
+      ],
+      "venue": "International Journal of Sustainable Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/14786451.2023.2227294?download=true",
+      "topics": [
+        "Computer science",
+        "Reliability engineering",
+        "Systems engineering",
+        "Risk analysis (engineering)"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4319324156",
+      "doi": "https://doi.org/10.1016/j.esd.2022.12.014",
+      "title": "Assessment of low-carbon energy transitions policies for the energy demand sector of Cameroon",
+      "year": 2023,
+      "date": "2023-01-11",
+      "type": "article",
+      "citations": 31,
+      "authors": [
+        {
+          "name": "Yvan Ayuketah",
+          "orcid": "https://orcid.org/0000-0002-3279-9975",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Athanasios Dagoumas",
+          "orcid": "https://orcid.org/0000-0001-7524-5262",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Sustainable Development/Energy for sustainable development",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.esd.2022.12.014",
+      "topics": [
+        "Environmental economics",
+        "Natural resource economics",
+        "Economics",
+        "Business"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4385483668",
+      "doi": "https://doi.org/10.1016/j.sciaf.2023.e01836",
+      "title": "Pyrolysis of plastic waste into diesel engine-grade oil",
+      "year": 2023,
+      "date": "2023-08-02",
+      "type": "article",
+      "citations": 28,
+      "authors": [
+        {
+          "name": "N.K. Ndiaye",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Amankwah",
+          "orcid": "https://orcid.org/0000-0001-6231-1419",
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2023.e01836",
+      "topics": [
+        "Waste management",
+        "Materials science",
+        "Chemical engineering",
+        "Organic chemistry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4385567253",
+      "doi": "https://doi.org/10.1016/j.sciaf.2023.e01843",
+      "title": "Greenhouse gas (GHG) emissions reduction in the electricity sector: Implications of increasing renewable energy penetration in Ghana's electricity generation mix",
+      "year": 2023,
+      "date": "2023-08-04",
+      "type": "article",
+      "citations": 26,
+      "authors": [
+        {
+          "name": "Ebenezer Nyarko Kumi",
+          "orcid": "https://orcid.org/0000-0001-9027-3739",
+          "isRcees": true
+        },
+        {
+          "name": "Mudasiru Mahama",
+          "orcid": "https://orcid.org/0000-0002-1279-3226",
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2023.e01843",
+      "topics": [
+        "Environmental science",
+        "Natural resource economics",
+        "Environmental engineering",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4321234724",
+      "doi": "https://doi.org/10.3389/frsc.2023.1062482",
+      "title": "Driving the clean energy transition in Cameroon: A sustainable pathway to meet the Paris climate accord and the power supply/demand gap",
+      "year": 2023,
+      "date": "2023-02-17",
+      "type": "article",
+      "citations": 22,
+      "authors": [
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Yvan Ayuketah",
+          "orcid": "https://orcid.org/0000-0002-3279-9975",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Tanyi",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Eric Effah-Donyina",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        }
+      ],
+      "venue": "Frontiers in Sustainable Cities",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.frontiersin.org/articles/10.3389/frsc.2023.1062482/pdf",
+      "topics": [
+        "Natural resource economics",
+        "Business",
+        "Environmental economics",
+        "Environmental resource management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4386519353",
+      "doi": "https://doi.org/10.1016/j.sciaf.2023.e01894",
+      "title": "Data analytics for prediction of solar PV power generation and system performance: A real case of Bui Solar Generating Station, Ghana",
+      "year": 2023,
+      "date": "2023-09-01",
+      "type": "article",
+      "citations": 21,
+      "authors": [
+        {
+          "name": "Dampaak Abdulai",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Peter Acheampong",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2023.e01894",
+      "topics": [
+        "Environmental economics",
+        "Computer science",
+        "Environmental science",
+        "Reliability engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4323256156",
+      "doi": "https://doi.org/10.1080/23311916.2023.2185946",
+      "title": "Economic viability and environmental sustainability of a grid-connected solar PV plant in Yaounde - Cameroon using RETScreen expert",
+      "year": 2023,
+      "date": "2023-03-05",
+      "type": "article",
+      "citations": 20,
+      "authors": [
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Tanyi",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Eric Effah-Donyina",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Cogent Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/23311916.2023.2185946?download=true",
+      "topics": [
+        "Environmental science",
+        "Environmental engineering",
+        "Engineering",
+        "Environmental economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4360975697",
+      "doi": "https://doi.org/10.1007/s11069-023-05915-0",
+      "title": "GIS-based multi-criteria analytical hierarchy process modelling for urban flood vulnerability analysis, Accra Metropolis",
+      "year": 2023,
+      "date": "2023-03-20",
+      "type": "article",
+      "citations": 19,
+      "authors": [
+        {
+          "name": "Raymond Seyeram Nkonu",
+          "orcid": "https://orcid.org/0000-0002-4433-1683",
+          "isRcees": true
+        },
+        {
+          "name": "Mary Antwi",
+          "orcid": "https://orcid.org/0000-0002-6226-5464",
+          "isRcees": false
+        },
+        {
+          "name": "Mark Amo-Boateng",
+          "orcid": "https://orcid.org/0000-0002-8564-6307",
+          "isRcees": false
+        },
+        {
+          "name": "Benjamin Wullobayi Dekongmen",
+          "orcid": "https://orcid.org/0000-0001-7047-7937",
+          "isRcees": false
+        }
+      ],
+      "venue": "Natural Hazards",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1007/s11069-023-05915-0",
+      "topics": [
+        "Environmental science",
+        "Geography",
+        "Water resource management",
+        "Cartography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4362731782",
+      "doi": "https://doi.org/10.1080/23311916.2023.2199511",
+      "title": "A review of the sources, distribution sequences, and health risks associated with exposure to atmospheric polycyclic aromatic hydrocarbons",
+      "year": 2023,
+      "date": "2023-04-09",
+      "type": "review",
+      "citations": 19,
+      "authors": [
+        {
+          "name": "Godfred Safo-Adu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Gorman Ofosu",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Cogent Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1080/23311916.2023.2199511",
+      "topics": [
+        "Environmental science",
+        "Environmental chemistry",
+        "Environmental health",
+        "Medicine"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4388210523",
+      "doi": "https://doi.org/10.1016/j.envc.2023.100785",
+      "title": "Physicochemical properties and heavy metals distribution of waste fine particles and soil around urban and peri-urban dumpsites",
+      "year": 2023,
+      "date": "2023-11-02",
+      "type": "article",
+      "citations": 18,
+      "authors": [
+        {
+          "name": "Daniel Gyabaah",
+          "orcid": "https://orcid.org/0000-0002-2200-6433",
+          "isRcees": true
+        },
+        {
+          "name": "Esi Awuah",
+          "orcid": "https://orcid.org/0000-0003-0722-8801",
+          "isRcees": true
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Richard Amankwah Kuffour",
+          "orcid": "https://orcid.org/0000-0001-7704-2645",
+          "isRcees": false
+        }
+      ],
+      "venue": "Environmental Challenges",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.envc.2023.100785",
+      "topics": [
+        "Environmental science",
+        "Environmental chemistry",
+        "Environmental engineering",
+        "Chemistry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4388195147",
+      "doi": "https://doi.org/10.1016/j.heliyon.2023.e21247",
+      "title": "Impacts of LULC and climate changes on hydropower generation and development: A systematic review",
+      "year": 2023,
+      "date": "2023-10-26",
+      "type": "review",
+      "citations": 16,
+      "authors": [
+        {
+          "name": "Emmanuel Kekle Ahialey",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": false
+        }
+      ],
+      "venue": "Heliyon",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.heliyon.2023.e21247",
+      "topics": [
+        "Environmental resource management",
+        "Environmental science",
+        "Environmental planning",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4317538568",
+      "doi": "https://doi.org/10.1080/14786451.2023.2168002",
+      "title": "Assessment of the optimum location and hosting capacity of distributed solar PV in the southern interconnected grid (SIG) of Cameroon",
+      "year": 2023,
+      "date": "2023-01-20",
+      "type": "article",
+      "citations": 15,
+      "authors": [
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Tanyi",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Eric Effah-Donyina",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "International Journal of Sustainable Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.tandfonline.com/doi/pdf/10.1080/14786451.2023.2168002?download=true",
+      "topics": [
+        "Environmental science",
+        "Engineering",
+        "Automotive engineering",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4379744832",
+      "doi": "https://doi.org/10.1016/j.ecmx.2023.100403",
+      "title": "Degradation analysis of polycrystalline silicon modules from different manufacturers under the same climatic conditions",
+      "year": 2023,
+      "date": "2023-06-07",
+      "type": "article",
+      "citations": 15,
+      "authors": [
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": true
+        },
+        {
+          "name": "Forson Peprah",
+          "orcid": "https://orcid.org/0000-0002-9813-3316",
+          "isRcees": true
+        },
+        {
+          "name": "Michael Obeng",
+          "orcid": "https://orcid.org/0000-0002-2142-377X",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Conversion and Management X",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.ecmx.2023.100403",
+      "topics": [
+        "Reliability engineering",
+        "Environmental science",
+        "Computer science",
+        "Automotive engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4387603584",
+      "doi": "https://doi.org/10.1080/27658511.2023.2265729",
+      "title": "Outdoor and indoor particle air pollution and its health consequences in African cities: New evidence and an exhortation",
+      "year": 2023,
+      "date": "2023-10-12",
+      "type": "article",
+      "citations": 14,
+      "authors": [
+        {
+          "name": "Godfred Safo-Adu",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Ismaila Emahi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Francis Gorman Ofosu",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Sustainable Environment",
+      "venueType": "book series",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1080/27658511.2023.2265729",
+      "topics": [
+        "Environmental health",
+        "Environmental science",
+        "Environmental protection",
+        "Natural resource economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4378895093",
+      "doi": "https://doi.org/10.1016/j.enpol.2023.113644",
+      "title": "A techno-economic and environmental assessment of a low-carbon power generation system in Cameroon",
+      "year": 2023,
+      "date": "2023-05-31",
+      "type": "article",
+      "citations": 13,
+      "authors": [
+        {
+          "name": "Yvan Ayuketah",
+          "orcid": "https://orcid.org/0000-0002-3279-9975",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Athanasios Dagoumas",
+          "orcid": "https://orcid.org/0000-0001-7524-5262",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Policy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.enpol.2023.113644",
+      "topics": [
+        "Environmental economics",
+        "Natural resource economics",
+        "Environmental resource management",
+        "Business"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4367554915",
+      "doi": "https://doi.org/10.1016/j.heliyon.2023.e15827",
+      "title": "Characterization of dumpsite waste of different ages in Ghana",
+      "year": 2023,
+      "date": "2023-05-01",
+      "type": "article",
+      "citations": 13,
+      "authors": [
+        {
+          "name": "Daniel Gyabaah",
+          "orcid": "https://orcid.org/0000-0002-2200-6433",
+          "isRcees": true
+        },
+        {
+          "name": "Esi Awuah",
+          "orcid": "https://orcid.org/0000-0003-0722-8801",
+          "isRcees": true
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Richard Amankwah Kuffour",
+          "orcid": "https://orcid.org/0000-0001-7704-2645",
+          "isRcees": false
+        }
+      ],
+      "venue": "Heliyon",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "http://www.cell.com/article/S2405844023030347/pdf",
+      "topics": [
+        "Environmental science",
+        "Waste management",
+        "Geography",
+        "Environmental engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4324057993",
+      "doi": "https://doi.org/10.1080/23311916.2023.2178125",
+      "title": "A Review of sewerage and drainage systems typologies with case study in Abidjan, Côte d'Ivoire: failures, policy and management techniques perspectives",
+      "year": 2023,
+      "date": "2023-03-13",
+      "type": "review",
+      "citations": 10,
+      "authors": [
+        {
+          "name": "Zié Adama Ouattara",
+          "orcid": "https://orcid.org/0000-0001-8030-6680",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": false
+        },
+        {
+          "name": "Kouassi Dongo",
+          "orcid": "https://orcid.org/0000-0002-2032-290X",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        }
+      ],
+      "venue": "Cogent Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1080/23311916.2023.2178125",
+      "topics": [
+        "Environmental planning",
+        "Environmental resource management",
+        "Business",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4390141979",
+      "doi": "https://doi.org/10.1007/s10668-023-04339-x",
+      "title": "Assessing livelihood and environmental implications of artisanal and small-scale mining: a case of Akango mining, Nzema East Municipality, Western Region, Ghana",
+      "year": 2023,
+      "date": "2023-12-23",
+      "type": "article",
+      "citations": 10,
+      "authors": [
+        {
+          "name": "Kingsford Cudjoe",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": "https://orcid.org/0000-0001-7161-856X",
+          "isRcees": false
+        },
+        {
+          "name": "J. K. Borkloe",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Adjei",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": false
+        },
+        {
+          "name": "Saeed Ibn Idris Kofi Yeboah",
+          "orcid": "https://orcid.org/0000-0002-8088-4920",
+          "isRcees": false
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": false
+        },
+        {
+          "name": "Clement Apuri Wezenamo",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Michael Owusu",
+          "orcid": "https://orcid.org/0000-0001-5066-150X",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Adu-Tutu",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Amanda Owusu",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Environment Development and Sustainability",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s10668-023-04339-x",
+      "topics": [
+        "Geography",
+        "Environmental protection",
+        "Environmental science",
+        "Ecology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4360975718",
+      "doi": "https://doi.org/10.1007/s41324-023-00518-0",
+      "title": "Deep learning-based framework for vegetation hazard monitoring near powerlines",
+      "year": 2023,
+      "date": "2023-03-20",
+      "type": "article",
+      "citations": 8,
+      "authors": [
+        {
+          "name": "Nana Ekow Nkwa Sey",
+          "orcid": "https://orcid.org/0000-0001-8143-3825",
+          "isRcees": true
+        },
+        {
+          "name": "Mark Amo-Boateng",
+          "orcid": "https://orcid.org/0000-0002-8564-6307",
+          "isRcees": false
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": false
+        }
+      ],
+      "venue": "Spatial Information Research",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s41324-023-00518-0",
+      "topics": [
+        "Remote sensing",
+        "Artificial intelligence",
+        "Computer science",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4319925043",
+      "doi": "https://doi.org/10.3389/frsc.2023.1032459",
+      "title": "Operational and structural diagnosis of sewerage and drainage networks in Côte d'Ivoire, West Africa",
+      "year": 2023,
+      "date": "2023-02-10",
+      "type": "article",
+      "citations": 7,
+      "authors": [
+        {
+          "name": "Zié Adama Ouattara",
+          "orcid": "https://orcid.org/0000-0001-8030-6680",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": false
+        },
+        {
+          "name": "Kouassi Dongo",
+          "orcid": "https://orcid.org/0000-0002-2032-290X",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": false
+        },
+        {
+          "name": "Armand Ketcha Malan Kablan",
+          "orcid": "https://orcid.org/0000-0002-9739-1559",
+          "isRcees": false
+        },
+        {
+          "name": "Kouamedai Mathias Kangah",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Frontiers in Sustainable Cities",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.3389/frsc.2023.1032459",
+      "topics": [
+        "Water resource management",
+        "Environmental science",
+        "Environmental engineering",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4382461052",
+      "doi": "https://doi.org/10.1016/j.sajce.2023.06.008",
+      "title": "Optimisation of the anaerobic co-digestion process of Calotropis procera leaves, stems, and cow dung using a mixture design",
+      "year": 2023,
+      "date": "2023-06-27",
+      "type": "article",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "Solal Stephanie Djimtoingar",
+          "orcid": "https://orcid.org/0000-0001-5754-4525",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Atta Kuranchie",
+          "orcid": "https://orcid.org/0000-0001-7298-9258",
+          "isRcees": false
+        }
+      ],
+      "venue": "South African Journal of Chemical Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sajce.2023.06.008",
+      "topics": [
+        "Chemistry",
+        "Agronomy",
+        "Botany",
+        "Biology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4381895818",
+      "doi": "https://doi.org/10.1007/978-3-031-36007-7_4",
+      "title": "Renewable Energy Communities in Africa: A Case Study of Five Selected Countries",
+      "year": 2023,
+      "date": "2023-01-01",
+      "type": "book-chapter",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Mathew Anabadongo Atinsia",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Kankam O. Adu-Kankam",
+          "orcid": "https://orcid.org/0000-0001-8572-1170",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        }
+      ],
+      "venue": "IFIP advances in information and communication technology",
+      "venueType": "book series",
+      "isOpenAccess": true,
+      "url": "https://inria.hal.science/hal-05473092",
+      "topics": [
+        "Business",
+        "Economic growth",
+        "Political science",
+        "Finance"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4366975663",
+      "doi": "https://doi.org/10.1007/s12517-023-11424-y",
+      "title": "Environmental and health impacts of mining: a case study in Kenyasi-Ahafo Region, Ghana",
+      "year": 2023,
+      "date": "2023-04-24",
+      "type": "article",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Albert Martey Addo",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": "https://orcid.org/0000-0001-7161-856X",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Appiah-Adjei",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Nana Osei Bonsu Ackerson",
+          "orcid": "https://orcid.org/0000-0001-6010-7107",
+          "isRcees": true
+        },
+        {
+          "name": "Saeed Ibn Idris Kofi Yeboah",
+          "orcid": "https://orcid.org/0000-0002-8088-4920",
+          "isRcees": true
+        },
+        {
+          "name": "J. K. Borkloe",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": true
+        },
+        {
+          "name": "Clement Apuri Wezenamo",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Michael Owusu",
+          "orcid": "https://orcid.org/0000-0001-5066-150X",
+          "isRcees": false
+        }
+      ],
+      "venue": "Arabian Journal of Geosciences",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s12517-023-11424-y",
+      "topics": [
+        "Environmental health",
+        "Geography",
+        "Environmental planning",
+        "Environmental protection"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4388913859",
+      "doi": "https://doi.org/10.1016/j.egyr.2023.11.018",
+      "title": "Energy analysis for efficient mechanisation of palm oil extraction in Ghana: Targeting circular economy",
+      "year": 2023,
+      "date": "2023-11-01",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Gilbert Ayine Akolgo",
+          "orcid": "https://orcid.org/0000-0001-8424-8983",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": true
+        },
+        {
+          "name": "Edward A. Awafo",
+          "orcid": "https://orcid.org/0000-0001-8416-3621",
+          "isRcees": true
+        },
+        {
+          "name": "Killian Asampana Asosega",
+          "orcid": "https://orcid.org/0000-0002-3140-2649",
+          "isRcees": false
+        },
+        {
+          "name": "Francis Kemausuor",
+          "orcid": "https://orcid.org/0000-0001-5507-8399",
+          "isRcees": false
+        },
+        {
+          "name": "Francis Kumi",
+          "orcid": "https://orcid.org/0000-0003-2815-0134",
+          "isRcees": false
+        },
+        {
+          "name": "Kofi Asamoah Adu-Poku",
+          "orcid": "https://orcid.org/0000-0002-9703-4674",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Reports",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egyr.2023.11.018",
+      "topics": [
+        "Agricultural engineering",
+        "Environmental science",
+        "Pulp and paper industry",
+        "Agricultural science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4380990055",
+      "doi": "https://doi.org/10.3389/frwa.2023.1071686",
+      "title": "Assessment of solid and liquid wastes management and health impacts along the failed sewerage systems in capital cities of African countries: case of Abidjan, Côte d'Ivoire",
+      "year": 2023,
+      "date": "2023-06-16",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Zié Adama Ouattara",
+          "orcid": "https://orcid.org/0000-0001-8030-6680",
+          "isRcees": true
+        },
+        {
+          "name": "Kouassi Dongo",
+          "orcid": "https://orcid.org/0000-0002-2032-290X",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Attiogbé",
+          "orcid": "https://orcid.org/0000-0002-3043-9896",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": true
+        },
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Guemegbo Hypolithe Gogo",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Frontiers in Water",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.frontiersin.org/articles/10.3389/frwa.2023.1071686/pdf",
+      "topics": [
+        "Veterinary medicine",
+        "Environmental health",
+        "Geography",
+        "Toxicology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4389235515",
+      "doi": "https://doi.org/10.1007/978-3-031-46282-5_10",
+      "title": "The Power of Procedural Justice in the Planning of Energy Projects",
+      "year": 2023,
+      "date": "2023-12-01",
+      "type": "book-chapter",
+      "citations": 2,
+      "authors": [
+        {
+          "name": "Nerissa E. L. Anku",
+          "orcid": "https://orcid.org/0000-0002-8041-9383",
+          "isRcees": true
+        }
+      ],
+      "venue": "Just Transitions",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-031-46282-5_10.pdf",
+      "topics": [
+        "Business",
+        "Public relations",
+        "Environmental economics",
+        "Economic growth"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4386832126",
+      "doi": "https://doi.org/10.2166/washdev.2023.112",
+      "title": "Response to COVID-19: building resilience through water and wastewater management in Ghana",
+      "year": 2023,
+      "date": "2023-09-16",
+      "type": "article",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Bertha Darteh",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Olufunke Cofie",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Josiane Nikiema",
+          "orcid": "https://orcid.org/0000-0001-8802-0564",
+          "isRcees": false
+        },
+        {
+          "name": "Everisto Mapedza",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Solomie Gebrezgabher",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Andrew Emmanuel Okem",
+          "orcid": "https://orcid.org/0000-0001-5449-7639",
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Water Sanitation and Hygiene for Development",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://iwaponline.com/washdev/article-pdf/doi/10.2166/washdev.2023.112/1292215/washdev2023112.pdf",
+      "topics": [
+        "Business",
+        "Environmental planning",
+        "Environmental resource management",
+        "Economic growth"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4224311823",
+      "doi": "https://doi.org/10.1016/j.sciaf.2022.e01199",
+      "title": "The role of renewable energies in sustainable development of Ghana",
+      "year": 2022,
+      "date": "2022-04-23",
+      "type": "article",
+      "citations": 77,
+      "authors": [
+        {
+          "name": "Mark Amoah Nyasapoh",
+          "orcid": "https://orcid.org/0000-0002-4722-6256",
+          "isRcees": true
+        },
+        {
+          "name": "Michael Deho Elorm",
+          "orcid": "https://orcid.org/0000-0002-2744-2031",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": false
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2022.e01199",
+      "topics": [
+        "Business",
+        "Environmental economics",
+        "Natural resource economics",
+        "Economic growth"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4205103286",
+      "doi": "https://doi.org/10.1016/j.envc.2021.100439",
+      "title": "Assessing climate change projections in the Volta Basin using the CORDEX-Africa climate simulations and statistical bias-correction",
+      "year": 2022,
+      "date": "2022-01-01",
+      "type": "article",
+      "citations": 69,
+      "authors": [
+        {
+          "name": "Kofi A. Yeboah",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Mensah Mortey",
+          "orcid": "https://orcid.org/0000-0003-2199-7340",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel A. Okyereh",
+          "orcid": "https://orcid.org/0000-0001-9640-797X",
+          "isRcees": true
+        }
+      ],
+      "venue": "Environmental Challenges",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.envc.2021.100439",
+      "topics": [
+        "Environmental science",
+        "Climatology",
+        "Meteorology",
+        "Statistics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4306881664",
+      "doi": "https://doi.org/10.1016/j.egyr.2022.10.120",
+      "title": "Decision optimization techniques for evaluating renewable energy resources for power generation in Ghana: MCDM approach",
+      "year": 2022,
+      "date": "2022-10-20",
+      "type": "article",
+      "citations": 68,
+      "authors": [
+        {
+          "name": "Wilson Ofori Sarkodie",
+          "orcid": "https://orcid.org/0000-0002-0788-5599",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Benjamin Chris Ampimah",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Reports",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egyr.2022.10.120",
+      "topics": [
+        "Environmental economics",
+        "Computer science",
+        "Environmental science",
+        "Operations research"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4294335518",
+      "doi": "https://doi.org/10.1080/23311916.2022.2115283",
+      "title": "A review of response surface methodology for biogas process optimization",
+      "year": 2022,
+      "date": "2022-09-02",
+      "type": "review",
+      "citations": 61,
+      "authors": [
+        {
+          "name": "Solal Stephanie Djimtoingar",
+          "orcid": "https://orcid.org/0000-0001-5754-4525",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Atta Kuranchie",
+          "orcid": "https://orcid.org/0000-0001-7298-9258",
+          "isRcees": false
+        },
+        {
+          "name": "Joseph Kusi Yankyera",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Cogent Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1080/23311916.2022.2115283",
+      "topics": [
+        "Process engineering",
+        "Computer science",
+        "Engineering",
+        "Machine learning"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4220933618",
+      "doi": "https://doi.org/10.1016/j.sciaf.2022.e01162",
+      "title": "Solar energy policy implementation in Ghana: A LEAP model analysis",
+      "year": 2022,
+      "date": "2022-03-21",
+      "type": "article",
+      "citations": 48,
+      "authors": [
+        {
+          "name": "Araba Amo-Aidoo",
+          "orcid": "https://orcid.org/0000-0003-1963-1753",
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer Nyarko Kumi",
+          "orcid": "https://orcid.org/0000-0001-9027-3739",
+          "isRcees": true
+        },
+        {
+          "name": "Oliver Hensel",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Joseph Kudadam Korese",
+          "orcid": "https://orcid.org/0000-0001-9895-1717",
+          "isRcees": false
+        },
+        {
+          "name": "Barbara Sturm",
+          "orcid": "https://orcid.org/0000-0002-6269-1906",
+          "isRcees": false
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2022.e01162",
+      "topics": [
+        "Environmental economics",
+        "Natural resource economics",
+        "Business",
+        "Environmental science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4220735054",
+      "doi": "https://doi.org/10.1016/j.egyr.2022.03.015",
+      "title": "Characterization of fuel and mechanical properties of charred agricultural wastes: Experimental and statistical studies",
+      "year": 2022,
+      "date": "2022-03-26",
+      "type": "article",
+      "citations": 44,
+      "authors": [
+        {
+          "name": "Kofi Asamoah Adu-Poku",
+          "orcid": "https://orcid.org/0000-0002-9703-4674",
+          "isRcees": false
+        },
+        {
+          "name": "Desmond Appiah",
+          "orcid": "https://orcid.org/0000-0002-1653-3237",
+          "isRcees": false
+        },
+        {
+          "name": "Killian Asampana Asosega",
+          "orcid": "https://orcid.org/0000-0002-3140-2649",
+          "isRcees": false
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer Nyarko Kumi",
+          "orcid": "https://orcid.org/0000-0001-9027-3739",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Akowuah",
+          "orcid": "https://orcid.org/0000-0002-1390-5605",
+          "isRcees": false
+        },
+        {
+          "name": "Gilbert Ayine Akolgo",
+          "orcid": "https://orcid.org/0000-0001-8424-8983",
+          "isRcees": false
+        },
+        {
+          "name": "Daniel Gyamfi",
+          "orcid": "https://orcid.org/0000-0001-9406-5873",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Reports",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egyr.2022.03.015",
+      "topics": [
+        "Materials science",
+        "Pulp and paper industry",
+        "Environmental science",
+        "Composite material"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4280518540",
+      "doi": "https://doi.org/10.1016/j.agsy.2022.103429",
+      "title": "Climate change-induced reduction in agricultural land suitability of West-Africa's inland valley landscapes",
+      "year": 2022,
+      "date": "2022-05-12",
+      "type": "article",
+      "citations": 32,
+      "authors": [
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "T.A. Groen",
+          "orcid": "https://orcid.org/0000-0001-6333-2553",
+          "isRcees": false
+        },
+        {
+          "name": "Elliott Ronald Dossou‐Yovo",
+          "orcid": "https://orcid.org/0000-0002-3565-8879",
+          "isRcees": false
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": false
+        },
+        {
+          "name": "Sander J. Zwart",
+          "orcid": "https://orcid.org/0000-0002-5091-1801",
+          "isRcees": false
+        }
+      ],
+      "venue": "Agricultural Systems",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0308521X22000658-ga1_lrg.jpg",
+      "topics": [
+        "Environmental science",
+        "Physical geography",
+        "Climatology",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4223471559",
+      "doi": "https://doi.org/10.1016/j.sciaf.2022.e01172",
+      "title": "Impact assessment of grid tied rooftop PV systems on LV distribution network",
+      "year": 2022,
+      "date": "2022-04-12",
+      "type": "article",
+      "citations": 30,
+      "authors": [
+        {
+          "name": "Forson Peprah",
+          "orcid": "https://orcid.org/0000-0002-9813-3316",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Mark Amo-Boateng",
+          "orcid": "https://orcid.org/0000-0002-8564-6307",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Effah-Donyina",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2022.e01172",
+      "topics": [
+        "Computer science",
+        "Reliability engineering",
+        "Automotive engineering",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4310372403",
+      "doi": "https://doi.org/10.1016/j.esr.2022.101004",
+      "title": "Power generation expansion pathways: A policy analysis of the Cameroon power system",
+      "year": 2022,
+      "date": "2022-11-01",
+      "type": "article",
+      "citations": 30,
+      "authors": [
+        {
+          "name": "Yvan Ayuketah",
+          "orcid": "https://orcid.org/0000-0002-3279-9975",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": false
+        },
+        {
+          "name": "Athanasios Dagoumas",
+          "orcid": "https://orcid.org/0000-0001-7524-5262",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Strategy Reviews",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.esr.2022.101004",
+      "topics": [
+        "Environmental economics",
+        "Economics",
+        "Natural resource economics",
+        "Business"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4293874875",
+      "doi": "https://doi.org/10.1016/j.apenergy.2022.119795",
+      "title": "Modeling climate change impact on inflow and hydropower generation of Nangbeto dam in West Africa using multi-model CORDEX ensemble and ensemble machine learning",
+      "year": 2022,
+      "date": "2022-08-26",
+      "type": "article",
+      "citations": 28,
+      "authors": [
+        {
+          "name": "Salomon Obahoundjé",
+          "orcid": "https://orcid.org/0000-0001-8093-5241",
+          "isRcees": false
+        },
+        {
+          "name": "Arona Diédhiou",
+          "orcid": "https://orcid.org/0000-0003-3841-1027",
+          "isRcees": false
+        },
+        {
+          "name": "Laurent Dubus",
+          "orcid": "https://orcid.org/0000-0002-3987-646X",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Alamou",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Ernest Amoussou",
+          "orcid": "https://orcid.org/0000-0002-9402-4446",
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": false
+        }
+      ],
+      "venue": "Applied Energy",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.apenergy.2022.119795",
+      "topics": [
+        "Environmental science",
+        "Climatology",
+        "Meteorology",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4226219447",
+      "doi": "https://doi.org/10.1016/j.ejrs.2022.03.017",
+      "title": "Instance segmentation scheme for roofs in rural areas based on Mask R-CNN",
+      "year": 2022,
+      "date": "2022-04-07",
+      "type": "article",
+      "citations": 26,
+      "authors": [
+        {
+          "name": "Mark Amo-Boateng",
+          "orcid": "https://orcid.org/0000-0002-8564-6307",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Ekow Nkwa Sey",
+          "orcid": "https://orcid.org/0000-0001-8143-3825",
+          "isRcees": true
+        },
+        {
+          "name": "Amprofi Ampah Amproche",
+          "orcid": "https://orcid.org/0000-0002-1208-7006",
+          "isRcees": true
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        }
+      ],
+      "venue": "The Egyptian Journal of Remote Sensing and Space Science",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.ejrs.2022.03.017",
+      "topics": [
+        "Artificial intelligence",
+        "Computer science",
+        "Geography",
+        "Cartography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4210677185",
+      "doi": "https://doi.org/10.1016/j.seta.2022.102034",
+      "title": "Characterisation of degradation of photovoltaic (PV) module technologies in different climatic zones in Ghana",
+      "year": 2022,
+      "date": "2022-02-02",
+      "type": "article",
+      "citations": 26,
+      "authors": [
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Siniša Djordjević",
+          "orcid": "https://orcid.org/0000-0003-1770-4728",
+          "isRcees": false
+        }
+      ],
+      "venue": "Sustainable Energy Technologies and Assessments",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.seta.2022.102034",
+      "topics": [
+        "Environmental science",
+        "Physical geography",
+        "Ecology",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4205285577",
+      "doi": "https://doi.org/10.2166/washdev.2022.152",
+      "title": "Drinking water quality and health risk assessment of intake and point-of-use water sources in Tano North Municipality, Ghana",
+      "year": 2022,
+      "date": "2022-01-18",
+      "type": "article",
+      "citations": 24,
+      "authors": [
+        {
+          "name": "Saeed Ibn Idris Kofi Yeboah",
+          "orcid": "https://orcid.org/0000-0002-8088-4920",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        }
+      ],
+      "venue": "Journal of Water Sanitation and Hygiene for Development",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://iwaponline.com/washdev/article-pdf/12/2/157/1011710/washdev0120157.pdf",
+      "topics": [
+        "Environmental health",
+        "Environmental science",
+        "Toxicology",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4225012875",
+      "doi": "https://doi.org/10.1155/2022/5312895",
+      "title": "Estimation of CO2 Emissions of Fossil-Fueled Power Plants in Ghana: Message Analytical Model",
+      "year": 2022,
+      "date": "2022-04-26",
+      "type": "article",
+      "citations": 21,
+      "authors": [
+        {
+          "name": "Mark Amoah Nyasapoh",
+          "orcid": "https://orcid.org/0000-0002-4722-6256",
+          "isRcees": true
+        },
+        {
+          "name": "Seth Kofi Debrah",
+          "orcid": "https://orcid.org/0000-0002-0593-8124",
+          "isRcees": false
+        },
+        {
+          "name": "Nerissa E. L. Anku",
+          "orcid": "https://orcid.org/0000-0002-8041-9383",
+          "isRcees": false
+        },
+        {
+          "name": "S. Yamoah",
+          "orcid": "https://orcid.org/0000-0001-8146-818X",
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://downloads.hindawi.com/journals/jen/2022/5312895.pdf",
+      "topics": [
+        "Natural resource economics",
+        "Environmental science",
+        "Environmental economics",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4280499094",
+      "doi": "https://doi.org/10.3390/cli10050074",
+      "title": "Spatio-Temporal Trends of Precipitation and Temperature Extremes across the North-East Region of Côte d’Ivoire over the Period 1981–2020",
+      "year": 2022,
+      "date": "2022-05-20",
+      "type": "article",
+      "citations": 20,
+      "authors": [
+        {
+          "name": "Kouamé Donald Kouman",
+          "orcid": "https://orcid.org/0000-0003-3911-4112",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": false
+        },
+        {
+          "name": "Boyossoro Hélène Kouadio",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": false
+        }
+      ],
+      "venue": "Climate",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/2225-1154/10/5/74/pdf?version=1653036527",
+      "topics": [
+        "Climatology",
+        "Environmental science",
+        "Geography",
+        "Physical geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4295952995",
+      "doi": "https://doi.org/10.1155/2022/2608045",
+      "title": "Anaerobic Co-Digestion of Human Feces with Rice Straw for Biogas Production: A Case Study in Sunyani",
+      "year": 2022,
+      "date": "2022-09-15",
+      "type": "article",
+      "citations": 16,
+      "authors": [
+        {
+          "name": "Irédon Adjama",
+          "orcid": "https://orcid.org/0000-0002-9417-8330",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": true
+        },
+        {
+          "name": "Gilbert Ayine Akolgo",
+          "orcid": "https://orcid.org/0000-0001-8424-8983",
+          "isRcees": true
+        },
+        {
+          "name": "Richard Opuko",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Modelling and Simulation in Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://downloads.hindawi.com/journals/mse/2022/2608045.pdf",
+      "topics": [
+        "Environmental science",
+        "Waste management",
+        "Agronomy",
+        "Pulp and paper industry"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4281562992",
+      "doi": "https://doi.org/10.1155/2022/1031044",
+      "title": "An Overview of Energy Resource and Future Concerns for Ghana’s Electricity Generation Mix",
+      "year": 2022,
+      "date": "2022-05-25",
+      "type": "article",
+      "citations": 16,
+      "authors": [
+        {
+          "name": "Mark Amoah Nyasapoh",
+          "orcid": "https://orcid.org/0000-0002-4722-6256",
+          "isRcees": true
+        },
+        {
+          "name": "Seth Kofi Debrah",
+          "orcid": "https://orcid.org/0000-0002-0593-8124",
+          "isRcees": false
+        },
+        {
+          "name": "Daniel Kwabena Twerefou",
+          "orcid": "https://orcid.org/0000-0003-3330-3932",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Foster Kwame Kholi",
+          "orcid": "https://orcid.org/0000-0002-6974-3449",
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Energy",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://irena.org/-/media/Files/IRENA/Agency/Publication/2015/IRENA_RRA_Ghana_Nov_2015.pdf",
+      "topics": [
+        "Environmental economics",
+        "Business",
+        "Natural resource economics",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4226113181",
+      "doi": "https://doi.org/10.1007/s40808-022-01380-z",
+      "title": "Delineation of groundwater potential zones in the Central Region of Ghana using GIS and fuzzy analytic hierarchy process",
+      "year": 2022,
+      "date": "2022-04-04",
+      "type": "article",
+      "citations": 15,
+      "authors": [
+        {
+          "name": "Gustav Merrit Osiakwan",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Abass Gibrilla",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Amos T. Kabo-Bah",
+          "orcid": "https://orcid.org/0000-0002-1361-4250",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel K. Appiah-Adjei",
+          "orcid": "https://orcid.org/0000-0001-8774-6750",
+          "isRcees": false
+        },
+        {
+          "name": "Geophrey K. Anornu",
+          "orcid": "https://orcid.org/0000-0003-3691-5635",
+          "isRcees": false
+        }
+      ],
+      "venue": "Modeling Earth Systems and Environment",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1007/s40808-022-01380-z",
+      "topics": [
+        "Water resource management",
+        "Environmental science",
+        "Geography",
+        "Geology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4285201921",
+      "doi": "https://doi.org/10.1016/b978-0-323-88668-0.00010-3",
+      "title": "The role of demand-side management in sustainable energy sector development",
+      "year": 2022,
+      "date": "2022-01-01",
+      "type": "book-chapter",
+      "citations": 10,
+      "authors": [
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Effah",
+          "orcid": "https://orcid.org/0000-0003-4080-3943",
+          "isRcees": true
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-323-88668-0.00010-3",
+      "topics": [
+        "Natural resource economics",
+        "Environmental economics",
+        "Business",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4313679641",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00002-9",
+      "title": "Energy storage technologies",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 10,
+      "authors": [
+        {
+          "name": "Ebenezer Nyarko Kumi",
+          "orcid": "https://orcid.org/0000-0001-9027-3739",
+          "isRcees": true
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-12-818853-8.00002-9",
+      "topics": [
+        "Electrical engineering",
+        "Process engineering",
+        "Computer science",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4223502805",
+      "doi": "https://doi.org/10.3390/ijerph19074271",
+      "title": "Shared but Clean Household Toilets: What Makes This Possible? Evidence from Ghana and Kenya",
+      "year": 2022,
+      "date": "2022-04-02",
+      "type": "article",
+      "citations": 10,
+      "authors": [
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Isaac Monney",
+          "orcid": "https://orcid.org/0000-0003-4990-4732",
+          "isRcees": false
+        },
+        {
+          "name": "Kwaku Amaning Adjei",
+          "orcid": "https://orcid.org/0000-0003-3220-6735",
+          "isRcees": false
+        },
+        {
+          "name": "Raphael Kweyu",
+          "orcid": "https://orcid.org/0000-0002-3353-8937",
+          "isRcees": false
+        },
+        {
+          "name": "Sheillah Simiyu",
+          "orcid": "https://orcid.org/0000-0003-3069-8967",
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Environmental Research and Public Health",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/1660-4601/19/7/4271/pdf?version=1649156234",
+      "topics": [
+        "Environmental health",
+        "Business",
+        "Socioeconomics",
+        "Medicine"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4288810581",
+      "doi": "https://doi.org/10.1016/j.sciaf.2022.e01306",
+      "title": "The emergence of artisanal gold mining and local perceptions in the Hounde municipality, Burkina Faso",
+      "year": 2022,
+      "date": "2022-07-30",
+      "type": "article",
+      "citations": 9,
+      "authors": [
+        {
+          "name": "Ramata Ouedraogo",
+          "orcid": "https://orcid.org/0000-0002-1865-7399",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Kwesi Nyantakyi",
+          "orcid": "https://orcid.org/0000-0001-7161-856X",
+          "isRcees": false
+        },
+        {
+          "name": "Brahima Sorgho",
+          "orcid": "https://orcid.org/0000-0002-4344-2381",
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer K. Siabi",
+          "orcid": "https://orcid.org/0000-0001-8563-6689",
+          "isRcees": false
+        },
+        {
+          "name": "Amprofi Ampah Amproche",
+          "orcid": "https://orcid.org/0000-0002-1208-7006",
+          "isRcees": false
+        },
+        {
+          "name": "Abena Obiri-Yeboah",
+          "orcid": "https://orcid.org/0000-0002-5839-0553",
+          "isRcees": false
+        },
+        {
+          "name": "Tongnoma Zongo",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Eric Mensah Mortey",
+          "orcid": "https://orcid.org/0000-0003-2199-7340",
+          "isRcees": false
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Appiah Owusu",
+          "orcid": "https://orcid.org/0000-0003-0184-0290",
+          "isRcees": false
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2022.e01306",
+      "topics": [
+        "Geography",
+        "Socioeconomics",
+        "Economic growth",
+        "Sociology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4291582682",
+      "doi": "https://doi.org/10.1016/j.sciaf.2022.e01331",
+      "title": "Comparative assessment of a stand-alone and a grid-connected hybrid system for a community water supply system: A case study of Nankese community in the eastern region of Ghana",
+      "year": 2022,
+      "date": "2022-08-15",
+      "type": "article",
+      "citations": 8,
+      "authors": [
+        {
+          "name": "Samuel Sarpong Asamoah",
+          "orcid": "https://orcid.org/0000-0003-0772-5074",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": true
+        },
+        {
+          "name": "Gifty Serwah Mensah",
+          "orcid": "https://orcid.org/0000-0002-3154-1841",
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2022.e01331",
+      "topics": [
+        "Environmental science",
+        "Environmental economics",
+        "Business",
+        "Computer science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4308696033",
+      "doi": "https://doi.org/10.1080/23311916.2022.2143042",
+      "title": "Anaerobic digestion of calotropis procera for biogas production in arid and semi-arid regions: A case study of Chad",
+      "year": 2022,
+      "date": "2022-11-10",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Solal Stephanie Djimtoingar",
+          "orcid": "https://orcid.org/0000-0001-5754-4525",
+          "isRcees": true
+        },
+        {
+          "name": "Nana Sarfo Agyemang Derkyi",
+          "orcid": "https://orcid.org/0000-0003-0730-0965",
+          "isRcees": true
+        },
+        {
+          "name": "Francis Atta Kuranchie",
+          "orcid": "https://orcid.org/0000-0001-7298-9258",
+          "isRcees": false
+        },
+        {
+          "name": "Khadija Sarquah",
+          "orcid": "https://orcid.org/0000-0003-4257-3571",
+          "isRcees": false
+        }
+      ],
+      "venue": "Cogent Engineering",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1080/23311916.2022.2143042",
+      "topics": [
+        "Environmental science",
+        "Agroforestry",
+        "Biotechnology",
+        "Agronomy"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4290785993",
+      "doi": "https://doi.org/10.1016/j.sciaf.2022.e01313",
+      "title": "Energy analysis of poultry housing in Ghana using artificial neural networks",
+      "year": 2022,
+      "date": "2022-08-09",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Gilbert Ayine Akolgo",
+          "orcid": "https://orcid.org/0000-0001-8424-8983",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Uba",
+          "orcid": "https://orcid.org/0000-0002-7568-9565",
+          "isRcees": true
+        },
+        {
+          "name": "Richard Opoku",
+          "orcid": "https://orcid.org/0000-0001-8766-3402",
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Tweneboah‐Koduah",
+          "orcid": "https://orcid.org/0000-0003-0054-3200",
+          "isRcees": false
+        },
+        {
+          "name": "Abdul‐Rauf Malimanga Alhassan",
+          "orcid": "https://orcid.org/0000-0003-2870-9639",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Gyimah Anokye",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Akimsah Osman A. Jedaiah",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer Nunoo",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2022.e01313",
+      "topics": [
+        "Agricultural engineering",
+        "Environmental science",
+        "Environmental economics",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298152565",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00011-x",
+      "title": "Techno-economic challenges of pumped hydro energy storage",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "John Ansu Gyabaah",
+          "orcid": "https://orcid.org/0000-0002-4722-3055",
+          "isRcees": true
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-12-818853-8.00011-x",
+      "topics": [
+        "Environmental economics",
+        "Business",
+        "Engineering",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298113029",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00001-7",
+      "title": "Need for pumped hydro energy storage systems",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 4,
+      "authors": [
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Roland Teye Amanor",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": true,
+      "url": "https://www.nrel.gov/docs/fy10osti/47187.pdf",
+      "topics": [
+        "Environmental economics",
+        "Environmental science",
+        "Computer science",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298113038",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00006-6",
+      "title": "Characteristic features of pumped hydro energy storage systems",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Roland Teye Amanor",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-12-818853-8.00006-6",
+      "topics": [
+        "Engineering",
+        "Process engineering",
+        "Electrical engineering",
+        "Computer science"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298113145",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00009-1",
+      "title": "Technological advances in prospecting sites for pumped hydro energy storage",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Salomon Obahoundjé",
+          "orcid": "https://orcid.org/0000-0001-8093-5241",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Mensah Mortey",
+          "orcid": "https://orcid.org/0000-0003-2199-7340",
+          "isRcees": false
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": false
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": true,
+      "url": "http://ageconsearch.umn.edu/record/339127",
+      "topics": [
+        "Environmental science",
+        "Environmental planning",
+        "Environmental resource management",
+        "Civil engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4297399781",
+      "doi": "https://doi.org/10.1155/2022/2094276",
+      "title": "Status of Agricultural Mechanization in Ghana: Insight from Farmers’ Perception, Population, and Nonagricultural Sector Growth",
+      "year": 2022,
+      "date": "2022-09-26",
+      "type": "article",
+      "citations": 3,
+      "authors": [
+        {
+          "name": "Gilbert Ayine Akolgo",
+          "orcid": "https://orcid.org/0000-0001-8424-8983",
+          "isRcees": true
+        },
+        {
+          "name": "Duke Nii Darko Quaye",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Abdul‐Rauf Malimanga Alhassan",
+          "orcid": "https://orcid.org/0000-0003-2870-9639",
+          "isRcees": false
+        },
+        {
+          "name": "Killian Asampana Asosega",
+          "orcid": "https://orcid.org/0000-0002-3140-2649",
+          "isRcees": false
+        },
+        {
+          "name": "Ebenezer Nunoo",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Osman A. Akimsah Jedaiah",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Michael Elorm Deho",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Thomas Atta‐Darkwa",
+          "orcid": "https://orcid.org/0000-0002-3679-854X",
+          "isRcees": false
+        }
+      ],
+      "venue": "Advances in Agriculture",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://downloads.hindawi.com/journals/aag/2022/2094276.pdf",
+      "topics": [
+        "Business",
+        "Agricultural economics",
+        "Agricultural science",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298152203",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00010-8",
+      "title": "Case studies on hybrid pumped hydro energy storage systems",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 2,
+      "authors": [
+        {
+          "name": "Mathew Anabadongo Atinsia",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Williams Amankwah",
+          "orcid": "https://orcid.org/0009-0005-2830-7893",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-12-818853-8.00010-8",
+      "topics": [
+        "Engineering",
+        "Automotive engineering",
+        "Computer science",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298113122",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00007-8",
+      "title": "Concept for cost-effective pumped hydro energy storage system for developing countries",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Williams Amankwah",
+          "orcid": "https://orcid.org/0009-0005-2830-7893",
+          "isRcees": true
+        },
+        {
+          "name": "Mathew Atinsia Anabadongo",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-12-818853-8.00007-8",
+      "topics": [
+        "Environmental economics",
+        "Reliability engineering",
+        "Risk analysis (engineering)",
+        "Business"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298113066",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00012-1",
+      "title": "Lessons for pumped hydro energy storage systems uptake",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 1,
+      "authors": [
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": true
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": true,
+      "url": "http://ageconsearch.umn.edu/record/339128",
+      "topics": [
+        "Environmental economics",
+        "Business",
+        "Engineering",
+        "Natural resource economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4298113018",
+      "doi": "https://doi.org/10.1016/b978-0-12-818853-8.00017-0",
+      "title": "List of contributors",
+      "year": 2022,
+      "date": "2022-09-30",
+      "type": "book-chapter",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Williams Amankwah",
+          "orcid": "https://orcid.org/0009-0005-2830-7893",
+          "isRcees": true
+        },
+        {
+          "name": "Roland Teye Amanor",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Mathew Atinsia Anabadongo",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Eric Ofosu Antwi",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Mathew Anabadongo Atinsia",
+          "orcid": null,
+          "isRcees": true
+        },
+        {
+          "name": "M.A.A. Derkyi",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "N.S.A. Derkyi",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Felix Amankwah Diawuo",
+          "orcid": "https://orcid.org/0000-0001-7868-5511",
+          "isRcees": true
+        },
+        {
+          "name": "Martin Kyereh Domfeh",
+          "orcid": "https://orcid.org/0000-0001-6612-7301",
+          "isRcees": true
+        },
+        {
+          "name": "John Ansu Gyabaah",
+          "orcid": "https://orcid.org/0000-0002-4722-3055",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Amos T. Kabo–bah",
+          "orcid": "https://orcid.org/0000-0002-5758-3708",
+          "isRcees": true
+        },
+        {
+          "name": "Ebenezer Nyarko Kumi",
+          "orcid": "https://orcid.org/0000-0001-9027-3739",
+          "isRcees": true
+        },
+        {
+          "name": "Joseph Yankyera Kusi",
+          "orcid": "https://orcid.org/0000-0002-2750-8619",
+          "isRcees": false
+        },
+        {
+          "name": "Eric Mensah Mortey",
+          "orcid": "https://orcid.org/0000-0003-2199-7340",
+          "isRcees": false
+        },
+        {
+          "name": "Salomon Obahoundjé",
+          "orcid": "https://orcid.org/0000-0001-8093-5241",
+          "isRcees": false
+        }
+      ],
+      "venue": "Elsevier eBooks",
+      "venueType": "ebook platform",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/b978-0-12-818853-8.00017-0",
+      "topics": [
+        "Computer science",
+        "History"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4398364629",
+      "doi": "https://doi.org/10.7910/dvn/ghfanr",
+      "title": "Replication Data for: Replication Data for: The potential for expansion of irrigated rice under alternate wetting and drying in Burkina Faso",
+      "year": 2022,
+      "date": "2022-01-01",
+      "type": "dataset",
+      "citations": 0,
+      "authors": [
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Elliott Ronald Dossou‐Yovo",
+          "orcid": "https://orcid.org/0000-0002-3565-8879",
+          "isRcees": false
+        },
+        {
+          "name": "Sander J. Zwart",
+          "orcid": "https://orcid.org/0000-0002-5091-1801",
+          "isRcees": false
+        },
+        {
+          "name": "Paul Kiepe",
+          "orcid": "https://orcid.org/0000-0002-9126-6810",
+          "isRcees": false
+        }
+      ],
+      "venue": "Harvard Dataverse",
+      "venueType": "repository",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.7910/dvn/ghfanr",
+      "topics": [
+        "Biology",
+        "Engineering",
+        "Virology",
+        "Chemical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3198488256",
+      "doi": "https://doi.org/10.3390/en14175375",
+      "title": "Distributed Generation and Renewable Energy Integration into the Grid: Prerequisites, Push Factors, Practical Options, Issues and Merits",
+      "year": 2021,
+      "date": "2021-08-29",
+      "type": "article",
+      "citations": 217,
+      "authors": [
+        {
+          "name": "Chu Donatus Iweh",
+          "orcid": "https://orcid.org/0000-0001-8075-7094",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Emmanuel Tanyi",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Eric Effah-Donyina",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "Energies",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/1996-1073/14/17/5375/pdf?version=1630248969",
+      "topics": [
+        "Computer science",
+        "Distributed computing",
+        "Risk analysis (engineering)",
+        "Reliability engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4200057419",
+      "doi": "https://doi.org/10.1016/j.esd.2021.12.003",
+      "title": "Investigation into the impacts of design, installation, operation and maintenance issues on performance and degradation of installed solar photovoltaic (PV) systems",
+      "year": 2021,
+      "date": "2021-12-28",
+      "type": "article",
+      "citations": 90,
+      "authors": [
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Siniša Djordjević",
+          "orcid": "https://orcid.org/0000-0003-1770-4728",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Sustainable Development/Energy for sustainable development",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.esd.2021.12.003",
+      "topics": [
+        "Reliability engineering",
+        "Automotive engineering",
+        "Engineering",
+        "Electrical engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3208601400",
+      "doi": "https://doi.org/10.1016/j.egyr.2021.10.046",
+      "title": "Degradation analysis of installed solar photovoltaic (PV) modules under outdoor conditions in Ghana",
+      "year": 2021,
+      "date": "2021-10-25",
+      "type": "article",
+      "citations": 78,
+      "authors": [
+        {
+          "name": "Bernard Aboagye",
+          "orcid": "https://orcid.org/0000-0003-2912-7948",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Eric Antwi Ofosu",
+          "orcid": "https://orcid.org/0000-0002-7972-8509",
+          "isRcees": true
+        },
+        {
+          "name": "Siniša Djordjević",
+          "orcid": "https://orcid.org/0000-0003-1770-4728",
+          "isRcees": false
+        }
+      ],
+      "venue": "Energy Reports",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.egyr.2021.10.046",
+      "topics": [
+        "Environmental science",
+        "Materials science",
+        "Electrical engineering",
+        "Engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3126100550",
+      "doi": "https://doi.org/10.1016/j.agwat.2021.106758",
+      "title": "The potential for expansion of irrigated rice under alternate wetting and drying in Burkina Faso",
+      "year": 2021,
+      "date": "2021-01-19",
+      "type": "article",
+      "citations": 47,
+      "authors": [
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Elliott Ronald Dossou‐Yovo",
+          "orcid": "https://orcid.org/0000-0002-3565-8879",
+          "isRcees": false
+        },
+        {
+          "name": "Sander J. Zwart",
+          "orcid": "https://orcid.org/0000-0002-5091-1801",
+          "isRcees": false
+        },
+        {
+          "name": "Paul Kiepe",
+          "orcid": "https://orcid.org/0000-0002-9126-6810",
+          "isRcees": false
+        }
+      ],
+      "venue": "Agricultural Water Management",
+      "venueType": "journal",
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.1016/j.agwat.2021.106758",
+      "topics": [
+        "Environmental science",
+        "Water resource management",
+        "Agronomy",
+        "Agricultural engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3197693479",
+      "doi": "https://doi.org/10.1016/j.scitotenv.2021.149959",
+      "title": "Mapping land suitability for informal, small-scale irrigation development using spatial modelling and machine learning in the Upper East Region, Ghana",
+      "year": 2021,
+      "date": "2021-08-27",
+      "type": "article",
+      "citations": 25,
+      "authors": [
+        {
+          "name": "Komlavi Akpoti",
+          "orcid": "https://orcid.org/0000-0001-6435-5116",
+          "isRcees": true
+        },
+        {
+          "name": "Thomas Higginbottom",
+          "orcid": "https://orcid.org/0000-0003-1150-1444",
+          "isRcees": false
+        },
+        {
+          "name": "Timothy Foster",
+          "orcid": "https://orcid.org/0000-0001-9594-1556",
+          "isRcees": false
+        },
+        {
+          "name": "Roshan Adhikari",
+          "orcid": "https://orcid.org/0000-0002-1932-6225",
+          "isRcees": false
+        },
+        {
+          "name": "Sander J. Zwart",
+          "orcid": "https://orcid.org/0000-0002-5091-1801",
+          "isRcees": false
+        }
+      ],
+      "venue": "The Science of The Total Environment",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.scitotenv.2021.149959",
+      "topics": [
+        "Environmental science",
+        "Geography",
+        "Water resource management",
+        "Agricultural engineering"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4200258600",
+      "doi": "https://doi.org/10.1007/s11205-021-02855-9",
+      "title": "Indicators for Sanitation Quality in Low-Income Urban Settlements: Evidence from Kenya, Ghana, and Bangladesh",
+      "year": 2021,
+      "date": "2021-12-09",
+      "type": "article",
+      "citations": 18,
+      "authors": [
+        {
+          "name": "Dario Meili",
+          "orcid": "https://orcid.org/0000-0001-5714-4505",
+          "isRcees": false
+        },
+        {
+          "name": "Vasco Schelbert",
+          "orcid": "https://orcid.org/0000-0003-1470-8547",
+          "isRcees": false
+        },
+        {
+          "name": "Mahbub‐Ul Alam",
+          "orcid": "https://orcid.org/0000-0001-6940-364X",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Sheillah Simiyu",
+          "orcid": "https://orcid.org/0000-0003-3069-8967",
+          "isRcees": false
+        },
+        {
+          "name": "Kwaku Amaning Adjei",
+          "orcid": "https://orcid.org/0000-0003-3220-6735",
+          "isRcees": false
+        },
+        {
+          "name": "Bismark Dwumfour–Asare",
+          "orcid": "https://orcid.org/0000-0002-6493-3892",
+          "isRcees": false
+        },
+        {
+          "name": "Mahbubur Rahman",
+          "orcid": "https://orcid.org/0000-0003-0520-2683",
+          "isRcees": false
+        },
+        {
+          "name": "Christoph Lüthi",
+          "orcid": "https://orcid.org/0000-0002-4174-5522",
+          "isRcees": false
+        },
+        {
+          "name": "Isabel Günther",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "Social Indicators Research",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://link.springer.com/content/pdf/10.1007/s11205-021-02855-9.pdf",
+      "topics": [
+        "Business",
+        "Environmental health",
+        "Socioeconomics",
+        "Geography"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3209979741",
+      "doi": "https://doi.org/10.53014/hzgg5241",
+      "title": "Quality determinants of shared sanitation facilities in low-income urban settlements",
+      "year": 2021,
+      "date": "2021-10-27",
+      "type": "article",
+      "citations": 5,
+      "authors": [
+        {
+          "name": "Vasco Schelbert",
+          "orcid": "https://orcid.org/0000-0003-1470-8547",
+          "isRcees": false
+        },
+        {
+          "name": "Dario Meili",
+          "orcid": "https://orcid.org/0000-0001-5714-4505",
+          "isRcees": false
+        },
+        {
+          "name": "Sheillah Simiyu",
+          "orcid": "https://orcid.org/0000-0003-3069-8967",
+          "isRcees": false
+        },
+        {
+          "name": "Mahbub‐Ul Alam",
+          "orcid": "https://orcid.org/0000-0001-6940-364X",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": false
+        },
+        {
+          "name": "Christoph Lüthi",
+          "orcid": "https://orcid.org/0000-0002-4174-5522",
+          "isRcees": true
+        }
+      ],
+      "venue": null,
+      "venueType": null,
+      "isOpenAccess": false,
+      "url": "https://doi.org/10.53014/hzgg5241",
+      "topics": [
+        "Business",
+        "Environmental planning",
+        "Environmental health",
+        "Socioeconomics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4200489248",
+      "doi": "https://doi.org/10.4314/ahs.v21i4.3",
+      "title": "COVID-19 in Africa: rethinking the tools to manage future pandemics",
+      "year": 2021,
+      "date": "2021-12-14",
+      "type": "article",
+      "citations": 2,
+      "authors": [
+        {
+          "name": "Ismaila Emahi",
+          "orcid": "https://orcid.org/0000-0003-0707-5526",
+          "isRcees": true
+        },
+        {
+          "name": "Mimmie CNC Watts",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Samuel Azibere",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Joseph F Morrison",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Kwabena AN Sarpong",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": "African Health Sciences",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.ajol.info/index.php/ahs/article/download/218769/206381",
+      "topics": [
+        "Medicine",
+        "Environmental health",
+        "Intensive care medicine",
+        "Virology"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3110819824",
+      "doi": "https://doi.org/10.1016/j.sciaf.2020.e00675",
+      "title": "Potential of meeting electricity needs of off-grid community with mini-grid solar systems",
+      "year": 2020,
+      "date": "2020-12-18",
+      "type": "article",
+      "citations": 45,
+      "authors": [
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Samuel Gyamfi",
+          "orcid": "https://orcid.org/0000-0002-6631-8236",
+          "isRcees": true
+        },
+        {
+          "name": "Athanasios Dagoumas",
+          "orcid": "https://orcid.org/0000-0001-7524-5262",
+          "isRcees": false
+        }
+      ],
+      "venue": "Scientific African",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://doi.org/10.1016/j.sciaf.2020.e00675",
+      "topics": [
+        "Environmental economics",
+        "Business",
+        "Engineering",
+        "Economics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3035821841",
+      "doi": "https://doi.org/10.3390/ijerph17124528",
+      "title": "Understanding the Barriers and Opportunities for Effective Management of Shared Sanitation in Low-Income Settlements—The Case of Kumasi, Ghana",
+      "year": 2020,
+      "date": "2020-06-23",
+      "type": "article",
+      "citations": 33,
+      "authors": [
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Bismark Dwumfour–Asare",
+          "orcid": "https://orcid.org/0000-0002-6493-3892",
+          "isRcees": false
+        },
+        {
+          "name": "Kwaku Amaning Adjei",
+          "orcid": "https://orcid.org/0000-0003-3220-6735",
+          "isRcees": false
+        },
+        {
+          "name": "Raphael Kweyu",
+          "orcid": "https://orcid.org/0000-0002-3353-8937",
+          "isRcees": false
+        },
+        {
+          "name": "Sheillah Simiyu",
+          "orcid": "https://orcid.org/0000-0003-3069-8967",
+          "isRcees": false
+        }
+      ],
+      "venue": "International Journal of Environmental Research and Public Health",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/1660-4601/17/12/4528/pdf",
+      "topics": [
+        "Business",
+        "Environmental planning",
+        "Environmental health",
+        "Socioeconomics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3092515384",
+      "doi": "https://doi.org/10.2166/washdev.2020.084",
+      "title": "When is shared sanitation acceptable in low-income urban settlements? A user perspective on shared sanitation quality in Kumasi, Kisumu and Dhaka",
+      "year": 2020,
+      "date": "2020-10-07",
+      "type": "article",
+      "citations": 18,
+      "authors": [
+        {
+          "name": "Vasco Schelbert",
+          "orcid": "https://orcid.org/0000-0003-1470-8547",
+          "isRcees": false
+        },
+        {
+          "name": "Dario Meili",
+          "orcid": "https://orcid.org/0000-0001-5714-4505",
+          "isRcees": false
+        },
+        {
+          "name": "Mahbub‐Ul Alam",
+          "orcid": "https://orcid.org/0000-0001-6940-364X",
+          "isRcees": false
+        },
+        {
+          "name": "Sheillah Simiyu",
+          "orcid": "https://orcid.org/0000-0003-3069-8967",
+          "isRcees": false
+        },
+        {
+          "name": "Prince Antwi-Agyei",
+          "orcid": "https://orcid.org/0000-0001-6940-2428",
+          "isRcees": true
+        },
+        {
+          "name": "Kwaku Amaning Adjei",
+          "orcid": "https://orcid.org/0000-0003-3220-6735",
+          "isRcees": false
+        },
+        {
+          "name": "Bismark Dwumfour–Asare",
+          "orcid": "https://orcid.org/0000-0002-6493-3892",
+          "isRcees": false
+        },
+        {
+          "name": "Mahbubur Rahman",
+          "orcid": "https://orcid.org/0000-0003-0520-2683",
+          "isRcees": false
+        },
+        {
+          "name": "Sharika Ferdous",
+          "orcid": "https://orcid.org/0000-0002-2271-7585",
+          "isRcees": false
+        },
+        {
+          "name": "Supta Sarker",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Isabel Günther",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Christoph Lüthi",
+          "orcid": "https://orcid.org/0000-0002-4174-5522",
+          "isRcees": false
+        }
+      ],
+      "venue": "Journal of Water Sanitation and Hygiene for Development",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://iwaponline.com/washdev/article-pdf/10/4/959/828986/washdev0100959.pdf",
+      "topics": [
+        "Business",
+        "Environmental planning",
+        "Environmental health",
+        "Water resource management"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W3112742043",
+      "doi": "https://doi.org/10.3390/ecsa-7-08201",
+      "title": "Detection of Hotspots and Performance Deteriotations in PV Modules under Partial Shading Conditions Using Infrared Thermography",
+      "year": 2020,
+      "date": "2020-11-14",
+      "type": "article",
+      "citations": 8,
+      "authors": [
+        {
+          "name": "Onyinye Emmanuella Ikejiofor",
+          "orcid": null,
+          "isRcees": false
+        },
+        {
+          "name": "Emmanuel Yeboah Asuamah",
+          "orcid": "https://orcid.org/0000-0002-2446-5107",
+          "isRcees": true
+        },
+        {
+          "name": "Howard O. Njoku",
+          "orcid": "https://orcid.org/0000-0002-1072-362X",
+          "isRcees": false
+        },
+        {
+          "name": "S.O. Enibe",
+          "orcid": null,
+          "isRcees": false
+        }
+      ],
+      "venue": null,
+      "venueType": null,
+      "isOpenAccess": true,
+      "url": "https://www.mdpi.com/2673-4591/2/1/71/pdf?version=1607263256",
+      "topics": [
+        "Materials science",
+        "Remote sensing",
+        "Environmental science",
+        "Optics"
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4205274427",
+      "doi": "https://doi.org/10.15406/mojes.2020.05.00185",
+      "title": "Mercury emission from the aluminium industry: a review",
+      "year": 2020,
+      "date": "2020-06-19",
+      "type": "review",
+      "citations": 6,
+      "authors": [
+        {
+          "name": "Kofi Owusu Ansah Amano",
+          "orcid": "https://orcid.org/0000-0002-5779-2497",
+          "isRcees": false
+        },
+        {
+          "name": "AG Ntiri-Asiedu",
+          "orcid": null,
+          "isRcees": true
+        }
+      ],
+      "venue": "MOJ Ecology & Environmental Sciences",
+      "venueType": "journal",
+      "isOpenAccess": true,
+      "url": "https://medcraveonline.com/MOJES/MOJES-05-00185.pdf",
+      "topics": [
+        "Environmental chemistry",
+        "Chemistry",
+        "Environmental science",
+        "Metallurgy"
+      ]
+    }
+  ]
+}
