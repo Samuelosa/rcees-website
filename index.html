@@ -1922,7 +1922,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
     </div>
   </div>
   <div class="crop-container" id="cropContainer">
-    <img id="cropImg" src="images/img-001y827j.png" alt="Crop preview" loading="lazy">
+    <img id="cropImg" src="" alt="Crop preview" loading="lazy">
     <div class="crop-box" id="cropBox" style="left: 19.445313px; top: 0px; width: 486.828125px; height: 438.296875px;">
       <div class="crop-handle crop-handle-tl" data-handle="tl"></div>
       <div class="crop-handle crop-handle-tr" data-handle="tr"></div>
@@ -4402,8 +4402,13 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
     toast.classList.remove('show'); // ensure toast never gets baked into saved HTML
     toast.textContent='';
     editActive=false;
+    // Clear cropper preview so it doesn't get baked into published HTML
+    const _cropImg=document.getElementById('cropImg');
+    const _cropImgSrc=_cropImg?_cropImg.src:'';
+    if(_cropImg) _cropImg.src='';
 
     const html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+    if(_cropImg) _cropImg.src=_cropImgSrc; // restore for current session
     fab.classList.add('unlocked'); // restore for current editing session
     // Re-enter edit mode immediately so UI stays responsive
     setTimeout(()=>{
