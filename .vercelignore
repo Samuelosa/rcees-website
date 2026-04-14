@@ -1,0 +1,19 @@
+# Heavy fetched assets — Vercel re-fetches these in the build step.
+public/files/ace-impact/
+public/images/news/
+public/data/publications.json
+public/data/news.json
+public/data/ace-impact.json
+
+# Standard ignores
+node_modules/
+.next/
+out/
+.git/
+.claude/
+*.log
+
+# Scratch files from scraping
+*.html
+p1.json
+pages_meta.json
