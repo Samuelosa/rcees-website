@@ -3800,7 +3800,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   const sidebar=document.querySelector('.n-sidebar');
   if(!pager||!sidebar) return;
   const items=Array.from(sidebar.querySelectorAll('.n-item'));
-  const PAGE_SIZE=1;
+  const PAGE_SIZE=3;
   let currentPage=1;
   function renderPage(page){
     const totalPages=Math.max(1,Math.ceil(items.length/PAGE_SIZE));
