@@ -475,13 +475,13 @@ section{padding:5rem 0}
 .prog-panel.active{display:block;animation:fadeUp .4s var(--ease)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
-.prog-list{display:flex;flex-direction:column;gap:.75rem}
-#tab-short .prog-list{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-/* Option E – Split Spotlight Cards */
-.prog-item{display:grid;grid-template-columns:90px 1fr;gap:0;padding:0;background:var(--white);border:1px solid var(--gray-100);border-radius:14px;overflow:hidden;transition:box-shadow .25s var(--ease),transform .25s var(--ease);cursor:pointer}
-.prog-item:hover{transform:translateX(3px);box-shadow:0 6px 24px rgba(7,46,92,.1)}
-.pi-icon{width:auto;height:auto;min-height:90px;align-self:stretch;border-radius:0;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--white)}
-.pi-icon svg{width:32px;height:32px}
+.prog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+#tab-short .prog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+/* Option A – Vertical Tile Cards */
+.prog-item{display:flex;flex-direction:column;padding:0;background:var(--white);border:1px solid var(--gray-100);border-radius:14px;overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s var(--ease);cursor:pointer}
+.prog-item:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(7,46,92,.12)}
+.pi-icon{width:100%;height:100px;border-radius:0;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--white)}
+.pi-icon svg{width:36px;height:36px}
 .pi-icon.pi-policy{background:linear-gradient(135deg,#1a5276,#2980b9)}
 .pi-icon.pi-economics{background:linear-gradient(135deg,#1e8449,#27ae60)}
 .pi-icon.pi-environment{background:linear-gradient(135deg,#2a5a4a,#3a9a4a)}
@@ -490,17 +490,10 @@ section{padding:5rem 0}
 .pi-icon.pi-audit{background:linear-gradient(135deg,#6c3483,#8e44ad)}
 .pi-icon.pi-safety{background:linear-gradient(135deg,#c0392b,#e74c3c)}
 .pi-icon.pi-cert{background:linear-gradient(135deg,var(--blue-dark),var(--blue))}
-.pi-body{padding:1rem 1.25rem;display:flex;flex-direction:column;justify-content:center}
-.pi-deg{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--blue-light);margin-bottom:.2rem}
-.pi-name{font-family:var(--serif);font-size:1rem;color:var(--blue-dark);margin-bottom:.2rem;line-height:1.3}
-.pi-sub{font-size:.82rem;color:var(--gray-500);line-height:1.5}
-.pi-footer{display:flex;align-items:center;justify-content:space-between;margin-top:.6rem}
-.pi-pill{font-size:.68rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--blue-pale);color:var(--blue)}
-.pi-arrow{color:var(--gray-200);transition:all .3s ease;flex-shrink:0}
-.prog-item:hover .pi-arrow{color:var(--blue);transform:translateX(3px)}
-/* MSc/MPhil/PhD — wider icon panel */
-#tab-msc .prog-item,#tab-mphil .prog-item,#tab-phd .prog-item{grid-template-columns:110px 1fr}
-#tab-msc .pi-icon svg,#tab-mphil .pi-icon svg,#tab-phd .pi-icon svg{width:42px;height:42px}
+.pi-body{padding:1.1rem 1rem 1.25rem;display:flex;flex-direction:column;flex:1}
+.pi-name{font-family:var(--serif);font-size:.98rem;font-weight:700;color:var(--blue-dark);margin-bottom:.35rem;line-height:1.3}
+.pi-sub{font-size:.78rem;color:var(--gray-500);line-height:1.5;flex:1;margin-bottom:.75rem}
+.pi-cta{font-size:.75rem;font-weight:700;color:var(--blue-light);display:flex;align-items:center;gap:.3rem;margin-top:auto}
 .prog-note{font-size:.88rem;color:var(--gray-300);margin-top:1.5rem;padding-left:.5rem;border-left:3px solid var(--green-light)}
 
 /* ======== TEAM ======== */
@@ -1000,11 +993,9 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
   .prog-tabs{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;-ms-overflow-style:none}
   .prog-tabs::-webkit-scrollbar{display:none}
   .prog-tab{font-size:.82rem;padding:.6rem .9rem;white-space:nowrap}
-  .prog-item{grid-template-columns:64px 1fr}
-  .pi-icon{min-height:70px}
-  .pi-icon svg{width:24px;height:24px}
-  .pi-pill{display:none}
-  .pi-footer{margin-top:.4rem}
+  .prog-list{grid-template-columns:repeat(2,1fr)}
+  .pi-icon{height:80px}
+  .pi-icon svg{width:28px;height:28px}
   .sec-title{font-size:clamp(1.5rem,5vw,2rem)}
   .form-row{grid-template-columns:1fr}
   .nl-form{flex-direction:column;width:100%}
@@ -3983,39 +3974,20 @@ document.querySelectorAll('.t-card').forEach(card=>{
   });
 });
 
-// Programme cards — Option E: inject degree badge, pi-body wrapper, footer
+// Programme cards — Option A: inject pi-body wrapper and View details CTA
 (function(){
-  const degMap={'MSc':'MSc Programme','MPhil':'MPhil Programme','PhD':'PhD Programme','Short Course':'Short Course'};
   document.querySelectorAll('.prog-item').forEach(item=>{
-    const icon=item.querySelector('.pi-icon');
-    const arrow=item.querySelector('.pi-arrow');
-    // The text div is the second child (no class originally)
     const textDiv=Array.from(item.children).find(c=>!c.classList.contains('pi-icon')&&c.tagName!=='svg'&&!c.classList.contains('pi-body'));
     if(!textDiv) return;
-    // Wrap text div as pi-body
     textDiv.classList.add('pi-body');
-    // Inject degree label
-    const type=item.dataset.progType||'';
-    const deg=document.createElement('div');
-    deg.className='pi-deg';
-    deg.textContent=degMap[type]||type;
-    textDiv.insertBefore(deg,textDiv.firstChild);
-    // Inject footer with duration pill + arrow
-    const duration=item.dataset.progDuration||'';
-    const footer=document.createElement('div');
-    footer.className='pi-footer';
-    const pill=document.createElement('span');
-    pill.className='pi-pill';
-    pill.textContent=duration;
-    footer.appendChild(pill);
-    if(arrow){footer.appendChild(arrow);}
-    else{
-      const arr=document.createElementNS('http://www.w3.org/2000/svg','svg');
-      arr.setAttribute('class','pi-arrow');arr.setAttribute('width','18');arr.setAttribute('height','18');arr.setAttribute('viewBox','0 0 16 16');arr.setAttribute('fill','none');
-      arr.innerHTML='<path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>';
-      footer.appendChild(arr);
-    }
-    textDiv.appendChild(footer);
+    // Remove stray arrow sibling
+    const arrow=item.querySelector('.pi-arrow');
+    if(arrow) arrow.remove();
+    // Add CTA
+    const cta=document.createElement('div');
+    cta.className='pi-cta';
+    cta.innerHTML='View details <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    textDiv.appendChild(cta);
   });
 })();
 
