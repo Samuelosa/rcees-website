@@ -475,8 +475,8 @@ section{padding:5rem 0}
 .prog-panel.active{display:block;animation:fadeUp .4s var(--ease)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 
-.prog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
-#tab-short .prog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.prog-list{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
+.prog-item{flex:0 0 calc(25% - .75rem);max-width:calc(25% - .75rem);min-width:180px}
 /* Option A – Vertical Tile Cards */
 .prog-item{display:flex;flex-direction:column;padding:0;background:var(--white);border:1px solid var(--gray-100);border-radius:14px;overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s var(--ease);cursor:pointer}
 .prog-item:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(7,46,92,.12)}
@@ -993,7 +993,7 @@ body.edit-active .edit-fab{right:calc(380px + 2rem)}
   .prog-tabs{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;-ms-overflow-style:none}
   .prog-tabs::-webkit-scrollbar{display:none}
   .prog-tab{font-size:.82rem;padding:.6rem .9rem;white-space:nowrap}
-  .prog-list{grid-template-columns:repeat(2,1fr)}
+  .prog-item{flex:0 0 calc(50% - .5rem);max-width:calc(50% - .5rem)}
   .pi-icon{height:80px}
   .pi-icon svg{width:28px;height:28px}
   .sec-title{font-size:clamp(1.5rem,5vw,2rem)}
