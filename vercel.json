@@ -3,7 +3,6 @@
   "buildCommand": "bun run scripts/fetch-publications.mjs && bun run scripts/fetch-news.mjs && bun run scripts/fetch-ace-impact.mjs && bun run build",
   "installCommand": "bun install",
   "framework": "nextjs",
-  "outputDirectory": "out",
   "build": {
     "env": {
       "DEPLOY_TARGET": "vercel"
