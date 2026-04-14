@@ -516,6 +516,20 @@ if(document.getElementById('heroSlider'))(function(){
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('show'))closeNews()});
 
   window.attachNewsModal=attachNews;
+
+  // Expand featured card paragraph with full article text
+  (function(){
+    const featured=document.querySelector('.n-featured');
+    if(!featured) return;
+    const p=featured.querySelector('.nf-body p');
+    if(!p) return;
+    const content=featured.dataset.content||'';
+    if(!content) return;
+    const paragraphs=content.split('|').map(s=>s.trim()).filter(Boolean);
+    if(paragraphs.length>1){
+      p.textContent=paragraphs.join(' ');
+    }
+  })();
 })();
 
 // Programme modal
