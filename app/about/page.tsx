@@ -58,8 +58,17 @@ export default function AboutPage() {
           </div>
           <div className="md:col-span-5">
             <div className="relative aspect-[4/5] w-full overflow-hidden bg-forest-900">
-              <Image src={images.directorWelcome} alt="" fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
+              <Image
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/samuel-gyamfi.png`}
+                alt="Prof. Ing. Samuel Gyamfi, Centre Director"
+                fill
+                sizes="(min-width: 768px) 40vw, 100vw"
+                className="object-cover"
+              />
             </div>
+            <p className="mt-4 text-xs uppercase tracking-wider text-muted">
+              Prof. Ing. Samuel Gyamfi · Centre Director
+            </p>
           </div>
         </div>
       </section>
