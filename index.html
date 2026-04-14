@@ -3991,8 +3991,40 @@ document.querySelectorAll('.team-tab').forEach(tab=>{
       panel.dataset.teamPage='0';
       paginateGroup(panel);
     }
+    teamCycler.pause();
   });
 });
+
+// Team group auto-cycle
+const teamCycler=(function(){
+  const tabs=Array.from(document.querySelectorAll('.team-tab'));
+  let timer=null;
+  let pauseTimer=null;
+  function activateTab(idx){
+    const tab=tabs[idx];
+    if(!tab) return;
+    document.querySelectorAll('.team-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.tg').forEach(g=>g.classList.remove('active'));
+    tab.classList.add('active');
+    const panel=document.querySelector(`.tg[data-group="${tab.dataset.team}"]`);
+    if(panel){panel.classList.add('active');panel.dataset.teamPage='0';paginateGroup(panel);}
+  }
+  function next(){
+    const active=tabs.findIndex(t=>t.classList.contains('active'));
+    activateTab((active+1)%tabs.length);
+  }
+  function start(){
+    if(timer) return;
+    timer=setInterval(next,4000);
+  }
+  function pause(){
+    clearInterval(timer);timer=null;
+    clearTimeout(pauseTimer);
+    pauseTimer=setTimeout(start,10000);
+  }
+  start();
+  return {pause};
+})();
 
 // ========== IMAGE CROPPER ==========
 (function(){
